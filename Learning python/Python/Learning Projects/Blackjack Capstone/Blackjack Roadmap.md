@@ -8,7 +8,7 @@ Calculate the user's and computer's scores based on their card values.
 
 If an ace is drawn, count it as 11. But if the total goes over 21, count the ace as 1 instead.
 
-only Computer first card should be revealed to the user.
+Only the computer's first card should be revealed to the user.
 
 Game ends immediately when user score goes over 21 or if the user or computer gets a blackjack.
 
