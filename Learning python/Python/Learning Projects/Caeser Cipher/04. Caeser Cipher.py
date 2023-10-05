@@ -44,8 +44,7 @@ def caeser(a, b, c):
 #Try running the program and entering a shift number of 45.
 #Add some code so that the program continues to work even if the user enters a shift number greater than 26. 
 #Hint: Think about how you can use the modulus (%).
-rerun = True
-while rerun:
+while true:
     direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
@@ -57,5 +56,5 @@ while rerun:
     result = input("Type 'Yes' if you want to go again. Otherwise type 'No':\n")
 
     if result == 'No':
-        rerun = False
-        print('Goodbye')
+            print('Goodbye')
+            break
