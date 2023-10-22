@@ -13,6 +13,7 @@ def play_game():
     if game_level == 'easy':
         attempts = 10
     elif game_level == 'hard':
+        
         attempts = 5
     else:
         print("Incorrect value!")
