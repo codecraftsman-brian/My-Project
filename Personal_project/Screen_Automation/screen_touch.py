@@ -2,7 +2,7 @@ import pyautogui
 import time
 import random
 # Define the screen dimensions (change these values based on your screen resolution)
-screen_width, screen_height = pyautogui.size()
+#screen_width, screen_height = pyautogui.size()
 
 click_interval = 2
 scroll_wait_time = 1
@@ -16,7 +16,7 @@ def teamviewer():
     time.sleep(click_interval)
 
 def folder():
-    folders=((0,255), (190,353), (630, 1062), (613, 979),(1739, 103), (1087, 112))
+    folders=[(637,1057), (624,949), (154,836), (1363,124),(1592,669)]
     for folder in folders:
         pyautogui.moveTo(folder[0], folder[1], duration=2)
         pyautogui.click()
@@ -50,14 +50,16 @@ def email():
         time.sleep(click_interval)
 
     scroll_up()
-teamviewer_is_open = False
+
+teamviewer_is_open = 0
+
+if teamviewer_is_open == 0:
+    teamviewer()
+    teamviewer_is_open += 1
+
 while True:
     # x = random.randint(0, screen_width)
     # y = random.randint(0, screen_height)
-
-    while teamviewer_is_open == False:
-        teamviewer()
-        teamviewer_is_open = True
     folder()
     email()
 
@@ -66,6 +68,25 @@ while True:
 
 
 
+
+##########################################################################
+# Get the name of the window that is on the forebackground
+
+# def is_open():
+#     def click(x, y, button, pressed):
+#         window_under_cursor = gw.getWindowsAt(x, y)
+#         if pressed:
+#             app_name = window_under_cursor[0].title
+#             if app_name != "Arthur Ngugi - TeamViewer":
+#                 teamviewer()
+#             else:
+#                 print("Not open")
+#             #print(f"The name of the foreground application is: {app_name}")
+
+#     with Listener(on_click=click) as listener:
+#         listener.join()
+
+##########################################################################
 
 
 

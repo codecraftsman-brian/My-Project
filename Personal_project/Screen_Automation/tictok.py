@@ -24,7 +24,6 @@ driver.get(my_address)
 
 logging.info('Opened tictok page')
 
-time.sleep(500)
 # Wait for the page to load and the Sign-In buttons to be clickable
 wait = WebDriverWait(driver, 20)
 google_sign_in_button_XPath = '//div[text() = "Use phone / email / username"]'
@@ -65,9 +64,11 @@ input_password.send_keys(my_password)
 
 print('password inputted')
 #Locate the sign-in button and click it
-sign_in_xpath = '//*[@id="loginContainer"]/div[2]/form/button'
+sign_in_xpath = '//*[@id="loginContainer"]/div[1]/form/button'
 sign_in_button = driver.find_element(By.XPATH, sign_in_xpath)
 sign_in_button.click()
+
+print('Login button clicked')
 
 print("Have you bypassed the CAPTCHA authentication? (Press Enter to continue if yes):")
 

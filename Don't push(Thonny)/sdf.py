@@ -1,24 +1,21 @@
-def is_leap(year):
-  if year % 4 == 0:
-    if year % 100 == 0:
-      if year % 400 == 0:
-        return "True"
-      else:
-        return "False"
-    else:
-        return "True"
-  else:
-      return "False"
+import pyautogui
+import time
+import random
 
-year = int(input("Enter a year: "))
-month = int(input("Enter a month: "))
-             
-def days_in_month(a,b):
-    month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-    if is_leap(a) == "True":
-       month_days[1] = 29
-       print(month_days) 
-    else:
-       print("NOt")
+click_interval = 2
+scroll_wait_time = 1
 
-days_in_month(year,month)
+def teamviewer():
+    teamviewers=((0,255), (190,353))
+    for teamviewer in teamviewers:
+        pyautogui.moveTo(teamviewer[0], teamviewer[1], duration=2)
+        pyautogui.click()
+        
+    time.sleep(click_interval)
+    
+
+teamviewer_is_open = 0
+
+if teamviewer_is_open == 0:
+    teamviewer()
+    teamviewer_is_open += 1
