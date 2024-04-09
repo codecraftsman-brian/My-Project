@@ -3,7 +3,8 @@ from TikTokLive.events import ConnectEvent, CommentEvent
 import pyautogui
 import time
 
-target_position =(2335,1400,2487,1400) #gold__ita, Lady.Kay_, kingangi_official
+#target_position =(2335,1400,2487,1400) #gold__ita, Lady.Kay_, kingangi_official
+target_position =(1662,1042,1851,1047)
 unique_ids = []
 
 def comment_activate(position, message):
@@ -17,7 +18,7 @@ def comment_activate(position, message):
     pyautogui.click()
 
 def run_client():
-    client = TikTokLiveClient(unique_id="@Lady.Kay_")
+    client = TikTokLiveClient(unique_id="@gold__ita")
     
     @client.on(CommentEvent)
     async def on_comment(event: CommentEvent):
@@ -29,8 +30,8 @@ def run_client():
     client.run()
 
 def navigate_and_scroll():
-    pyautogui.moveTo(1074,468, duration=0.5)
-    pyautogui.click()
+    # pyautogui.moveTo(1074,468, duration=0.5)
+    # pyautogui.click()
     # Navigate to a specific point
     pyautogui.moveTo(2444, 1250, duration=0.5)
     # Perform scrolling twice

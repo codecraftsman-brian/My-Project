@@ -13,10 +13,12 @@ from selenium.webdriver.support import expected_conditions as EC
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Open Chrome
-my_path= "F:\Chrome\chromedriver-win64/chromedriver.exe"
+my_path= "F:/chromedriver-win64/chromedriver-win64/chromedriver.exe"
 chrome_service = Service(my_path)
 driver = webdriver.Chrome(service=chrome_service)
 logging.info('Chrome Opened Successfully')
+
+time.sleep(300)
 
 # Navigate to TikTok
 my_address = "https://www.tiktok.com/login"
