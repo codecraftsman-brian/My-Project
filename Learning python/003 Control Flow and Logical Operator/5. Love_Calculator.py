@@ -17,6 +17,8 @@ r = both_names.count("r")
 u = both_names.count("u")
 e = both_names.count("e")
 
+# true_count = t + r + u + e instead of the if statement
+
 l = both_names.count("l")
 o = both_names.count("o")
 v = both_names.count("v")

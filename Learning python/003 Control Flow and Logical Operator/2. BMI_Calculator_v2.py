@@ -6,6 +6,7 @@ weight = float(input("enter your weight in kg: "))
 
 #Don't change the code above
 
+#write your code below this line
 #BMI calculations 
 bmi=int(round((weight/(height*height)),0))
 
