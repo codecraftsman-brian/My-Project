@@ -4,7 +4,7 @@ import pyautogui
 import time
 
 #target_position =(2335,1400,2487,1400) #gold__ita, Lady.Kay_, kingangi_official
-target_position =(1662,1042,1851,1047)
+target_position =(1151,733, 1340,726)
 unique_ids = []
 
 def comment_activate(position, message):
