@@ -10,15 +10,14 @@ shift = int(input("Type the shift number:\n"))
 
 #TODO-1: Create a function called 'caeser' that takes the 'text' 'shift' and 'direction' as inputs.
 def caeser(a, b, c):
+    encrypt_name = ''
     if b == 'encode':        
-        encrypt_name = ''
         for i in a:
             position = alphabet.index(i)
             shifted = position + c
             encrypt_name += alphabet[shifted]
         print(f"Here's the encoded result: {encrypt_name}\n")
     elif b == 'decode':
-        encrypt_name = ''
         for i in a:
             position = alphabet.index(i)
             shifted = position - c

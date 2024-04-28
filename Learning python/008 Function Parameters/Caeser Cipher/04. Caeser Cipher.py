@@ -10,8 +10,8 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 #Create a function called 'caeser' that takes the 'text' 'shift' and 'direction' as inputs.
 def caeser(a, b, c):
+    encrypt_name = ''
     if b == 'encode':        
-        encrypt_name = ''
         for i in a:
             #Logic checking if the input contains a non-alphabetic.
             if i in alphabet:
@@ -22,7 +22,6 @@ def caeser(a, b, c):
                 encrypt_name += i
         print(f"Here's the encoded result: {encrypt_name}\n")
     elif b == 'decode':
-        encrypt_name = ''
         for i in a:
             #Logic checking if the input contains a non-alphabetic.
             if i in alphabet:            
