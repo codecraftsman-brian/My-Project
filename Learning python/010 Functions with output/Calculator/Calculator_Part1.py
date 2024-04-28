@@ -43,6 +43,7 @@ def calculator():
         if input(f"Type 'y' to continue calculating with {ans}, else type 'n' to start a new calculation: ") == 'y':
             num1 = ans
         else:
+            print("Goodbye")
             should_continue = False
             #reculsive function
             calculator()
