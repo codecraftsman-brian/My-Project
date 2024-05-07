@@ -4,7 +4,7 @@ import random
 
 screen_width, screen_height = pyautogui.size()
 
-click_interval = 90
+click_interval = 50
 
 # #Screen 1
 # teamviewers_a=1610
@@ -41,17 +41,17 @@ click_interval = 90
 # #############
 
 #Screen 2
-teamviewers_a=1101
-teamviewers_b=565
+teamviewers_a=659
+teamviewers_b=449
 
-teamviewers_a1=292
-teamviewers_b1=538
+teamviewers_a1=1804
+teamviewers_b1=435
 
-teamviewers_a2=280
-teamviewers_b2=218
+teamviewers_a2=1959
+teamviewers_b2=1041
 
-teamviewers_a3=1018
-teamviewers_b3=206
+teamviewers_a3=690
+teamviewers_b3=1035
 
 while True:
     pyautogui.moveTo(teamviewers_a,teamviewers_b, duration=2)
