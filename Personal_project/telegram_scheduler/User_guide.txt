@@ -1,0 +1,92 @@
+Usage Guide
+1. Initial Setup
+The first time you run the application, you'll need to configure it:
+
+Click on the Settings button in the top right corner
+Enter your Telegram API credentials:
+
+API ID: Get from https://my.telegram.org/apps
+API Hash: Get from https://my.telegram.org/apps
+Phone Number: Your Telegram account phone number with country code (e.g., +1234567890)
+
+
+Configure timing settings:
+
+Minimum Wait Time: Minimum minutes to wait between batches of messages
+Maximum Wait Time: Maximum minutes to wait between batches of messages
+
+
+Click Save Settings
+
+2. Adding Messages
+You can add messages in two ways:
+Individual Messages:
+
+Enter your message in the "Add New Message" text area
+Click Add Message
+
+Bulk Upload:
+
+Create a text file (.txt) or CSV file (.csv) with one message per line
+Use the "Upload Messages" section to upload your file
+
+3. Adding Targets
+Targets can be users, groups, or channels that will receive your messages:
+Individual Targets:
+
+Fill in the "Add New Target" form:
+
+Name: A friendly name to identify the target
+Username/ID: The Telegram username or ID
+Type: Select user, group, or channel
+
+
+Click Add Target
+
+Bulk Upload:
+
+Create a CSV file with format: name,id,type (one per line)
+Example:
+John Doe,@johndoe,user
+Marketing Group,@marketing_group,group
+News Channel,@news_channel,channel
+
+Use the "Upload Targets" section to upload your file
+
+4. Running the Scheduler
+Once you've configured the application and added messages and targets:
+
+Click the Start Scheduler button
+The first time you run it, you'll need to authenticate with Telegram:
+
+A modal will appear asking for the verification code sent to your Telegram account
+If you have 2FA enabled, you'll also need to enter your password
+
+
+
+5. Managing the Scheduler
+
+Stop Scheduler: Click to stop sending messages
+Reset Cycle: Click to start a new messaging cycle (all targets will receive messages again)
+You can see whether the scheduler is running from the status indicator
+
+How It Works
+
+The scheduler randomly selects messages from your list
+It sends these messages to 1-4 random targets at a time
+It ensures no target receives a second message until all targets have received one (completing a cycle)
+Messages are sent at random intervals between your minimum and maximum wait times
+
+Troubleshooting
+
+Authentication Issues: If you have trouble authenticating, check that your API credentials are correct
+Connection Problems: Ensure you have an active internet connection
+Messages Not Sending: Verify that your targets exist and are accessible by your account
+Application Not Starting: Check that all required packages are installed and files are in the correct locations
+
+Data Storage
+The application creates several files to store your data:
+
+data/config.json: Stores your API credentials and timing settings
+data/messages.json: Stores your messages and targets
+data/sent_log.json: Tracks which targets have received messages in each cycle

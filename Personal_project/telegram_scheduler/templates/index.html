@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Telegram Message Scheduler{% endblock %}
+
+{% block content %}
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Dashboard</h2>
+                <div>
+                    {% if is_running %}
+                        <span class="status-indicator status-running"></span> Scheduler is running
+                        <form class="d-inline" action="{{ url_for('stop_scheduler') }}" method="post">
+                            <button type="submit" class="btn btn-danger ms-2">Stop Scheduler</button>
+                        </form>
+                    {% else %}
+                        <span class="status-indicator status-stopped"></span> Scheduler is stopped
+                        <form class="d-inline" action="{{ url_for('start_scheduler') }}" method="post">
+                            <button type="submit" class="btn btn-success ms-2">Start Scheduler</button>
+                        </form>
+                    {% endif %}
+                    <a href="{{ url_for('setup') }}" class="btn btn-secondary ms-2">Settings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="mb-0">Messages</h3>
+                </div>
+                <div class="card-body">
+                    <h4>Add New Message</h4>
+                    <form action="{{ url_for('add_message') }}" method="post" class="mb-3">
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="3" placeholder="Enter your message here" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Message</button>
+                    </form>
+                    
+                    <hr>
+                    
+                    <h4>Upload Messages</h4>
+                    <p class="text-muted">Upload a .txt or .csv file with one message per line</p>
+                    <form action="{{ url_for('upload_messages') }}" method="post" enctype="multipart/form-data" class="mb-3">
+                        <div class="mb-3">
+                            <input type="file" name="file" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Upload Messages</button>
+                    </form>
+                    
+                    <hr>
+                    
+                    <h4>Current Messages ({{ messages|length }})</h4>
+                    {% if messages %}
+                        <div class="list-group">
+                            {% for message in messages %}
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div class="text-truncate" style="max-width: 80%;" title="{{ message }}">
+                                        {{ message }}
+                                    </div>
+                                    <form action="{{ url_for('delete_message', index=loop.index0) }}" method="post">
+                                        <button type="submit" class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </button>
+                                    </form>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <p class="text-muted">No messages added yet</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3 class="mb-0">Targets</h3>
+                </div>
+                <div class="card-body">
+                    <h4>Add New Target</h4>
+                    <form action="{{ url_for('add_target') }}" method="post" class="mb-3">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Group/User Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="target_id" class="form-label">Username/ID</label>
+                            <input type="text" name="target_id" id="target_id" class="form-control" placeholder="@username or group/channel ID" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="type" class="form-label">Type</label>
+                            <select name="type" id="type" class="form-control" required>
+                                <option value="user">User</option>
+                                <option value="group">Group</option>
+                                <option value="channel">Channel</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Target</button>
+                    </form>
+                    
+                    <hr>
+                    
+                    <h4>Upload Targets</h4>
+                    <p class="text-muted">Upload a .csv file with format: name,id,type (one per line)</p>
+                    <form action="{{ url_for('upload_targets') }}" method="post" enctype="multipart/form-data" class="mb-3">
+                        <div class="mb-3">
+                            <input type="file" name="file" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Upload Targets</button>
+                    </form>
+                    
+                    <hr>
+                    
+                    <h4>Current Targets ({{ targets|length }})</h4>
+                    {% if targets %}
+                        <div class="list-group">
+                            {% for target in targets %}
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <strong>{{ target.name }}</strong><br>
+                                        <small class="text-muted">{{ target.id }} ({{ target.type }})</small>
+                                    </div>
+                                    <form action="{{ url_for('delete_target', index=loop.index0) }}" method="post">
+                                        <button type="submit" class="btn btn-sm btn-danger">
+                                            <i class="bi bi-trash"></i> Delete
+                                        </button>
+                                    </form>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        <p class="text-muted">No targets added yet</p>
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-0">Cycle Management</h3>
+                </div>
+                <div class="card-body">
+                    <p>Reset the current messaging cycle if you want to start sending to all targets again.</p>
+                    <form action="{{ url_for('reset_cycle') }}" method="post">
+                        <button type="submit" class="btn btn-warning">Reset Cycle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Authentication modal -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="authModalLabel">Telegram Authentication</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please check your Telegram app for a verification code and enter it below:</p>
+                    <form id="authCodeForm">
+                        <div class="mb-3">
+                            <label for="auth_code" class="form-label">Authentication Code</label>
+                            <input type="text" class="form-control" id="auth_code" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Code</button>
+                    </form>
+                    
+                    <div id="twoFactorForm" style="display: none;">
+                        <hr>
+                        <p>Two-factor authentication required. Please enter your password:</p>
+                        <form id="authPasswordForm">
+                            <div class="mb-3">
+                                <label for="auth_password" class="form-label">2FA Password</label>
+                                <input type="password" class="form-control" id="auth_password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascript %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}

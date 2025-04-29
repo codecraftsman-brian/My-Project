@@ -1,0 +1,28 @@
+App api_id: 25653855
+App api_hash: 4890503ff9054f3790689a53955644bd
+
+
+Telegram Message Scheduler Features
+Here's a breakdown of key features you could include in a Telegram message scheduler:
+Core Features
+
+Schedule messages to be sent at specific dates and times
+Support for different message types (text, images, videos, files)
+Recurring messages (daily, weekly, monthly)
+Message preview before scheduling
+Time zone support
+Queue management (edit/delete pending messages)
+Basic analytics (delivery confirmation)
+
+Premium Features
+
+Advanced scheduling patterns (e.g., business hours only, custom recurrence)
+Message templates library
+Bulk scheduling to multiple chats/groups
+AI-assisted message creation
+Priority sending (guaranteed delivery during high traffic)
+Advanced analytics (engagement metrics, optimal time suggestions)
+Calendar integration (Google Calendar, Outlook)
+Team collaboration tools (shared schedules, approval workflows)
+Message personalization using variables
+Failsafe delivery (retry mechanism if message fails)

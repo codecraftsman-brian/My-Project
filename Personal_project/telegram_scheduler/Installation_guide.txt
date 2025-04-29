@@ -1,0 +1,151 @@
+# Telegram Message Scheduler - Installation and Usage Guide
+
+This guide will help you install and set up the Telegram Message Scheduler application.
+
+## Installation
+
+### Prerequisites
+
+1. Python 3.7 or higher
+2. Pip package manager
+
+### Step 1: Install Required Packages
+
+Open a terminal or command prompt and install the required Python packages:
+
+```bash
+pip install flask telethon werkzeug
+```
+
+### Step 2: Create Project Directory Structure
+
+Create the following directory structure for the application:
+
+```
+telegram_scheduler/
+│
+├── app.py
+├── config.py
+├── scheduler/
+│   ├── __init__.py
+│   ├── models.py
+│   └── utils.py
+│
+├── web/
+│   ├── __init__.py
+│   └── routes.py
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   └── setup.html
+│
+├── static/
+│   └── js/
+│       └── main.js
+│
+├── data/                 # Will be created automatically
+└── uploads/              # Will be created automatically
+```
+
+### Step 3: Copy the Code Files
+
+Copy all the code files provided into their respective locations in the directory structure.
+
+### Step 4: Run the Application
+
+Navigate to the main project directory and run the application:
+
+```bash
+cd telegram_scheduler
+python app.py
+```
+
+The application will start and be accessible at [http://127.0.0.1:5000](http://127.0.0.1:5000) in your web browser.
+
+## Usage Guide
+
+### 1. Initial Setup
+
+The first time you run the application, you'll need to configure it:
+
+1. Click on the **Settings** button in the top right corner
+2. Enter your Telegram API credentials:
+   - **API ID**: Get from [https://my.telegram.org/apps](https://my.telegram.org/apps)
+   - **API Hash**: Get from [https://my.telegram.org/apps](https://my.telegram.org/apps)
+   - **Phone Number**: Your Telegram account phone number with country code (e.g., +1234567890)
+3. Configure timing settings:
+   - **Minimum Wait Time**: Minimum minutes to wait between batches of messages
+   - **Maximum Wait Time**: Maximum minutes to wait between batches of messages
+4. Click **Save Settings**
+
+### 2. Adding Messages
+
+You can add messages in two ways:
+
+#### Individual Messages:
+1. Enter your message in the "Add New Message" text area
+2. Click **Add Message**
+
+#### Bulk Upload:
+1. Create a text file (.txt) or CSV file (.csv) with one message per line
+2. Use the "Upload Messages" section to upload your file
+
+### 3. Adding Targets
+
+Targets can be users, groups, or channels that will receive your messages:
+
+#### Individual Targets:
+1. Fill in the "Add New Target" form:
+   - **Name**: A friendly name to identify the target
+   - **Username/ID**: The Telegram username or ID
+   - **Type**: Select user, group, or channel
+2. Click **Add Target**
+
+#### Bulk Upload:
+1. Create a CSV file with format: `name,id,type` (one per line)
+   Example:
+   ```
+   John Doe,@johndoe,user
+   Marketing Group,@marketing_group,group
+   News Channel,@news_channel,channel
+   ```
+2. Use the "Upload Targets" section to upload your file
+
+### 4. Running the Scheduler
+
+Once you've configured the application and added messages and targets:
+
+1. Click the **Start Scheduler** button
+2. The first time you run it, you'll need to authenticate with Telegram:
+   - A modal will appear asking for the verification code sent to your Telegram account
+   - If you have 2FA enabled, you'll also need to enter your password
+
+### 5. Managing the Scheduler
+
+- **Stop Scheduler**: Click to stop sending messages
+- **Reset Cycle**: Click to start a new messaging cycle (all targets will receive messages again)
+- You can see whether the scheduler is running from the status indicator
+
+## How It Works
+
+- The scheduler randomly selects messages from your list
+- It sends these messages to 1-4 random targets at a time
+- It ensures no target receives a second message until all targets have received one (completing a cycle)
+- Messages are sent at random intervals between your minimum and maximum wait times
+
+## Troubleshooting
+
+1. **Authentication Issues**: If you have trouble authenticating, check that your API credentials are correct
+2. **Connection Problems**: Ensure you have an active internet connection
+3. **Messages Not Sending**: Verify that your targets exist and are accessible by your account
+4. **Application Not Starting**: Check that all required packages are installed and files are in the correct locations
+
+## Data Storage
+
+The application creates several files to store your data:
+
+- `data/config.json`: Stores your API credentials and timing settings
+- `data/messages.json`: Stores your messages and targets
+- `data/sent_log.json`: Tracks which targets have received messages in each cycle
+- `data/telegram_scheduler_session`: Telethon session file for authentication
