@@ -1,0 +1,66 @@
+<!-- templates/add_account.html (continued) -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Add Social Media Account</h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="platform" class="form-label">Platform</label>
+                        <select class="form-select" id="platform" name="platform" required>
+                            <option value="" selected disabled>Select Platform</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="tiktok">TikTok</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="account_name" class="form-label">Account Name</label>
+                        <input type="text" class="form-control" id="account_name" name="account_name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="account_id" class="form-label">Account ID</label>
+                        <input type="text" class="form-control" id="account_id" name="account_id" required>
+                        <div class="form-text">
+                            <span class="facebook-help d-none">For Facebook: Your Page ID</span>
+                            <span class="instagram-help d-none">For Instagram: Your Instagram Business Account ID</span>
+                            <span class="tiktok-help d-none">For TikTok: Your TikTok Account ID</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="access_token" class="form-label">Access Token</label>
+                        <input type="text" class="form-control" id="access_token" name="access_token" required>
+                        <div class="form-text">
+                            <span class="facebook-help d-none">For Facebook: Your Page Access Token</span>
+                            <span class="instagram-help d-none">For Instagram: Your Instagram Graph API Access Token</span>
+                            <span class="tiktok-help d-none">For TikTok: Your TikTok API Access Token</span>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Add Account</button>
+                        <a href="{{ url_for('accounts') }}" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.getElementById('platform').addEventListener('change', function() {
+        const platform = this.value;
+        document.querySelectorAll('.form-text span').forEach(el => el.classList.add('d-none'));
+        
+        if (platform) {
+            document.querySelectorAll(`.${platform}-help`).forEach(el => el.classList.remove('d-none'));
+        }
+    });
+</script>
+{% endblock %}

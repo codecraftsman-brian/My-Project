@@ -1,0 +1,95 @@
+<!-- templates/index.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Dashboard</h2>
+
+<div class="row mt-4">
+    <div class="col-md-4">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header">Connected Accounts</div>
+            <div class="card-body">
+                <h5 class="card-title">{{ accounts|length }}</h5>
+                <p class="card-text">Active social media accounts</p>
+                <a href="{{ url_for('accounts') }}" class="btn btn-light">Manage Accounts</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-white bg-success mb-3">
+            <div class="card-header">Scheduled Posts</div>
+            <div class="card-body">
+                <h5 class="card-title">{{ posts|selectattr('status', 'equalto', 'scheduled')|list|length }}</h5>
+                <p class="card-text">Upcoming posts in the queue</p>
+                <a href="{{ url_for('posts') }}?status=scheduled" class="btn btn-light">View Scheduled</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card text-white bg-info mb-3">
+            <div class="card-header">Published Posts</div>
+            <div class="card-body">
+                <h5 class="card-title">{{ posts|selectattr('status', 'equalto', 'posted')|list|length }}</h5>
+                <p class="card-text">Successfully published posts</p>
+                <a href="{{ url_for('posts') }}?status=posted" class="btn btn-light">View Published</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-header">
+        <h5 class="mb-0">Upcoming Scheduled Posts</h5>
+    </div>
+    <div class="card-body">
+        {% if posts|selectattr('status', 'equalto', 'scheduled')|list|length > 0 %}
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Platform</th>
+                        <th>Account</th>
+                        <th>Scheduled Time</th>
+                        <th>Caption</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for post in posts|selectattr('status', 'equalto', 'scheduled')|list|sort(attribute='scheduled_time') %}
+                        {% if loop.index <= 5 %}
+                            <tr>
+                                <td>
+                                    {% if post.social_account.platform == 'facebook' %}
+                                        <i class="fab fa-facebook text-primary"></i>
+                                    {% elif post.social_account.platform == 'instagram' %}
+                                        <i class="fab fa-instagram text-danger"></i>
+                                    {% elif post.social_account.platform == 'tiktok' %}
+                                        <i class="fab fa-tiktok"></i>
+                                    {% endif %}
+                                    {{ post.social_account.platform|capitalize }}
+                                </td>
+                                <td>{{ post.social_account.account_name }}</td>
+                                <td>{{ post.scheduled_time.strftime('%b %d, %Y %H:%M') }}</td>
+                                <td>{{ post.caption|truncate(30) }}</td>
+                                <td>
+                                    <a href="{{ url_for('edit_post', post_id=post.id) }}" class="btn btn-sm btn-warning">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% if posts|selectattr('status', 'equalto', 'scheduled')|list|length > 5 %}
+                <div class="text-center">
+                    <a href="{{ url_for('posts') }}?status=scheduled" class="btn btn-primary">View All Scheduled Posts</a>
+                </div>
+            {% endif %}
+        {% else %}
+            <p class="text-center">No scheduled posts. <a href="{{ url_for('schedule_post') }}">Schedule a new post</a>.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

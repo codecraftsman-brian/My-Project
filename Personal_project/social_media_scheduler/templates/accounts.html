@@ -1,0 +1,49 @@
+<!-- templates/accounts.html -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Social Media Accounts</h2>
+    <a href="{{ url_for('add_account') }}" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Add Account
+    </a>
+</div>
+
+<div class="row">
+    {% if accounts|length > 0 %}
+        {% for account in accounts %}
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-header {% if account.platform == 'facebook' %}bg-primary text-white{% elif account.platform == 'instagram' %}bg-danger text-white{% elif account.platform == 'tiktok' %}bg-dark text-white{% endif %}">
+                        {% if account.platform == 'facebook' %}
+                            <i class="fab fa-facebook"></i>
+                        {% elif account.platform == 'instagram' %}
+                            <i class="fab fa-instagram"></i>
+                        {% elif account.platform == 'tiktok' %}
+                            <i class="fab fa-tiktok"></i>
+                        {% endif %}
+                        {{ account.platform|capitalize }}
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ account.account_name }}</h5>
+                        <p class="card-text">
+                            <small class="text-muted">ID: {{ account.account_id }}</small>
+                        </p>
+                        <p class="card-text">
+                            <span class="badge {% if account.connected %}bg-success{% else %}bg-danger{% endif %}">
+                                {{ 'Connected' if account.connected else 'Disconnected' }}
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="col-12">
+            <div class="alert alert-info">
+                No social media accounts added yet. <a href="{{ url_for('add_account') }}">Add your first account</a>.
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

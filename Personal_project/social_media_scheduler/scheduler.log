@@ -1,0 +1,1035 @@
+2025-04-29 04:23:30,973 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-29 04:23:30,998 - apscheduler.scheduler - INFO - Added job "check_and_publish_scheduled_posts" to job store "default"
+2025-04-29 04:23:31,688 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-29 04:23:31,689 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-29 04:23:31,693 - werkzeug - INFO -  * Restarting with stat
+2025-04-29 04:23:34,411 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-29 04:23:34,433 - apscheduler.scheduler - INFO - Added job "check_and_publish_scheduled_posts" to job store "default"
+2025-04-29 04:23:34,523 - werkzeug - WARNING -  * Debugger is active!
+2025-04-29 04:23:34,528 - werkzeug - INFO -  * Debugger PIN: 225-284-551
+2025-04-29 04:24:32,987 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:24:32] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-29 04:24:33,068 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:24:33] "GET /login HTTP/1.1" 200 -
+2025-04-29 04:24:34,423 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:24:34 PDT)" (scheduled at 2025-04-29 04:24:34.420886-07:00)
+2025-04-29 04:24:34,469 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:25:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:24:34,487 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:24:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-29 04:24:54,524 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:24:54] "POST /login HTTP/1.1" 200 -
+2025-04-29 04:25:12,958 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 04:25:13,038 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:13] "GET / HTTP/1.1" 200 -
+2025-04-29 04:25:34,435 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:25:34 PDT)" (scheduled at 2025-04-29 04:25:34.420886-07:00)
+2025-04-29 04:25:34,435 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:26:34 PDT)" (scheduled at 2025-04-29 04:25:34.420886-07:00)
+2025-04-29 04:25:34,439 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:26:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:25:34,493 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:26:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:25:38,759 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:38] "GET / HTTP/1.1" 200 -
+2025-04-29 04:25:40,030 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:40] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:25:42,476 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:42] "GET /schedule HTTP/1.1" 200 -
+2025-04-29 04:25:47,150 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:47] "GET /posts HTTP/1.1" 200 -
+2025-04-29 04:25:53,119 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:53] "GET /schedule HTTP/1.1" 200 -
+2025-04-29 04:25:56,631 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:56] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:25:58,210 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:25:58] "GET / HTTP/1.1" 200 -
+2025-04-29 04:26:26,331 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:26:26] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:26:28,523 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:26:28] "GET / HTTP/1.1" 200 -
+2025-04-29 04:26:32,696 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:26:32] "GET /posts?status=posted HTTP/1.1" 200 -
+2025-04-29 04:26:34,424 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:27:34 PDT)" (scheduled at 2025-04-29 04:26:34.420886-07:00)
+2025-04-29 04:26:34,429 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:27:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:26:53,337 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:26:53] "GET / HTTP/1.1" 200 -
+2025-04-29 04:27:19,031 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:27:19] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:27:23,419 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:27:23] "GET /accounts/add HTTP/1.1" 200 -
+2025-04-29 04:27:34,429 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:28:34 PDT)" (scheduled at 2025-04-29 04:27:34.420886-07:00)
+2025-04-29 04:27:34,433 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:28:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:28:34,436 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:29:34 PDT)" (scheduled at 2025-04-29 04:28:34.420886-07:00)
+2025-04-29 04:28:34,440 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:29:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:28:34,440 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:29:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:29:07,276 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:29:07] "GET / HTTP/1.1" 200 -
+2025-04-29 04:29:09,039 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:29:09] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:29:11,072 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:29:11] "GET /schedule HTTP/1.1" 200 -
+2025-04-29 04:29:34,428 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:30:34 PDT)" (scheduled at 2025-04-29 04:29:34.420886-07:00)
+2025-04-29 04:29:34,429 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:30:34 PDT)" (scheduled at 2025-04-29 04:29:34.420886-07:00)
+2025-04-29 04:29:34,433 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:30:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:29:58,253 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:29:58] "GET / HTTP/1.1" 200 -
+2025-04-29 04:30:26,108 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:30:26] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:30:34,428 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:31:34 PDT)" (scheduled at 2025-04-29 04:30:34.420886-07:00)
+2025-04-29 04:30:34,428 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:31:34 PDT)" (scheduled at 2025-04-29 04:30:34.420886-07:00)
+2025-04-29 04:30:34,437 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:31:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:30:34,438 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:31:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:30:41,628 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:30:41] "GET / HTTP/1.1" 200 -
+2025-04-29 04:31:34,427 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:32:34 PDT)" (scheduled at 2025-04-29 04:31:34.420886-07:00)
+2025-04-29 04:31:34,427 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:32:34 PDT)" (scheduled at 2025-04-29 04:31:34.420886-07:00)
+2025-04-29 04:31:34,431 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:32:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:31:34,431 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:32:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:32:34,431 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:33:34 PDT)" (scheduled at 2025-04-29 04:32:34.420886-07:00)
+2025-04-29 04:32:34,431 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:33:34 PDT)" (scheduled at 2025-04-29 04:32:34.420886-07:00)
+2025-04-29 04:32:34,435 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:33:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:32:34,435 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:33:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:33:34,429 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:34:34 PDT)" (scheduled at 2025-04-29 04:33:34.420886-07:00)
+2025-04-29 04:33:34,433 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:34:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:33:34,434 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:34:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:34:34,429 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:35:34 PDT)" (scheduled at 2025-04-29 04:34:34.420886-07:00)
+2025-04-29 04:34:34,429 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:35:34 PDT)" (scheduled at 2025-04-29 04:34:34.420886-07:00)
+2025-04-29 04:34:34,432 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:35:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:34:34,433 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:35:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:35:34,429 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:36:34 PDT)" (scheduled at 2025-04-29 04:35:34.420886-07:00)
+2025-04-29 04:35:34,432 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:36:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:35:34,432 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:36:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:36:34,463 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:37:34 PDT)" (scheduled at 2025-04-29 04:36:34.420886-07:00)
+2025-04-29 04:36:34,499 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:37:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:36:34,540 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:37:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:37:34,439 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:38:34 PDT)" (scheduled at 2025-04-29 04:37:34.420886-07:00)
+2025-04-29 04:37:34,447 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:38:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:38:34,433 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:39:34 PDT)" (scheduled at 2025-04-29 04:38:34.420886-07:00)
+2025-04-29 04:38:34,438 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:39:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:38:34,440 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:39:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:39:34,447 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:40:34 PDT)" (scheduled at 2025-04-29 04:39:34.420886-07:00)
+2025-04-29 04:39:34,451 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:40:34 PDT)" (scheduled at 2025-04-29 04:39:34.420886-07:00)
+2025-04-29 04:39:34,459 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:40:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:39:34,462 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:40:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:40:34,439 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:41:34 PDT)" (scheduled at 2025-04-29 04:40:34.420886-07:00)
+2025-04-29 04:40:34,439 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:41:34 PDT)" (scheduled at 2025-04-29 04:40:34.420886-07:00)
+2025-04-29 04:40:34,444 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:41:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:40:34,445 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:41:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:41:34,435 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:42:34 PDT)" (scheduled at 2025-04-29 04:41:34.420886-07:00)
+2025-04-29 04:41:34,446 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:42:34 PDT)" (scheduled at 2025-04-29 04:41:34.420886-07:00)
+2025-04-29 04:41:34,448 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:42:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:41:34,449 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:42:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:42:34,431 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:43:34 PDT)" (scheduled at 2025-04-29 04:42:34.420886-07:00)
+2025-04-29 04:42:34,431 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:43:34 PDT)" (scheduled at 2025-04-29 04:42:34.420886-07:00)
+2025-04-29 04:42:34,433 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:43:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:42:34,435 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:43:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:43:34,439 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:44:34 PDT)" (scheduled at 2025-04-29 04:43:34.420886-07:00)
+2025-04-29 04:43:34,446 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:44:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:43:34,445 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:44:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:44:34,440 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:45:34 PDT)" (scheduled at 2025-04-29 04:44:34.420886-07:00)
+2025-04-29 04:44:34,444 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:45:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:44:34,444 - apscheduler.executors.default - ERROR - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:45:34 PDT)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\apscheduler\executors\base.py", line 131, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\app.py", line 283, in check_and_publish_scheduled_posts
+    posts = ScheduledPost.query.filter(
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\model.py", line 23, in __get__
+    cls, session=cls.__fsa__.session()  # type: ignore[arg-type]
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\orm\scoping.py", line 220, in __call__
+    sess = self.registry()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\sqlalchemy\util\_collections.py", line 634, in __call__
+    key = self.scopefunc()
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\flask_sqlalchemy\session.py", line 111, in _app_ctx_id
+    return id(app_ctx._get_current_object())  # type: ignore[attr-defined]
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Arthur\Desktop\Dev\social_media_scheduler\venv\Lib\site-packages\werkzeug\local.py", line 519, in _get_current_object
+    raise RuntimeError(unbound_message) from None
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+the current application. To solve this, set up an application context
+with app.app_context(). See the documentation for more information.
+2025-04-29 04:44:43,461 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Arthur\\Desktop\\Dev\\social_media_scheduler\\app.py', reloading
+2025-04-29 04:44:43,824 - werkzeug - INFO -  * Restarting with stat
+2025-04-29 04:45:02,090 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-29 04:45:02,148 - apscheduler.scheduler - INFO - Added job "check_and_publish_scheduled_posts" to job store "default"
+2025-04-29 04:45:02,271 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-29 04:45:02,271 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-29 04:45:02,276 - werkzeug - INFO -  * Restarting with stat
+2025-04-29 04:45:05,544 - apscheduler.scheduler - INFO - Scheduler started
+2025-04-29 04:45:05,567 - apscheduler.scheduler - INFO - Added job "check_and_publish_scheduled_posts" to job store "default"
+2025-04-29 04:45:05,637 - werkzeug - WARNING -  * Debugger is active!
+2025-04-29 04:45:05,641 - werkzeug - INFO -  * Debugger PIN: 225-284-551
+2025-04-29 04:45:26,853 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:45:26] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-29 04:45:26,891 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:45:26] "GET /login HTTP/1.1" 200 -
+2025-04-29 04:45:38,843 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:45:38] "POST /login HTTP/1.1" 200 -
+2025-04-29 04:45:50,119 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:45:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-29 04:45:50,169 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:45:50] "GET / HTTP/1.1" 200 -
+2025-04-29 04:46:05,554 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:46:05 PDT)" (scheduled at 2025-04-29 04:46:05.550995-07:00)
+2025-04-29 04:46:05,554 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:46:05 PDT)" (scheduled at 2025-04-29 04:46:05.550995-07:00)
+2025-04-29 04:46:05,592 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:47:05 PDT)" executed successfully
+2025-04-29 04:46:05,606 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:47:05 PDT)" executed successfully
+2025-04-29 04:46:42,922 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:46:42] "GET /schedule HTTP/1.1" 200 -
+2025-04-29 04:46:48,470 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:46:48] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:46:50,112 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:46:50] "GET /accounts/add HTTP/1.1" 200 -
+2025-04-29 04:47:04,544 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:47:04] "[32mPOST /accounts/add HTTP/1.1[0m" 302 -
+2025-04-29 04:47:04,565 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:47:04] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:47:05,558 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:48:05 PDT)" (scheduled at 2025-04-29 04:47:05.550995-07:00)
+2025-04-29 04:47:05,558 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:48:05 PDT)" (scheduled at 2025-04-29 04:47:05.550995-07:00)
+2025-04-29 04:47:05,569 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:48:05 PDT)" executed successfully
+2025-04-29 04:47:05,573 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:48:05 PDT)" executed successfully
+2025-04-29 04:47:23,691 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:47:23] "GET /schedule HTTP/1.1" 200 -
+2025-04-29 04:47:59,811 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:47:59] "[32mPOST /schedule HTTP/1.1[0m" 302 -
+2025-04-29 04:47:59,831 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:47:59] "GET / HTTP/1.1" 200 -
+2025-04-29 04:48:05,558 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:49:05 PDT)" (scheduled at 2025-04-29 04:48:05.550995-07:00)
+2025-04-29 04:48:05,564 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:49:05 PDT)" executed successfully
+2025-04-29 04:48:27,418 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:48:27] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:49:05,569 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:50:05 PDT)" (scheduled at 2025-04-29 04:49:05.550995-07:00)
+2025-04-29 04:49:05,572 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:50:05 PDT)" executed successfully
+2025-04-29 04:49:05,573 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:50:05 PDT)" executed successfully
+2025-04-29 04:50:00,059 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:50:00] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:50:02,994 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:50:02] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:50:05,560 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:51:05 PDT)" (scheduled at 2025-04-29 04:50:05.550995-07:00)
+2025-04-29 04:50:05,560 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:51:05 PDT)" (scheduled at 2025-04-29 04:50:05.550995-07:00)
+2025-04-29 04:50:05,599 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:51:05 PDT)" executed successfully
+2025-04-29 04:50:05,605 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:51:05 PDT)" executed successfully
+2025-04-29 04:50:05,617 - social_scheduler - INFO - SIMULATION: Would post to Facebook: well Done (file: uploads\20250429044759_Screen_Recording_2025-04-18_120828.mp4)
+2025-04-29 04:50:05,619 - social_scheduler - INFO - SIMULATION: Would post to Facebook: well Done (file: uploads\20250429044759_Screen_Recording_2025-04-18_120828.mp4)
+2025-04-29 04:50:07,631 - social_scheduler - INFO - Successfully simulated posting to Facebook: 1
+2025-04-29 04:50:07,642 - social_scheduler - INFO - Successfully simulated posting to Facebook: 1
+2025-04-29 04:50:23,745 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:50:23] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:50:25,310 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:50:25] "GET /posts?status=posted HTTP/1.1" 200 -
+2025-04-29 04:50:26,850 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:50:26] "GET /posts?status=failed HTTP/1.1" 200 -
+2025-04-29 04:50:27,708 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:50:27] "GET /posts?status=posted HTTP/1.1" 200 -
+2025-04-29 04:51:05,557 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:52:05 PDT)" (scheduled at 2025-04-29 04:51:05.550995-07:00)
+2025-04-29 04:51:05,560 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:52:05 PDT)" executed successfully
+2025-04-29 04:51:54,011 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:51:54] "GET / HTTP/1.1" 200 -
+2025-04-29 04:51:57,845 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:51:57] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:52:00,496 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:52:00] "GET /accounts/add HTTP/1.1" 200 -
+2025-04-29 04:52:05,566 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:53:05 PDT)" (scheduled at 2025-04-29 04:52:05.550995-07:00)
+2025-04-29 04:52:05,567 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:53:05 PDT)" (scheduled at 2025-04-29 04:52:05.550995-07:00)
+2025-04-29 04:52:05,570 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:53:05 PDT)" executed successfully
+2025-04-29 04:52:05,570 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:53:05 PDT)" executed successfully
+2025-04-29 04:52:32,432 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:52:32] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:53:05,557 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:54:05 PDT)" (scheduled at 2025-04-29 04:53:05.550995-07:00)
+2025-04-29 04:53:05,562 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:54:05 PDT)" executed successfully
+2025-04-29 04:53:59,268 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:53:59] "GET /schedule HTTP/1.1" 200 -
+2025-04-29 04:54:01,394 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:01] "GET /posts HTTP/1.1" 200 -
+2025-04-29 04:54:05,558 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:55:05 PDT)" (scheduled at 2025-04-29 04:54:05.550995-07:00)
+2025-04-29 04:54:05,563 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:55:05 PDT)" executed successfully
+2025-04-29 04:54:09,136 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:09] "GET /posts?status=posted HTTP/1.1" 200 -
+2025-04-29 04:54:12,208 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:12] "GET /posts?status=failed HTTP/1.1" 200 -
+2025-04-29 04:54:13,904 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:13] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:54:15,030 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:15] "GET /posts HTTP/1.1" 200 -
+2025-04-29 04:54:16,557 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:16] "GET /posts?status=scheduled HTTP/1.1" 200 -
+2025-04-29 04:54:26,862 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:26] "GET / HTTP/1.1" 200 -
+2025-04-29 04:54:41,270 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:41] "GET /accounts HTTP/1.1" 200 -
+2025-04-29 04:54:44,470 - werkzeug - INFO - 127.0.0.1 - - [29/Apr/2025 04:54:44] "GET / HTTP/1.1" 200 -
+2025-04-29 04:55:05,568 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:56:05 PDT)" (scheduled at 2025-04-29 04:55:05.550995-07:00)
+2025-04-29 04:55:05,575 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:56:05 PDT)" executed successfully
+2025-04-29 04:55:05,579 - apscheduler.executors.default - INFO - Running job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:56:05 PDT)" (scheduled at 2025-04-29 04:55:05.550995-07:00)
+2025-04-29 04:55:05,593 - apscheduler.executors.default - INFO - Job "check_and_publish_scheduled_posts (trigger: interval[0:01:00], next run at: 2025-04-29 04:56:05 PDT)" executed successfully
