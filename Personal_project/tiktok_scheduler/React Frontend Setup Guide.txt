@@ -1,0 +1,90 @@
+# React Frontend Setup Guide
+
+Follow these steps to set up the React frontend for the TikTok Scheduler application:
+
+## Prerequisites
+
+- Node.js 14.x or higher
+- npm 6.x or higher
+
+## Step 1: Install Node.js and npm
+
+If you don't have Node.js installed:
+
+### Windows/macOS:
+1. Download and install Node.js from [nodejs.org](  )
+2. This will also install npm (Node Package Manager)
+
+### Linux:
+```bash
+# Using nvm (recommended)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm install 16  # Install Node.js 16
+
+# Or using apt (Ubuntu/Debian)
+sudo apt update
+sudo apt install nodejs npm
+```
+
+## Step 2: Install Dependencies
+
+Navigate to the frontend directory and install the required packages:
+
+```bash
+# Navigate to the frontend directory
+cd frontend
+
+# Install dependencies
+npm install
+```
+
+This will install all the packages defined in package.json, including:
+- React and React DOM
+- Material UI and icons
+- Axios for API calls
+- Date-fns for date manipulation
+- Recharts for charts
+- Crypto-JS for client-side encryption
+
+## Step 3: Set Up Environment Variables
+
+Create a `.env` file in the frontend directory with:
+
+```
+REACT_APP_API_URL=http://localhost:5000/api
+```
+
+## Step 4: Run the Development Server
+
+```bash
+# Start the React development server
+npm start
+```
+
+The application will start running at http://localhost:3000.
+
+## Step 5: Building for Production
+
+When you're ready to deploy:
+
+```bash
+# Create a production build
+npm run build
+```
+
+This creates a `build` directory with optimized production files.
+
+## Troubleshooting Common Issues
+
+### "Module not found" errors
+```bash
+# Make sure all dependencies are installed
+npm install
+```
+
+### Port conflicts
+If port 3000 is already in use, React will ask to use a different port. Type 'Y' to accept.
+
+### API connection issues
+Ensure the backend server is running at http://localhost:5000, or update the REACT_APP_API_URL in .env.

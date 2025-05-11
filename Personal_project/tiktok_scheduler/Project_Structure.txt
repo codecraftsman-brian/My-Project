@@ -1,0 +1,43 @@
+tiktok_scheduler/
+├── backend/
+│   ├── app.py                  # Main Flask application
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── auth_routes.py      # Authentication routes
+│   │   ├── scheduler_routes.py # Scheduling routes
+│   │   └── dashboard_routes.py # Dashboard routes
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── user.py             # User model
+│   │   ├── account.py          # TikTok account model
+│   │   └── post.py             # Post model
+│   ├── services/
+│   │   ├── __init__.py
+│   │   ├── auth_service.py     # Authentication service
+│   │   ├── encryption_service.py # Encryption service
+│   │   ├── scheduler_service.py # Scheduler service
+│   │   └── tiktok_api_service.py # TikTok API service
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   ├── encryption.py       # Encryption utilities
+│   │   └── validators.py       # Input validation
+│   └── config.py               # Configuration
+├── frontend/
+│   ├── public/
+│   │   └── index.html          # HTML template
+│   ├── src/
+│   │   ├── App.js              # Main React component
+│   │   ├── components/
+│   │   │   ├── Calendar.js     # Calendar component
+│   │   │   ├── Dashboard.js    # Dashboard component
+│   │   │   ├── PostForm.js     # Post form component
+│   │   │   ├── Settings.js     # Settings component
+│   │   │   └── AccountManager.js # Account manager
+│   │   ├── services/
+│   │   │   ├── api.js          # API service
+│   │   │   └── encryption.js   # Client-side encryption
+│   │   └── styles/
+│   │       ├── main.css        # Main styles
+│   │       └── theme.js        # Theme configuration
+│   └── package.json            # NPM package file
+└── requirements.txt            # Python dependencies

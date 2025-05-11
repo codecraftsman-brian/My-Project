@@ -1,0 +1,114 @@
+# TikTok API Integration Guide
+
+This guide will walk you through the process of acquiring the necessary API credentials for the TikTok Scheduler application. To use the TikTok API for scheduling posts, you need to register as a TikTok developer and create an application in the TikTok Developer Portal.
+
+## Prerequisites
+
+- A TikTok account (personal or business)
+- A website or application where you'll implement the TikTok login flow
+- Basic understanding of OAuth authentication flows
+
+## Step 1: Create a TikTok Developer Account
+
+1. Go to the [TikTok for Developers](https://developers.tiktok.com/) website
+2. Click on the "Get Started" or "Sign Up" button
+3. Log in with your TikTok account credentials
+4. Fill out the developer registration form with details about yourself or your organization
+5. Read and accept the TikTok Developer Terms of Service
+6. Complete the email verification process if required
+
+## Step 2: Create a New Application
+
+1. Once logged in to the TikTok Developer Portal, go to "My Apps"
+2. Click "Create App" button
+3. Fill in the application details:
+   - **App Name**: TikTok Scheduler (or your preferred name)
+   - **App Description**: A brief description of your scheduling application
+   - **Company/Organization Name**: Your company name
+   - **App Icon**: Upload an icon for your application
+   - **App Category**: Choose "Tools" or the most appropriate category
+   - **App Type**: Web application
+
+4. Click "Create" to proceed
+
+## Step 3: Configure Application Settings
+
+1. In the App details page, navigate to "App Settings"
+2. Configure the following settings:
+
+   ### Basic Information
+   - Verify your App Name, Description, and other basic details
+   
+   ### Platform Settings
+   - Add a "Web" platform if not already added
+   - Enter your website URL in the "Site URL" field (e.g., `https://your-domain.com`)
+   - Add the Redirect URI for OAuth callbacks (e.g., `https://your-domain.com/api/auth/tiktok/callback`)
+
+   ### Permissions
+   Configure the required permissions for your application:
+   - **User Info**: Request access to basic user information (required)
+   - **Video Upload**: Request permission to upload videos
+   - **Video Publish**: Request permission to publish videos
+
+## Step 4: Get API Credentials
+
+After creating and configuring your application, you'll have access to your API credentials:
+
+1. Go to the "App Keys" section in your app dashboard
+2. Note down the following credentials:
+   - **Client Key** (also known as App ID or API Key)
+   - **Client Secret**
+
+These credentials will be needed to configure the TikTok Scheduler application.
+
+## Step 5: Configure the TikTok Scheduler
+
+1. Open the `.env` file in the root directory of the TikTok Scheduler application
+2. Add the following environment variables with your credentials:
+
+```
+TIKTOK_CLIENT_KEY=your_client_key_here
+TIKTOK_CLIENT_SECRET=your_client_secret_here
+TIKTOK_REDIRECT_URI=https://your-domain.com/api/auth/tiktok/callback
+```
+
+3. Save the file and restart the application
+
+## Step 6: Test the Integration
+
+1. Start the TikTok Scheduler application
+2. Go to "Accounts" and click "Add Account"
+3. Click "Connect to TikTok" to initiate the OAuth flow
+4. You will be redirected to TikTok to authorize the application
+5. After authorization, you will be redirected back to the application
+6. If everything is configured correctly, the account will be added successfully
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Invalid Redirect URI**: Ensure the redirect URI configured in the TikTok Developer Portal exactly matches the one used in your application.
+
+2. **Permissions Not Granted**: If you receive errors about missing permissions, verify that you've requested all necessary permissions in the Developer Portal.
+
+3. **Rate Limits**: TikTok API has rate limits. Check the TikTok Developer Documentation for current limits.
+
+4. **Token Expiry**: TikTok access tokens expire. Make sure your application handles token refresh correctly.
+
+### Additional Resources
+
+- [TikTok Developer Documentation](https://developers.tiktok.com/doc)
+- [TikTok Login Kit for Web](https://developers.tiktok.com/doc/login-kit-web)
+- [TikTok Video Upload API](https://developers.tiktok.com/doc/upload-videos-api)
+
+## Production Considerations
+
+For production use, consider the following:
+
+1. **SSL Certificate**: Ensure your website uses HTTPS with a valid SSL certificate.
+
+2. **App Status**: Your TikTok app needs to be in "Live" status for production use. This may require submitting your app for review by TikTok.
+
+3. **Security**: Store your API credentials securely and never expose them in client-side code.
+
+4. **Scaling**: Consider the TikTok API rate limits when designing your application architecture.

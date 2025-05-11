@@ -1,0 +1,83 @@
+# Python Environment Setup Guide
+
+Follow these steps to set up a Python virtual environment for the TikTok Scheduler application:
+
+## Prerequisites
+
+- Python 3.8 or higher
+- pip (Python package installer)
+
+## Step 1: Create a Virtual Environment
+
+Navigate to the tiktok_scheduler directory in your terminal/command prompt and run:
+
+### On Windows:
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+venv\Scripts\activate
+```
+
+### On macOS/Linux:
+```bash
+# Create a virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate
+```
+
+## Step 2: Install Dependencies
+
+With the virtual environment activated, install the required packages:
+
+```bash
+# Install all dependencies from requirements.txt
+pip install -r requirements.txt
+```
+
+## Step 3: Set Up Environment Variables
+
+Create a `.env` file in the root directory with the following variables:
+
+```
+# Flask configuration
+SECRET_KEY=your_secret_key_here
+JWT_SECRET_KEY=your_jwt_secret_key_here
+FLASK_APP=backend/app.py
+FLASK_ENV=development
+
+# Database configuration
+DATABASE_URI=sqlite:///tiktok_scheduler.db
+
+# TikTok API credentials
+TIKTOK_CLIENT_KEY=your_tiktok_client_key
+TIKTOK_CLIENT_SECRET=your_tiktok_client_secret
+TIKTOK_REDIRECT_URI=http://localhost:3000/auth/tiktok/callback
+
+# Encryption settings
+ENCRYPTION_MASTER_KEY=your_encryption_master_key
+```
+
+Replace the placeholder values with your actual keys and credentials.
+
+## Step 4: Initialize the Database
+
+```bash
+# Navigate to the backend directory
+cd backend
+
+# Run the database initialization script
+python -c "from app import app, db; from models import init_db; init_db(app)"
+```
+
+## Step 5: Run the Backend Server
+
+```bash
+# Start the Flask server
+python app.py
+```
+
+The server will start running at http://localhost:5000.

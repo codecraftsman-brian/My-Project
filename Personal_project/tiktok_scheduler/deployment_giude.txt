@@ -1,0 +1,189 @@
+# TikTok Scheduler Deployment Guide
+
+This guide provides instructions for deploying the TikTok Scheduler application to a production environment.
+
+## Files and Directories to Remove Before Deployment
+
+Before deploying the application, remove the following files and directories:
+
+### Remove from Backend:
+- `__pycache__/` directories and `.pyc` files
+- `.env` file (create a secure production version)
+- `tiktok_scheduler.db` (if you want to start with a fresh database)
+- `uploads/` directory (if you want to clear all uploads)
+- Any test files
+
+### Remove from Frontend:
+- `node_modules/` directory
+- `.env` file (create a secure production version)
+- `build/` directory (if it exists from previous builds)
+- `.cache/` directory
+- Any test files
+
+## Backend Deployment
+
+### Option 1: Deploy with Gunicorn and Nginx
+
+1. Install production dependencies:
+```bash
+pip install gunicorn
+```
+
+2. Create a production `.env` file with secure settings:
+```
+SECRET_KEY=your_secure_random_key
+JWT_SECRET_KEY=another_secure_random_key
+FLASK_ENV=production
+DATABASE_URI=sqlite:///tiktok_scheduler.db
+# For production, consider using PostgreSQL or MySQL
+# DATABASE_URI=postgresql://user:password@localhost/tiktok_scheduler
+
+TIKTOK_CLIENT_KEY=your_tiktok_client_key
+TIKTOK_CLIENT_SECRET=your_tiktok_client_secret
+TIKTOK_REDIRECT_URI=https://your-domain.com/auth/tiktok/callback
+
+ENCRYPTION_MASTER_KEY=your_secure_encryption_key
+```
+
+3. Run with Gunicorn:
+```bash
+gunicorn -w 4 -b 127.0.0.1:5000 backend.app:app
+```
+
+4. Configure Nginx as a reverse proxy (example config):
+```nginx
+server {
+    listen 80;
+    server_name your-domain.com;
+
+    location / {
+        # Serve static frontend files
+        root /path/to/tiktok_scheduler/frontend/build;
+        try_files $uri $uri/ /index.html;
+    }
+
+    location /api {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+```
+
+5. Secure with HTTPS using Let's Encrypt
+
+### Option 2: Deploy with Docker
+
+1. Create a `Dockerfile` for the backend:
+```dockerfile
+FROM python:3.9-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install gunicorn
+
+COPY . .
+
+ENV FLASK_ENV=production
+
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "backend.app:app"]
+```
+
+2. Create a `docker-compose.yml` file:
+```yaml
+version: '3'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env.production
+    volumes:
+      - ./uploads:/app/uploads
+  
+  # Add a database service if needed
+  # db:
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_USER: user
+  #     POSTGRES_PASSWORD: password
+  #     POSTGRES_DB: tiktok_scheduler
+```
+
+## Frontend Deployment
+
+1. Update the `.env` file with production API URL:
+```
+REACT_APP_API_URL=https://your-domain.com/api
+```
+
+2. Build the frontend:
+```bash
+cd frontend
+npm install
+npm run build
+```
+
+3. Deploy the contents of the `build` directory to your web server or CDN
+
+### Option: Deploy with Netlify or Vercel
+
+For easier frontend deployment, you can use services like Netlify or Vercel:
+
+1. Create a `netlify.toml` file in the frontend directory:
+```toml
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-api-domain.com/api/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+2. Connect your GitHub repository to Netlify/Vercel and deploy
+
+## Additional Production Considerations
+
+### 1. Database
+- For production, consider using PostgreSQL or MySQL instead of SQLite
+- Set up regular database backups
+
+### 2. Security
+- Ensure all environment variables are properly set with secure values
+- Set up rate limiting to prevent abuse
+- Configure proper CORS settings
+- Implement proper logging
+
+### 3. Monitoring
+- Set up application monitoring with tools like Prometheus/Grafana or New Relic
+- Configure error tracking with Sentry
+
+### 4. CI/CD
+- Set up continuous integration/deployment pipelines
+- Automate testing before deployment
+
+### 5. TikTok API
+- Ensure your TikTok application is approved for production use
+- Monitor API rate limits
+- Handle token refresh properly
+
+### 6. Performance
+- Set up proper caching
+- Optimize database queries
+- Configure CDN for static assets
+
+### 7. Scaling
+- Configure load balancing if needed
+- Use container orchestration for larger deployments
