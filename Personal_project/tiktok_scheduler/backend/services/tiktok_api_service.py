@@ -3,18 +3,30 @@ import os
 import json
 import time
 from datetime import datetime, timedelta
-from services.encryption_service import EncryptionService
+import logging
+
+logger = logging.getLogger(__name__)
 
 class TikTokAPIService:
-    def __init__(self, encryption_service=None):
+    def __init__(self):
         self.api_base_url = "https://open.tiktokapis.com/v2"
-        self.client_key = os.environ.get('TIKTOK_CLIENT_KEY')
-        self.client_secret = os.environ.get('TIKTOK_CLIENT_SECRET')
-        self.redirect_uri = os.environ.get('TIKTOK_REDIRECT_URI')
-        self.encryption_service = encryption_service or EncryptionService()
+        self.client_key = None
+        self.client_secret = None
+        self.redirect_uri = None
+        self.encryption_service = None
+    
+    def init_app(self, app, encryption_service=None):
+        """Initialize with app context and dependencies"""
+        self.client_key = app.config.get('TIKTOK_CLIENT_KEY') or os.environ.get('TIKTOK_CLIENT_KEY')
+        self.client_secret = app.config.get('TIKTOK_CLIENT_SECRET') or os.environ.get('TIKTOK_CLIENT_SECRET')
+        self.redirect_uri = app.config.get('TIKTOK_REDIRECT_URI') or os.environ.get('TIKTOK_REDIRECT_URI')
+        self.encryption_service = encryption_service
     
     def get_auth_url(self):
         """Get the TikTok OAuth authorization URL"""
+        if not self.client_key or not self.redirect_uri:
+            raise ValueError("TikTok API not properly configured. Missing client key or redirect URI.")
+            
         scope = "user.info.basic,video.upload,video.publish"
         auth_url = f"https://www.tiktok.com/auth/authorize/"
         params = {
@@ -30,6 +42,9 @@ class TikTokAPIService:
     
     def exchange_code_for_token(self, code):
         """Exchange authorization code for access token"""
+        if not self.client_key or not self.client_secret or not self.redirect_uri:
+            raise ValueError("TikTok API not properly configured. Missing client credentials.")
+            
         url = f"{self.api_base_url}/oauth/token/"
         data = {
             "client_key": self.client_key,
@@ -54,10 +69,14 @@ class TikTokAPIService:
             }
         else:
             error_msg = f"Failed to exchange code for token: {response.status_code} - {response.text}"
+            logger.error(error_msg)
             raise Exception(error_msg)
     
     def refresh_access_token(self, refresh_token):
         """Refresh an expired access token"""
+        if not self.client_key or not self.client_secret:
+            raise ValueError("TikTok API not properly configured. Missing client credentials.")
+            
         url = f"{self.api_base_url}/oauth/token/"
         data = {
             "client_key": self.client_key,
@@ -81,6 +100,7 @@ class TikTokAPIService:
             }
         else:
             error_msg = f"Failed to refresh token: {response.status_code} - {response.text}"
+            logger.error(error_msg)
             raise Exception(error_msg)
     
     def get_user_info(self, access_token):
@@ -96,6 +116,7 @@ class TikTokAPIService:
             return response.json()
         else:
             error_msg = f"Failed to get user info: {response.status_code} - {response.text}"
+            logger.error(error_msg)
             raise Exception(error_msg)
     
     def upload_video(self, access_token, video_file_path):
@@ -114,6 +135,7 @@ class TikTokAPIService:
             return result.get('data', {}).get('video_id')
         else:
             error_msg = f"Failed to upload video: {response.status_code} - {response.text}"
+            logger.error(error_msg)
             raise Exception(error_msg)
     
     def publish_video(self, access_token, video_id, caption):
@@ -140,6 +162,7 @@ class TikTokAPIService:
             return result.get('data', {}).get('post_id')
         else:
             error_msg = f"Failed to publish video: {response.status_code} - {response.text}"
+            logger.error(error_msg)
             raise Exception(error_msg)
     
     def check_video_status(self, access_token, post_id):
@@ -160,4 +183,8 @@ class TikTokAPIService:
             return response.json()
         else:
             error_msg = f"Failed to check video status: {response.status_code} - {response.text}"
+            logger.error(error_msg)
             raise Exception(error_msg)
+
+# Create a singleton instance
+tiktok_api_service = TikTokAPIService()
