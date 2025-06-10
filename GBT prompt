@@ -1,0 +1,5 @@
+I'm currently building a tourism site, on the landing page we have a navbar, a heros section which contains an image of the destination, its title and a small description of the destination. this images are to be set by the adminstrator, no limits for the pictures which scrolls to the left after an interval that the adim sets. 
+Second, still in the landing page it's has a top destinations section that displays the top 6 rated destinations. this should be added by the adimin
+lastly we have a contact us page where the user can input some information such as the name and email to contact them back and this should send and email to the admin.
+
+I want to create the website using bootstrap, and javascript for the frontend and python & sql in the backend. explain for me how to structure the page to better manage it easilly
