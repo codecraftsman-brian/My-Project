@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WAPALME - Explore Kenya's Beauty</title>
+    <title>WAFALME - Explore Kenya's Beauty</title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -38,9 +38,9 @@
            TOP HEADER STYLES
         ======================================== */
         .top-header {
-            background: #2c3e50;
+            background: #2c3e50; /*-------------Change the color to match the design*/
             color: white;
-            padding: 0.4rem 0; /* Reduced padding */
+            padding: 0.3rem 0; /* Reduced padding */
             font-size: 0.9rem;
             position: fixed;
             top: 0;
@@ -107,11 +107,12 @@
         .navbar {
             background: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(255, 187, 0, 0.192);
             transition: all 0.3s ease;
             padding: 1rem 0;
             top: 32px; /* Further reduced gap */
             z-index: 1040;
+            height: 60px;
         }
 
         .navbar.scrolled {
@@ -160,7 +161,7 @@
 
         .btn-adventure {
             background: transparent;
-            border: 2px solid #2c3e50;
+            border: 1px solid #2c3e50;
             color: #2c3e50;
             padding: 0.7rem 1.5rem;
             border-radius: 15px;
@@ -202,10 +203,8 @@
             
             .navbar-toggler {
                 order: 1;
-                border: none;
                 padding: 0.25rem 0.5rem;
-                background: none;
-                margin-left: 1rem; /* Move toggle button slightly to the left */
+                margin-left: 0.5rem; /* Move toggle button slightly to the left */
             }
             
             .navbar-toggler-icon {
@@ -223,10 +222,11 @@
                 order: 2;
                 position: absolute;
                 top: 100%;
-                right: 0; /* Position from the right */
-                width: 25%; /* 25% width as requested */
+                left: 0; /* Position from the left */
+                width: 40%; /* 40% width as requested */
                 background: white;
                 border-radius: 0 0 10px 10px;
+                opacity: 0.8;
                 padding: 1rem;
                 box-shadow: 0 5px 20px rgba(0,0,0,0.1);
                 z-index: 1000;
@@ -330,22 +330,24 @@
             position: absolute;
             bottom: 15%;
             right: 6rem;
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
             background: linear-gradient(135deg, #ff6b35, #f7931e);
             border: none;
             color: white;
             border-radius: 50%;
-            font-size: 0.9rem;
-            font-weight: 600;
+            font-size: 2rem;
+            font-weight: 800;
+            font-style: italic;
             transition: all 0.3s ease;
             text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
-            line-height: 1.2;
+            line-height: 1.0;
             text-align: center;
+            opacity: 0.8;
         }
 
         .btn-book-hero:hover {
@@ -353,6 +355,7 @@
             transform: translateY(-3px) scale(1.1);
             box-shadow: 0 10px 30px rgba(255, 107, 53, 0.6);
             color: white;
+            opacity: 1;
         }
 
         @media (max-width: 768px) {
@@ -361,11 +364,12 @@
             }
             
             .btn-book-hero {
-                width: 80px;
-                height: 80px;
+                width: 100px;
+                height: 100px;
                 bottom: 12%;
                 right: 3rem;
-                font-size: 0.8rem;
+                font-size: 1.3rem;
+                opacity: 0.8;
             }
         }
 
@@ -1099,9 +1103,9 @@
         <div class="container">
             <div class="top-header-content">
                 <div class="top-header-item">
-                    <a href="mailto:info@wafalme.com">
+                    <a href="mailto:wafalme@gmail.com">
                         <i class="fas fa-envelope"></i>
-                        info@wafalme.com
+                        wafalmetours@gmail.com
                     </a>
                 </div>
                 <div class="top-header-item">
@@ -1127,7 +1131,7 @@
         <div class="container">
             <!-- Brand Logo -->
             <a class="navbar-brand" href="#home">
-                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Lion Logo">
+                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Company Logo">
             </a>
             
             <!-- Mobile Toggle Button -->
