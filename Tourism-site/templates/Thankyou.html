@@ -94,6 +94,11 @@
                 display: none;
             }
         }
+        @media (max-width: 480px) {
+            .top-header-content {
+                gap: 1.5rem;
+            }
+        }
 
         /* ========================================
            NAVIGATION STYLES
@@ -115,14 +120,9 @@
             top: 0;
         }
 
-        .navbar-brand {
-            font-weight: 700;
-            font-size: 1.8rem;
-            color: #2c5aa0 !important;
-        }
-
         .navbar-brand img {
-            height: 40px;
+            margin-top: 11px;
+            height: 200px;
         }
 
         .navbar-nav .nav-link {
@@ -217,10 +217,10 @@
                 position: absolute;
                 top: 100%;
                 left: 0;
-                width: 30%;
+                width: 40%;
                 background: white;
                 border-radius: 0 0 10px 10px;
-                opacity: 0.95;
+                opacity: 0.8;
                 padding: 1rem;
                 box-shadow: 0 5px 20px rgba(0,0,0,0.1);
                 z-index: 1000;
@@ -240,6 +240,9 @@
                 border-bottom: none;
             }
         }
+            .hero-section {
+                padding-top: 65px; /* Minimal padding for mobile */
+            }
 
         /* Desktop navigation styles */
         @media (min-width: 992px) {
@@ -415,39 +418,7 @@
             background: #1e3a5f;
             color: white;
             padding: 3rem 0 1rem;
-        }
-
-        .footer-logo-section {
             text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .footer-logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 1rem;
-            background: #ff6b35;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            color: white;
-            position: relative;
-        }
-
-        .footer-brand-text {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: white;
-            margin-top: 0.5rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-tagline {
-            font-size: 0.9rem;
-            color: #bdc3c7;
-            margin-top: 0.3rem;
         }
 
         .footer h5 {
@@ -486,6 +457,39 @@
             transform: translateX(5px);
         }
 
+        .footer-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            background: #ff6b35;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            position: relative;
+        }
+
+        .footer-logo-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .footer-brand-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            margin-top: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-tagline {
+            font-size: 0.9rem;
+            color: #bdc3c7;
+            margin-top: 0.3rem;
+        }
+
         .contact-item {
             display: flex;
             align-items: center;
@@ -500,29 +504,27 @@
 
         .newsletter-form {
             display: flex;
-            margin-bottom: 1.5rem;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 0 auto 1rem;
+            max-width: 300px;
+            justify-content: center;
         }
 
         .newsletter-form input {
             flex: 1;
-            padding: 0.8rem 1rem;
+            padding: 0.7rem;
             border: none;
+            border-radius: 15px 0 0 15px;
             outline: none;
-            font-size: 0.9rem;
-            background: white;
         }
 
         .newsletter-form button {
             background: linear-gradient(135deg, #ff6b35, #f7931e);
             border: none;
             color: white;
-            padding: 0.8rem 1.5rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 0 15px 15px 0;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-weight: 600;
         }
 
         .newsletter-form button:hover {
@@ -645,7 +647,7 @@
         <div class="container">
             <div class="top-header-content">
                 <div class="top-header-item">
-                    <a href="mailto:wafalmetours@gmail.com">
+                    <a href="mailto:wafalme@gmail.com">
                         <i class="fas fa-envelope"></i>
                         wafalmetours@gmail.com
                     </a>
@@ -673,7 +675,7 @@
         <div class="container">
             <!-- Brand Logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Wafalme Logo">
+                <img src="WAFALME TOURS LOGO/WAFALME LOGO-02.png" alt="Wafalme Logo">
             </a>
             
             <!-- Mobile Toggle Button -->
@@ -700,7 +702,7 @@
                         <a class="nav-link" href="index.html#testimonials">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -787,8 +789,10 @@
                     
                     <!-- Newsletter Form -->
                     <form class="newsletter-form" id="newsletter-form">
-                        <input type="email" id="newsletter-email" placeholder="Enter email address" required>
-                        <button type="submit">Subscribe</button>
+                        <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                     
                     <!-- Social Media Icons -->
