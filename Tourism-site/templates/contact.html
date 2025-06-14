@@ -123,8 +123,8 @@
         }
 
         .navbar-brand img {
-            margin-top: 11px;
-            height: 200px;
+            margin-top: 10px;
+            height: 60px;
         }
 
         .navbar-nav .nav-link {
@@ -154,32 +154,9 @@
             background: #ff6b35;
             border-radius: 1px;
         }
-
-        .btn-adventure {
-            background: transparent;
-            border: 1px solid #2c3e50;
-            color: #2c3e50;
-            padding: 0.7rem 1.5rem;
-            border-radius: 15px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-adventure:hover {
-            background: #2c3e50;
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
-        }
-
+        
         /* Mobile navigation styles */
         @media (max-width: 991px) {
-            .navbar-brand {
-                display: none !important;
-            }
-            
             .navbar {
                 padding: 0.5rem 0;
                 top: 25px;
@@ -197,25 +174,31 @@
                 position: relative;
             }
             
-            .navbar-toggler {
+            .navbar-brand {
                 order: 1;
+                position: absolute;
+                left: 0; /* Push logo to the far left */
+                z-index: 1002;
+            }
+            
+            .navbar-brand img {
+                height: 40px; /* Smaller logo on mobile */
+                margin-top: 0;
+            }
+            
+            .navbar-toggler {
+                order: 2;
+                margin-left: auto;
+                margin-right: 15px;
                 padding: 0.25rem 0.5rem;
-                margin-left: 0.5rem;
             }
             
             .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2844, 62, 80, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
             }
             
-            .btn-adventure {
-                order: 3;
-                margin-left: auto;
-                position: relative;
-                z-index: 1001;
-            }
-            
             .navbar-collapse {
-                order: 2;
+                order: 3;
                 position: absolute;
                 top: 100%;
                 left: 0;
@@ -276,12 +259,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-            
-            .btn-adventure {
-                order: 3;
-                flex-shrink: 0;
-                margin-left: auto;
             }
         }
 
@@ -416,23 +393,30 @@
             min-width: 30px;
         }
 
-        /* Submit Button */
+        /* Submit Button - Updated to match design */
         .submit-btn {
-            background: linear-gradient(45deg, #27ae60, #2ecc71);
+            background: #2c3e50; /* Navy blue to match design */
             color: white;
             border: none;
             padding: 15px 40px;
-            border-radius: 25px;
-            font-size: 1.1rem;
+            border-radius: 8px; /* Less rounded to match design */
+            font-size: 1rem;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
-            width: 100%;
+            width: auto; /* Changed from 100% to auto */
+            min-width: 120px;
         }
 
         .submit-btn:hover {
+            background: #1a252f;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+            box-shadow: 0 6px 20px rgba(44, 62, 80, 0.4);
+        }
+
+        .submit-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
         }
 
         /* ========================================
@@ -661,6 +645,7 @@
             .submit-btn {
                 padding: 12px 30px;
                 font-size: 1rem;
+                width: 100%; /* Full width on mobile */
             }
         }
     </style>
@@ -709,9 +694,6 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
-            <!-- Start Adventure Button (always visible) -->
-            <a href="contact.html" class="btn-adventure">Start Adventure</a>
-            
             <!-- Navigation Menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
@@ -728,7 +710,7 @@
                         <a class="nav-link" href="index.html#testimonials">Blogs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About Us</a>
+                        <a class="nav-link" href="index.html#about">About</a>
                     </li>
                 </ul>
             </div>
@@ -859,9 +841,9 @@
 
                         <!-- Submit Button -->
                         <div class="text-center">
-                            <button type="submit" class="submit-btn">
+                            <button type="submit" class="submit-btn" id="submitBtn">
                                 <i class="fas fa-paper-plane me-2"></i>
-                                Submit Request
+                                Submit
                             </button>
                         </div>
                     </form>
@@ -1049,20 +1031,18 @@
             }
 
             // Show loading state
-            const submitBtn = $('.submit-btn');
+            const submitBtn = $('#submitBtn');
             const originalText = submitBtn.html();
             submitBtn.html('<i class="fas fa-spinner fa-spin me-2"></i>Sending...');
             submitBtn.prop('disabled', true);
 
-            // Simulate form submission
+            // Simulate form submission and redirect to thank you page
             setTimeout(function() {
-                alert('Thank you for your inquiry! We will get back to you shortly.');
-                $('#contactForm')[0].reset();
-                resetCounters();
+                // Store form data in sessionStorage for thank you page
+                sessionStorage.setItem('contactFormData', JSON.stringify(formData));
                 
-                // Reset button
-                submitBtn.html(originalText);
-                submitBtn.prop('disabled', false);
+                // Redirect to thank you page
+                window.location.href = 'thankyou.html';
             }, 2000);
         });
 
