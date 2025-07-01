@@ -6,5 +6,3 @@ def click(x, y, button, pressed):
 
 with Listener(on_click=click) as listener:
     listener.join()
-    
-
