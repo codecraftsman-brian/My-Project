@@ -295,3 +295,123 @@ html {
         display: block !important;
     }
 }
+
+
+.footer {
+    background: #101D4B;
+    color: white;
+    padding: 4rem 0 2rem;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+/* Create responsive grid for footer sections */
+.footer .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns on desktop */
+    gap: 3rem;
+    align-items: start;
+    /* margin-bottom: 3rem; */
+}
+
+/* Logo Section */
+.footer-logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+}
+
+.footer-logo img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem 0;
+    text-align: left;
+}
+
+.contact-item i {
+    width: 20px;
+    color: #ff6b35;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+}
+
+.contact-item span {
+    color: #bdc3c7;
+}
+/* Newsletter Section */
+.newsletter-form {
+    display: flex;
+    margin: 0 auto 1.5rem;
+    max-width: 280px;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.newsletter-form button {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    border: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: linear-gradient(135deg, #e55a2b, #de831a);
+    transform: scale(1.05);
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #333;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    background: #ff6b35;
+    transform: translateY(-3px) scale(1.1);
+    color: white;
+}
+
+.social-facebook { --social-url: 'https://facebook.com'; }
+.social-twitter { --social-url: 'https://twitter.com/yourhandle'; }
+.social-instagram { --social-url: 'https://instagram.com/yourhandle'; }
+.social-youtube { --social-url: 'https://youtube.com/yourchannel'; }
+.social-tiktok { --social-url: 'https://tiktok.com/@yourhandle'; }
