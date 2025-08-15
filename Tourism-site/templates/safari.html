@@ -17,6 +17,8 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Savate:ital,wght@0,200..900;1,200..900&family=Truculenta:opsz,wght@12..72,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Savate:ital,wght@0,200..900;1,200..900&family=Truculenta:opsz,wght@12..72,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/css/safari.css"> 
         <link rel="stylesheet" href="../static/css/defualt_style.css"> 
     </head>
     <body>
@@ -88,13 +90,169 @@
             </div>
         </nav>
 
+        <section class="hero-section">
+            <h1 class="hero-title">Welcome to Wildlife Tours and Travel Destinations</h1>
+                <div class="hero-content">
+                    <div class="figure-left">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'><rect fill='%23654321' width='200' height='250'/><circle fill='%23FFA500' cx='100' cy='80' r='30'/><rect fill='%23228B22' x='60' y='150' width='80' height='100'/><text x='100' y='200' text-anchor='middle' fill='white' font-size='14'>Safari</text></svg>" alt="Safari Adventure">
+                    </div>
+                    <p class="hero-subtitle">
+                        Welcome to Wafalme tours and travel Destinations.Here we cater for everyone  from photographers,nature enthusiasts  to tourists and beyond.We have selected the best of Kenya to help you create the best memories of your life.From the beautiful pink flamingos of lake Nakuru to clear waters or Diani among others.Your adventure starts here.
+                    </p>
+                    <div class="figure-right">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'><rect fill='%23228B22' width='200' height='250'/><circle fill='%2387CEEB' cx='100' cy='60' r='25'/><polygon fill='%238B4513' points='80,180 120,180 100,120'/><text x='100' y='220' text-anchor='middle' fill='white' font-size='14'>Adventure</text></svg>" alt="Adventure Experience">
+                    </div>
+                </div>
+        </section>
+
+        <!-- All Packages Section -->
+        <section class="packages-section">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">AVAILABLE PACKAEGS</a></li>
+                    <li>|</li>
+                    <li><a href="#">BEACH GATEWAY</a></li>
+                    <li>|</li>
+                    <li><a href="#">BUSH GATEWAY</a></li>
+                    <li>|</li>
+                    <li><a href="#">WEEKEND GATEWAY</a></li>
+                </ul>
+                <h2 class="section-title">All packages</h2>
+                <p class="section-subtitle">Wherever your dream is we will take you there. Explore our popular destinations.</p>
+                
+                 <!-- Destinations Grid -->
+                <div class="row" id="destinations-grid">
+                    <!-- Destinations will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Exclusive Destinations -->
+        <section class="exclusive-section">
+            <div class="container">
+                <h2 class="section-title">Exclusive Destinations</h2>
+                <p class="section-subtitle">
+                    These are the absolute destinations for mountain enthusiasts. Explore the heights and experience the journey. Every mountain hides a story as let us guide you to the next chapter.
+                </p>
+                
+                <div class="row">
+                    <!-- Exclusive 1 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="exclusive-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="exclusive-image">
+                                        Mountain View
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="exclusive-content">
+                                        <h3 class="exclusive-title">5 Days Mount Kenya</h3>
+                                        <div class="exclusive-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="exclusive-price">$ 3,500</div>
+                                        <button class="exclusive-btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exclusive 2 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="exclusive-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="exclusive-image">
+                                        Kilimanjaro
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="exclusive-content">
+                                        <h3 class="exclusive-title">Mt. Kilimanjaro trek 7 Days 6 Nights</h3>
+                                        <div class="exclusive-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="exclusive-price">$ 2,500</div>
+                                        <button class="exclusive-btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exclusive 3 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="exclusive-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="exclusive-image">
+                                        Everest Base
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="exclusive-content">
+                                        <h3 class="exclusive-title">5 Days Everest Base Camp</h3>
+                                        <div class="exclusive-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="exclusive-price">$ 4,200</div>
+                                        <button class="exclusive-btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exclusive 4 -->
+                    <div class="col-lg-6 mb-4">
+                        <div class="exclusive-card">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="exclusive-image">
+                                        Rwenzori
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="exclusive-content">
+                                        <h3 class="exclusive-title">3 Days Rwenzori Mountain Hike</h3>
+                                        <div class="exclusive-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="exclusive-price">$ 1,800</div>
+                                        <button class="exclusive-btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
                 <!-- Bootstrap JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
         <!-- jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <script src="../static/js/index.js" async defer></script> 
+        <script src="../static/js/safari.js" async defer></script> 
 
     </body>
 </html>
