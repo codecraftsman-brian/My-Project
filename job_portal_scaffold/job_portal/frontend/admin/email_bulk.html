@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bulk Email</title>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+</head>
+<body>
+<main class="container narrow">
+  <h1>Bulk Email</h1>
+  <form method="post">
+    <label>Subject <input type="text" name="subject" required/></label>
+    <label>Body <textarea name="body" rows="8"></textarea></label>
+    <label>Limit to Job
+      <select name="job_id">
+        <option value="">All Users</option>
+        {% for j in jobs %}
+        <option value="{{ j.id }}">{{ j.title }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+</main>
+</body>
+</html>

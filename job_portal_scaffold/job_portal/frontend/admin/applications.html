@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Applications</title>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+</head>
+<body>
+<main class="container">
+  <h1>Applications</h1>
+  <table class="table">
+    <thead><tr><th>Candidate</th><th>Job</th><th>Status</th><th>Date</th></tr></thead>
+    <tbody>
+      {% for a in applications %}
+      <tr>
+        <td>{{ a.user.name }} ({{ a.user.email }})</td>
+        <td><a href="/jobs/{{ a.job.id }}">{{ a.job.title }}</a></td>
+        <td>{{ a.status }}</td>
+        <td>{{ a.application_date.strftime('%Y-%m-%d %H:%M') }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

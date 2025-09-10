@@ -12,7 +12,7 @@
 <body>
   <header class="site-header">
     <div class="container nav">
-      <div class="brand"><div class="logo"></div><a href="index.html">manuaAIrewrites</a></div>
+      <div class="brand"><div class="logo" aria-hidden="true"></div><a href="index.html">manuaAIrewrites</a></div>
       <nav aria-label="Primary">
         <a class="link" href="index.html">Home</a>
         <a class="link" href="about.html">About</a>
@@ -23,17 +23,90 @@
     </div>
   </header>
 
+  <!-- About block -->
   <section>
     <div class="container">
       <h2>About us</h2>
-      <p class="lead">At manuaAIrewrites, we manually refine AI-generated text so it sounds natural, purposeful, and unmistakably human. We keep your ideas intact while elevating clarity, rhythm, and style. Our editors sign NDAs upon request, and we never reuse your content.</p>
+      <p class="lead">We manually refine AI-generated text so it reads natural, purposeful, and unmistakably human. Your ideas stay intact—clarity, rhythm, and style get elevated. We sign NDAs on request and never reuse your content.</p>
+    </div>
+  </section>
+
+  <!-- Client rating / stats -->
+  <section class="section-muted">
+    <div class="container">
+      <div class="stats">
+        <div class="stat">
+          <div class="kpi">4.9<span>/5</span></div>
+          <div class="stars" aria-label="Average rating 4.9 out of 5">
+            <span>★★★★★</span>
+          </div>
+          <p class="muted">Average client rating</p>
+        </div>
+        <div class="stat">
+          <div class="kpi">1,200+</div>
+          <p class="muted">Projects rewritten</p>
+        </div>
+        <div class="stat">
+          <div class="kpi">72h</div>
+          <p class="muted">Typical turnaround</p>
+        </div>
+        <div class="stat">
+          <div class="kpi">0%</div>
+          <p class="muted">Data reuse policy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section>
+    <div class="container">
+      <h2>Meet the team</h2>
+      <p class="lead">Editors and linguists dedicated to sounding like you—only better.</p>
+      <div class="team-grid">
+        <article class="team-card">
+          <img src="https://i.pravatar.cc/240?img=5" alt="Ava – Lead Editor">
+          <h3>Ava K.</h3>
+          <p class="muted">Lead Editor • Narrative polish & tone</p>
+        </article>
+        <article class="team-card">
+          <img src="https://i.pravatar.cc/240?img=12" alt="Sam – QA & Compliance">
+          <h3>Sam R.</h3>
+          <p class="muted">QA & Compliance • Turnitin/ZeroGPT</p>
+        </article>
+        <article class="team-card">
+          <img src="https://i.pravatar.cc/240?img=32" alt="Lena – Senior Writer">
+          <h3>Lena M.</h3>
+          <p class="muted">Senior Writer • Style matching</p>
+        </article>
+        <article class="team-card">
+          <img src="https://i.pravatar.cc/240?img=24" alt="Noah – Ops Lead">
+          <h3>Noah T.</h3>
+          <p class="muted">Ops Lead • Delivery & timelines</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards / trust strip -->
+  <section class="section-muted">
+    <div class="container">
+      <h2>Selected recognition</h2>
+      <div class="awards">
+        <div class="award-pill">Editor’s Choice 2024</div>
+        <div class="award-pill">Top Service • Writing</div>
+        <div class="award-pill">Privacy-First Badge</div>
+        <div class="award-pill">Trusted by 500+ brands</div>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container foot">
-      <div class="brand" style="color: var(--muted)"><div class="logo"></div><span>© <span id="year"></span> manuaAIrewrites</span></div>
-      <div class="social"><a href="#" aria-label="Twitter"></a><a href="#" aria-label="LinkedIn"></a></div>
+      <div class="brand" style="color: var(--muted)"><div class="logo" aria-hidden="true"></div><span>© <span id="year"></span> manuaAIrewrites</span></div>
+      <div class="social" aria-label="social links">
+        <a href="#" aria-label="Twitter"></a><a href="#" aria-label="LinkedIn"></a>
+      </div>
     </div>
   </footer>
 

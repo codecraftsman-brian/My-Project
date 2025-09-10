@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ action }} Job</title>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+</head>
+<body>
+<main class="container narrow">
+  <h1>{{ action }} Job</h1>
+  <form method="post">
+    {{ form.csrf_token }}
+    <label>Title {{ form.title(size=60) }}</label>
+    <label>Description {{ form.description(rows=6, cols=60) }}</label>
+    <label>Requirements {{ form.requirements(rows=4, cols=60) }}</label>
+    <label>Benefits {{ form.benefits(rows=4, cols=60) }}</label>
+    <label>Salary {{ form.salary(size=40) }}</label>
+    <label>Location {{ form.location(size=40) }}</label>
+    <label>Company {{ form.company(size=40) }}</label>
+    <label>Category {{ form.category(size=40) }}</label>
+    <label>Status {{ form.status() }}</label>
+    <button type="submit">{{ action }}</button>
+  </form>
+</main>
+</body>
+</html>

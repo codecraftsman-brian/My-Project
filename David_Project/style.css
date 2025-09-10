@@ -291,3 +291,42 @@ footer {
         display:grid; 
     }
 }
+/* ----- Sections with soft contrast ----- */
+.section-muted { background: linear-gradient(180deg, rgba(148,163,184,.06), transparent); }
+
+/* ----- Stats / rating ----- */
+.stats { display:grid; grid-template-columns: repeat(4,1fr); gap:16px; }
+.stat { background: var(--card); border:1px solid rgba(148,163,184,.15); border-radius: var(--radius); padding:18px; text-align:center; box-shadow: var(--shadow); }
+.kpi { font-size: 28px; font-weight:800; }
+.kpi span { font-size: 18px; color: var(--muted); margin-left:4px; }
+.stars { letter-spacing: 2px; font-weight:700; }
+.muted { color: var(--muted); }
+
+/* ----- Team ----- */
+.team-grid { display:grid; grid-template-columns: repeat(4,1fr); gap:16px; }
+.team-card { background: var(--card); border:1px solid rgba(148,163,184,.15); border-radius: var(--radius); padding:16px; text-align:center; box-shadow: var(--shadow); }
+.team-card img { width:100%; height:auto; border-radius:12px; margin-bottom:10px; }
+
+/* ----- Awards strip ----- */
+.awards { display:flex; gap:10px; flex-wrap:wrap; }
+.award-pill { padding:10px 14px; border-radius:999px; border:1px solid rgba(148,163,184,.25); color:var(--muted); background: rgba(148,163,184,.08); font-weight:600; }
+
+/* ----- Blog cards ----- */
+.blog-link { transition: transform .15s ease, box-shadow .2s ease; display:block; }
+.blog-link:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(2,8,23,.35); }
+.blog-thumb { width:100%; height:auto; border-radius:12px; border:1px solid rgba(148,163,184,.15); margin-bottom:8px; }
+
+/* ----- Blog post body ----- */
+.post-body { margin-top:18px; }
+.post-body p { color: var(--text); margin: 14px 0; }
+.post-body h3 { margin: 22px 0 8px; }
+
+/* ----- Contact form ----- */
+.contact-card textarea { width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(148,163,184,.3); background:transparent; color:var(--text); outline:none; }
+.contact-card textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 6px var(--ring); }
+
+/* ----- Responsive tweaks ----- */
+@media (max-width: 900px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .team-grid { grid-template-columns: 1fr 1fr; }
+}

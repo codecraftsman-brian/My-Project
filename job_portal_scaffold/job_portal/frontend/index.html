@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Global Careers | Overseas Opportunities</title>
+  <meta name="description" content="Find vetted overseas jobs across tech, healthcare, engineering and more. Apply online and track your applications."/>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+  <script defer src="{{ url_for('static_files', filename='js/app.js') }}"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Organization",
+    "name": "Global Careers",
+    "url": "{{ request.host_url }}",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Global Careers</a>
+    <nav>
+      <a href="/jobs">Jobs</a>
+      <a href="/auth/login">Login</a>
+      <a class="btn" href="/auth/register">Create Account</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Work Abroad, Build Your Future</h1>
+    <p>Discover curated international roles. Apply in minutes and track your progress.</p>
+    <form action="/jobs" method="get" class="search-form">
+      <input type="text" name="q" placeholder="Search jobs e.g. 'nurse', 'engineer', 'remote'">
+      <button type="submit">Search Jobs</button>
+    </form>
+  </div>
+</section>
+
+<section class="features container">
+  <div class="grid">
+    <div class="card"><h3>Verified Employers</h3><p>Every role is screened to reduce scams and mismatches.</p></div>
+    <div class="card"><h3>Smart Filters</h3><p>Find roles by country, industry, salary range and more.</p></div>
+    <div class="card"><h3>Status Updates</h3><p>Get email notifications as your application moves forward.</p></div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">© {{ 2025 }} Global Careers</div>
+</footer>
+</body>
+</html>

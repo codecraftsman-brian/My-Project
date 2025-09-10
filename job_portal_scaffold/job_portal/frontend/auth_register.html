@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Create Account | Global Careers</title>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+</head>
+<body>
+<main class="container narrow">
+  <h1>Create Account</h1>
+  <form method="post">
+    {{ form.csrf_token }}
+    <label>Full Name {{ form.name(size=40) }}</label>
+    <label>Email {{ form.email(size=40) }}</label>
+    <label>Phone {{ form.phone(size=30) }}</label>
+    <label>Address {{ form.address(size=60) }}</label>
+    <label>Password {{ form.password(type="password", size=40) }}</label>
+    <button type="submit">Sign Up</button>
+  </form>
+  <p>Already have an account? <a href="/auth/login">Login</a></p>
+</main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{ job.title }} | Global Careers</title>
+  <meta name="description" content="{{ job.description[:150] }}"/>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "JobPosting",
+    "title": "{{ job.title|e }}",
+    "description": "{{ job.description|e }}",
+    "datePosted": "{{ job.posted_date.date().isoformat() }}",
+    "employmentType": "FULL_TIME",
+    "jobLocation": {"@type":"Place","address":{"@type":"PostalAddress","addressLocality":"{{ job.location|e }}"}},
+    "hiringOrganization": {"@type":"Organization","name":"{{ job.company or 'Confidential' }}"}
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="/">Global Careers</a>
+    <nav>
+      <a href="/jobs" class="active">Jobs</a>
+      <a href="/auth/login">Login</a>
+      <a class="btn" href="/auth/register">Create Account</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <article class="job-detail">
+    <h1>{{ job.title }}</h1>
+    <p class="meta">{{ job.company or 'Confidential' }} • {{ job.location or 'Remote' }} • {{ job.category or 'General' }}</p>
+    {% if job.salary %}<p><strong>Salary:</strong> {{ job.salary }}</p>{% endif %}
+    {% if job.benefits %}<p><strong>Benefits:</strong> {{ job.benefits }}</p>{% endif %}
+    <h3>Description</h3>
+    <p>{{ job.description }}</p>
+    {% if job.requirements %}
+      <h3>Requirements</h3>
+      <p>{{ job.requirements }}</p>
+    {% endif %}
+
+    <a class="btn" href="/apply/{{ job.id }}">Apply Now</a>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© {{ 2025 }} Global Careers</div>
+</footer>
+</body>
+</html>

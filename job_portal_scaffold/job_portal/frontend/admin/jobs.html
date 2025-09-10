@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Manage Jobs</title>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+</head>
+<body>
+<main class="container">
+  <h1>Jobs <a class="btn" href="/admin/jobs/create">+ New</a></h1>
+  <table class="table">
+    <thead><tr><th>Title</th><th>Company</th><th>Location</th><th>Status</th><th>Posted</th><th>Actions</th></tr></thead>
+    <tbody>
+      {% for j in jobs %}
+      <tr>
+        <td>{{ j.title }}</td>
+        <td>{{ j.company }}</td>
+        <td>{{ j.location }}</td>
+        <td>{{ j.status }}</td>
+        <td>{{ j.posted_date.strftime('%Y-%m-%d') }}</td>
+        <td>
+          <a href="/admin/jobs/{{ j.id }}/edit">Edit</a>
+          <form action="/admin/jobs/{{ j.id }}/delete" method="post" style="display:inline" onsubmit="return confirm('Delete this job?')">
+            <button type="submit" class="link danger">Delete</button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
+</body>
+</html>

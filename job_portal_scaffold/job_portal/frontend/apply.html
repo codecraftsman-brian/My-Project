@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Apply | Global Careers</title>
+  <link rel="stylesheet" href="{{ url_for('static_files', filename='css/style.css') }}"/>
+</head>
+<body>
+<main class="container narrow">
+  <h1>Apply — {{ job.title }}</h1>
+  <form method="post" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <label>Cover Letter {{ form.cover_letter(rows=6, cols=60) }}</label>
+    <label>Resume (PDF/DOC/DOCX) <input type="file" name="resume" accept=".pdf,.doc,.docx"/></label>
+    <button type="submit">Submit Application</button>
+  </form>
+</main>
+</body>
+</html>
