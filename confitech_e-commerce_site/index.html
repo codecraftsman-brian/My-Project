@@ -11,14 +11,16 @@
 <body>
     <nav class="@container">
         <!-- Top navigation -->
-        <div>
-            <p class="text-center">Fast Delivery Nationwide. Call/WhatsApp: +(254)723 821 *** or +(254)723 821 *** to
-                place your Order</p>
-            <hr>
-        </div>
+        <header class="bg-gray-100 text-center text-sm py-2">
+            <p>
+                Fast Delivery Nationwide. Call/WhatsApp:
+                <a href="tel:+254723821000" class="font-bold">+254 723 821 ***</a> |
+                <a href="tel:+254723821111" class="font-bold">+254 723 821 ***</a>
+            </p>
+        </header>
 
         <!-- Main navigation -->
-        <div class="flex flex-row justify-between items-center mx-12">
+        <div class="flex flex-row justify-between items-center mx-12 gap-2">
             <div class="w-40 mt-4">
                 <img src="static/images/logo.png" alt="">
             </div>
@@ -26,7 +28,7 @@
             <div class="flex">
                 <div>
                     <button
-                        class="rounded-md border border-gray-300 shadow-sm px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
+                        class="rounded-md border border-gray-300 w-full shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
                         All Caterories
                     </button>
                 </div>
@@ -36,7 +38,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
-                    <input class="h-6 w-70 placeholder:text-gray-500 placeholder:italic" type="text"
+                    <input class="w-70 placeholder:text-gray-500 placeholder:italic" type="text"
                         placeholder="Search for products, brands, and more...">
                     <button
                         class="rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 ">
@@ -45,7 +47,7 @@
                 </div>
             </div>
 
-            <div class="flex gap-12">
+            <div class="flex gap-10">
                 <div class="flex flex-row items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -53,7 +55,7 @@
                             d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
 
-                    <div class="flex flex-col">
+                    <div class="flex flex-col text-sm">
                         <div>
                             <p>My Account</p>
 
@@ -70,7 +72,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                     </svg>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col text-sm">
                         <div>
                             <p>My cart</p>
 
@@ -81,9 +83,276 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </nav>
+
+    <section class="@container mx-12">
+        <div class="flex flex-row justify-between items-center">
+            <div>
+                <button
+                    class="border text-left border-gray-300 w-56 shadow-sm px-4 p-2 bg-white text-sm font-medium text-gray-700">
+                    Show Caterories
+                </button>
+            </div>
+            <div class="flex gap-4">
+                <a href="">Mobile Accessories</a>
+                <a href="">Smartphone</a>
+                <a href="">Computer Accessories</a>
+                <a href="">Tvs</a>
+                <a href="">Gaming</a>
+            </div>
+            <div class="flex flex-row items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+
+                <div class="flex flex-col text-sm">
+                    <div>
+                        <p class="font-bold">WhatsApp</p>
+
+                    </div>
+                    <div>
+                        <p>Chat to order</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-row justify-between items-center gap-2 mb-6">
+            <div class="flex flex-col">
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Phones
+                </button>
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Tablets
+                </button>
+
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Games & Consoles
+                </button>
+
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Smartwatch
+                </button>
+
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Phones Accessories
+                </button>
+
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Audio
+                </button>
+
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Storage
+                </button>
+
+
+                <button
+                    class="flex gap-4 border border-gray-300 w-56 shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 flex-shrink-0">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    <span class="text-left">Computer Accessories</span>
+
+                </button>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                <div>
+                    <p class="font-bold text-center mx-auto w-full">Lipa na m-pesa: Till No: 333444</p>
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex flex-col gap-2">
+                        <div class="border h-44">
+                            <h1>Top deals of the day</h1>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="border w-24 h-30">
+                                <p>Smartwatch</p>
+                            </div>
+                            <div class="border w-24 h-30">
+                                <p>Smartwatch</p>
+                            </div>
+                            <div class="border w-24 h-30">
+                                <p>Smartwatch</p>
+                            </div>
+                            <div class="border w-24 h-30">
+                                <p>Smartwatch</p>
+                            </div>
+                            <div class="border w-24 h-30">
+                                <p>Smartwatch</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border h-76 w-40 flex flex-col gap-2">
+                        <h1 class="font-bold">Top Deals</h1>
+                        <div class="border w-36 h-15 mx-auto"></div>
+                        <div class="border w-36 h-15 mx-auto"></div>
+                        <div class="border w-36 h-15 mx-auto"></div>
+                        <div class="border w-36 h-15 mx-auto"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="@container mx-12">
+        <h1 class="font-bold text-5xl">Flash Sales</h1>
+        <div class="flex flex-col border p-2 mb-6">
+            <div class="flex justify-between items-center ">
+                <div>
+                    <h3 class="font-bold text-lg">Live now</h3>
+                </div>
+                <div>
+                    Time Left: 00h : 00m : 00s
+                </div>
+                <div>
+                    <button
+                        class="flex gap-4 border border-gray-300 w-full shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                        View All Deals
+                    </button>
+                </div>
+            </div>
+            <div class="flex gap-8 mt-4">
+                <div class="border h-60 w-full">
+
+                </div>
+                <div class="border h-60 w-full"></div>
+                <div class="border h-60 w-full"></div>
+                <div class="border h-60 w-full"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="@container mx-12 my-10">
+        <h1 class="font-bold text-5xl">Top Brand</h1>
+        <div class="flex mt-4 justify-between">
+            <p class="text-xl">Trusted Brands in stock</p>
+            <button
+                class="flex gap-4 border border-gray-300  shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                See All
+            </button>
+        </div>
+        <div class="flex justify-between my-6">
+            <div class="flex flex-col">
+                <div class="border h-72 w-72 rounded-full"></div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">Samsang</p>
+                    <a href="">View Collection</a>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="border h-72 w-72 rounded-full"></div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">Iphone</p>
+                    <a href="">View Collection</a>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <div class="border h-72 w-72 rounded-full"></div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">Google Pixel</p>
+                    <a href="">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="@container mx-12">
+
+        <div class="flex flex-col gap-4">
+            <div class="flex mt-4 justify-between">
+                <h1 class="font-bold text-5xl ">Phones & Tablets</h1>
+                <button
+                    class="flex gap-4 border border-gray-300  shadow-sm px-4 py-2 bg-white text-sm font-medium hover:bg-gray-50">
+                    See All
+                </button>
+            </div>
+            <div class="flex border h-32 w-full justify-between mt-6">
+                <p class="text-3xl font-bold my-auto ml-5">Smartphones that Define You.</p>
+                <div class="border h-20 w-64 my-auto rounded-xl mr-24"></div>
+            </div>
+            <div class="flex flex-col border h-122 w-full mx-auto p-4 gap-4">
+                <div class="flex w-full gap-4">
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                </div>
+                <div class="flex w-full gap-4">
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                    <div class="flex border w-full h-55">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
