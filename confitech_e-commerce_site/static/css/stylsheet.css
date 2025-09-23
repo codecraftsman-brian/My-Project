@@ -1,0 +1,138 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.slide-out {
+  animation: slideOut 0.8s ease-in-out;
+}
+
+.gradient-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(79, 70, 229, 0.6) 0%,
+    rgba(147, 51, 234, 0.6) 100%
+  );
+}
+
+.slide-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.scrolling-banner {
+  animation: scrollLeft 25s linear infinite;
+  white-space: nowrap;
+}
+
+.payment-banner {
+  background: linear-gradient(
+    90deg,
+    #10b981 0%,
+    #059669 25%,
+    #047857 50%,
+    #065f46 75%,
+    #10b981 100%
+  );
+  background-size: 200% 100%;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.live-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.bounce-animation {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.flash-gradient {
+  background: linear-gradient(
+    135deg,
+    #ff6b6b 0%,
+    #ff8e53 25%,
+    #ff6b9d 50%,
+    #c44569 75%,
+    #f8b500 100%
+  );
+  background-size: 300% 300%;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes brandSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.brand-slider {
+  animation: brandSlide 30s linear infinite;
+}
+
+.brand-slider:hover {
+  animation-play-state: paused;
+}
