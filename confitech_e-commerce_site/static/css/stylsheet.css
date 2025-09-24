@@ -136,3 +136,7 @@
 .brand-slider:hover {
   animation-play-state: paused;
 }
+
+.tv-carousel-slide {
+  transition: opacity 0.8s ease-in-out;
+}
