@@ -52,7 +52,7 @@
 }
 
 .scrolling-banner {
-  animation: scrollLeft 25s linear infinite;
+  animation: scrollLeft 40s ease infinite;
   white-space: nowrap;
 }
 
@@ -139,4 +139,34 @@
 
 .tv-carousel-slide {
   transition: opacity 0.8s ease-in-out;
+}
+
+.smartwatch-gradient {
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 25%,
+    #f093fb 50%,
+    #f5576c 75%,
+    #4facfe 100%
+  );
+  background-size: 300% 300%;
+  animation: gradientShift 5s ease infinite;
+}
+
+@keyframes productSlide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.product-slider {
+  animation: productSlide 40s linear infinite;
+}
+
+.product-slider:hover {
+  animation-play-state: paused;
 }
