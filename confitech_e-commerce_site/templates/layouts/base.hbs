@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confitech</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/logo-tab.svg">
+    <link rel="stylesheet" href="/static/css/output.css">
+    <link rel="stylesheet" href="/static/css/stylsheet.css">
+</head>
+
+<body>
+    <nav class="@container">
+        {{>components/navbar/delivery_bar}}
+        {{>components/navbar/logo_bar}}
+        {{>components/navbar/menu_bar_nav/menu_bar}}
+    </nav>
+
+    <!-- Scrolling Payment Banner -->
+    <div class="payment-banner overflow-hidden py-3 shadow-lg relative">
+        <div class="scrolling-banner text-white font-semibold text-xl">
+            <div class="flex items-center space-x-12 px-8">
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                        </path>
+                    </svg>
+                    <span>Lipa na M-pesa: Pay bill no: 247247 | Account no: 234454456654767 | Till no: 3453545 to
+                        order your products</span>
+                </div>
+                <span>🚀 Fast Delivery Nationwide | 24/7 Customer Support</span>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-green-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Secure Payments | Original Products Only | Money Back Guarantee</span>
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                        </path>
+                    </svg>
+                    <span>Lipa na M-pesa: Pay bill no: 247247 | Account no: 234454456654767 | Till no: 3453545 to
+                        order your products</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{>body_content}}
+    <script src="/static/js/script.js"></script>
+
+</body>
+
+</html>

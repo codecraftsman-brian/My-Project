@@ -1,0 +1,69 @@
+{
+    "anchor_styles": "hover:text-blue-700 text-gray-600 text-[15px] font-semibold block",
+    "contact_no": "2547000000",
+    "list": [
+        {
+            "type": "dropdown",
+            "text": "All Categories",
+            "list_items": [
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Phones"
+                },
+                {
+                    "page_link": "/tablets",
+                    "text": "Tablets"
+                },
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Games"
+                },
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Smartwatch"
+                },
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Phone Accessories"
+                },
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Audio"
+                },
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Storage"
+                },
+                {
+                    "page_link": "javascript:void(0)",
+                    "text": "Computer Accessories"
+                }
+            ]
+        },
+        {
+            "type": "normal",
+            "page_link": "javascript:void(0)",
+            "text": "Mobile Accessories"
+        },
+        {
+            "type": "normal",
+            "page_link": "javascript:void(0)",
+            "text": "Smartwatch"
+        },
+        {
+            "type": "normal",
+            "page_link": "javascript:void(0)",
+            "text": "Computer Accessories"
+        },
+        {
+            "type": "normal",
+            "page_link": "javascript:void(0)",
+            "text": "TVs"
+        },
+        {
+            "type": "normal",
+            "page_link": "javascript:void(0)",
+            "text": "Gaming"
+        }
+    ]
+}
