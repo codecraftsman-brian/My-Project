@@ -159,12 +159,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 .product-slider {
-  animation: productSlide 40s linear infinite;
+  animation: productSlide 80s linear infinite;
 }
 
 .product-slider:hover {

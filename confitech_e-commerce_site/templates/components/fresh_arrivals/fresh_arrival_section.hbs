@@ -4,8 +4,8 @@
         <div class="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center relative overflow-hidden bg-center bg-cover"
             style="background-image: url('{{image_url}}');">
         </div>
-        <div class="absolute top-2 left-2 {{image_tag_color}} text-white px-2 py-1 rounded-full text-xs font-bold">
-            {{image_tag}}</div>
+        <div class="absolute top-2 left-2 {{tag_bg_color}} text-white px-2 py-1 rounded-full text-xs font-bold">
+            {{tag_name}}</div>
         <div class="absolute top-2 right-2 flex text-yellow-400 text-sm">{{ratings}}</div>
     </div>
     <div>
@@ -17,7 +17,7 @@
             </div>
             <span class="{{stock_indicator_color}} text-sm font-medium">{{stock_indicator}}</span>
         </div>
-        <button class="w-full {{button_color}} text-white py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+        <button class="w-full {{button_bg_color}} text-white py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
             Quick Add
         </button>
     </div>

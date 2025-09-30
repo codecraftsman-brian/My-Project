@@ -1,0 +1,40 @@
+<div
+    class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 overflow-hidden group">
+    <div class="relative mb-4">
+        <div class="w-full h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center relative overflow-hidden bg-center bg-cover"
+            style="background-image: url('{{image_url}}');">
+        </div>
+        <div class="absolute top-2 left-2 {{tag_bg_color}} text-white px-2 py-1 rounded-full text-xs font-bold">
+            {{tag_name}}</div>
+        <div class="absolute top-3 right-3">
+            <div class="flex text-yellow-400 text-sm">
+                {{ratings}}
+            </div>
+            <div class="text-xs text-gray-500 text-right">({{rating_count}})</div>
+        </div>
+    </div>
+    <div class="p-6">
+        <h3 class="font-bold text-lg mb-2 text-gray-900">{{title}}</h3>
+        <p class="text-gray-600 text-sm mb-4">{{description}}</p>
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold {{price_color}}">{{price}}</span>
+                <span class="text-sm text-gray-400 line-through">{{prev_price}}</span>
+            </div>
+            <span class="{{stock_indicator_color}} text-sm font-medium">{{stock_indicator}}</span>
+        </div>
+        <div class="flex space-x-2 mb-4">
+            <button
+                class="flex-1 {{button_bg_color}} text-white py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                Add to Cart
+            </button>
+            <button class="p-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
