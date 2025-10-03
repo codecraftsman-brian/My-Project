@@ -170,3 +170,59 @@
 .product-slider:hover {
   animation-play-state: paused;
 }
+
+/*---product details page start---*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.thumbnail-active {
+  border: 2px solid #3b82f6;
+  transform: scale(1.05);
+}
+
+.size-button.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.main-image-container {
+  transition: transform 0.3s ease;
+}
+
+.main-image-container:hover {
+  transform: scale(1.02);
+}
+
+.star-filled {
+  color: #3b82f6;
+}
+
+.star-empty {
+  color: #d1d5db;
+}
+/*---product details page end---*/

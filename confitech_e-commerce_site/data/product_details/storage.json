@@ -1,0 +1,103 @@
+{
+    "storage_option": {
+        "title": "Storage",
+        "options": [
+            {
+                "storage": "128GB",
+                "selected_status": ""
+            },
+            {
+                "storage": "256GB",
+                "selected_status": "active"
+            },
+            {
+                "storage": "512GB",
+                "selected_status": ""
+            },
+            {
+                "storage": "1TB",
+                "selected_status": ""
+            }
+        ]
+    },
+    "color_options": [
+        {
+            "bg_color": "bg-gray-900",
+            "border_color": "border-blue-600"
+        },
+        {
+            "bg_color": "bg-gray-300",
+            "border_color": "border-gray-300 "
+        },
+        {
+            "bg_color": "bg-purple-300",
+            "border_color": "border-gray-300 "
+        },
+        {
+            "bg_color": "bg-yellow-100",
+            "border_color": "border-gray-300 "
+        }
+    ],
+    "product_info": {
+        "title": "Product Description",
+        "options": [
+            {
+                "description": "The Samsung Galaxy S24 Ultra features a premium titanium frame andrevolutionary 200MP camera system.",
+                "display": "6.8' AMOLED",
+                "processor": "Snapdragon 8 Gen 3",
+                "ram": "12GB",
+                "battery": "5000mAh"
+            }
+        ]
+    },
+    "return_policy": {
+        "title": "Return Policy",
+        "options": [
+            {
+                "policy_title": "30-day return policy. Full refund if not satisfied.",
+                "policy_descr_1": "30-day return window",
+                "policy_descr_2": "Free return shipping"
+            }
+        ]
+    },
+    "review_level": {
+        "review_score": 4.5,
+        "review": "★★★★",
+        "review_count": 253,
+        "review_summary": [
+            {
+                "review": 5,
+                "review_bar_width": "75%",
+                "review_total": 190
+            },
+            {
+                "review": 4,
+                "review_bar_width": "15%",
+                "review_total": 38
+            },
+            {
+                "review": 3,
+                "review_bar_width": "5%",
+                "review_total": 13
+            }
+        ]
+    },
+    "reviews_body": [
+        {
+            "reviewer_initials": "JD",
+            "initials_color": "text-blue-600",
+            "reviewer_name": "John D.",
+            "review_date": "2 months ago",
+            "review_rating": "★★★★",
+            "review_text": "Amazing phone! The camera quality is outstanding and the battery lasts all day. Highly recommend."
+        },
+        {
+            "reviewer_initials": "SM",
+            "initials_color": "text-green-600",
+            "reviewer_name": "Sarah Miller",
+            "review_date": "1 month ago",
+            "review_rating": "★★★★",
+            "review_text": "Great performance and display. Only wish the price was a bit lower, but overall very satisfied."
+        }
+    ]
+}

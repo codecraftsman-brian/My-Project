@@ -1,0 +1,48 @@
+{
+  "display_image": [
+    {
+      "image_url": "static/images/fresh-iPhone-15.jpg"
+    }
+  ],
+  "thumbnail_images": [
+    {
+      "active_status": "thumbnail-active",
+      "image_url": "static/images/fresh-iPhone-15.jpg"
+    },
+    {
+      "active_status": "",
+      "image_url": "static/images/fresh-iPhone-15.jpg"
+    },
+    {
+      "active_status": "",
+      "image_url": "static/images/fresh-iPhone-15.jpg"
+    },
+    {
+      "active_status": "",
+      "image_url": "static/images/fresh-iPhone-15.jpg"
+    }
+  ],
+  "product_title": [
+    {
+      "title": "Samsung Galaxy S24 Ultra",
+      "description": "256GB, Titanium Black - Unlocked with AI-Powered Camera System",
+      "rating": "4.5",
+      "rating_count": 253,
+      "review_count": 47,
+      "price": 899,
+      "prev_price": 1199.99,
+      "discount": 300
+    }
+  ],
+  "key_features": [
+    {
+      "feature": "200MP AI camera with 100x Space Zoom"
+    },
+    {
+      "feature": "Snapdragon 8 Gen 3 processor"
+    },
+    {
+      "feature": "6.8' AMOLED 120Hz display"
+    }
+  ]
+}

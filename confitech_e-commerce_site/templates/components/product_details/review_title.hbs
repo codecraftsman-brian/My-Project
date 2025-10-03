@@ -1,0 +1,21 @@
+<div class="flex flex-col md:flex-row gap-8 mb-8 pb-8 border-b">
+    <div class="text-center">
+        <div class="text-5xl font-bold mb-2">{{product_details.storage.review_level.review_score}}</div>
+        <div class="flex justify-center text-blue-600 text-2xl mb-2">
+            {{product_details.storage.review_level.review}}<span class="text-gray-300">★</span>
+        </div>
+        <p class="text-gray-600 text-sm">{{product_details.storage.review_level.review_count}} ratings</p>
+    </div>
+    <div class="flex-1 space-y-2">
+        {{#each product_details.storage.review_level.review_summary}}
+        <div class="flex items-center gap-3">
+            <span class="text-sm w-8">{{review}}★</span>
+            <div class="flex-1 bg-gray-200 rounded-full h-2">
+                <div class="bg-blue-600 h-2 rounded-full" style="width: {{review_bar_width}}"></div>
+            </div>
+            <span class="text-sm w-12 text-right">{{review_total}}</span>
+        </div>
+        {{/each}}
+
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="border-b">
+    <button class="w-full py-4 flex justify-between items-center" onclick="toggleAccordion(0)">
+        <span class="text-lg font-semibold">{{product_details.storage.product_info.title}}</span>
+        <svg class="accordion-icon w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    <div class="accordion-content">
+        <div class="pb-4">
+            <p class="text-gray-600 mb-4">{{product_details.storage.product_info.options.[0].description}}</p>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <p class="font-semibold">Display:</p>
+                    <p class="text-gray-600">{{product_details.storage.product_info.options.[0].display}}</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Processor:</p>
+                    <p class="text-gray-600">{{product_details.storage.product_info.options.[0].processor}}</p>
+                </div>
+                <div>
+                    <p class="font-semibold">RAM:</p>
+                    <p class="text-gray-600">{{product_details.storage.product_info.options.[0].ram}}</p>
+                </div>
+                <div>
+                    <p class="font-semibold">Battery:</p>
+                    <p class="text-gray-600">{{product_details.storage.product_info.options.[0].battery}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

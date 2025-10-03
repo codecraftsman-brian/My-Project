@@ -1,4 +1,54 @@
 {{#*inline "body_content"}}
-Tablets
+<!-- Phones & Tablets Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+        <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Phones & Tablets</h2>
+            <p class="text-xl text-gray-600">
+                Discover the latest smartphones and tablets with amazing features
+            </p>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Product Card 1: iPhone 15 Pro -->
+        {{#each phonesandtablets.phonesandtablets}}
+        {{>components/product/product_container}}
+        {{/each}}
+    </div>
+
+    <div class="text-center mt-12">
+        <ul class="flex justify-center gap-8">
+            <li class="hover:bg-gray-50  cursor-pointer">
+                <img src="static/images/left-arrow.svg" alt="Arrow Icon" class="w-10 h-10">
+            </li>
+            <li class="flex items-center justify-center shrink-0 hover:bg-gray-50
+                    border-2 border-blue-500 cursor-pointer text-base font-medium 
+                    text-slate-900 w-10 h-10 rounded-full">
+                1
+            </li>
+            <li class="flex items-center justify-center shrink-0 hover:bg-gray-50 
+                border-2 border-gray-200 cursor-pointer text-base font-medium 
+                text-slate-900 w-10 h-10 rounded-full">
+                2
+            </li>
+            <li class="flex items-center justify-center shrink-0 hover:bg-gray-50 
+                border-2 border-gray-200 cursor-pointer text-base font-medium 
+                text-slate-900 w-10 h-10 rounded-full">
+                3
+            </li>
+            <li class="flex items-center justify-center shrink-0 hover:bg-gray-50 
+                border-2 border-gray-200 cursor-pointer text-base font-medium 
+                text-slate-900 w-10 h-10 rounded-full">
+                4
+            </li>
+            <li class="hover:bg-gray-50  cursor-pointer">
+                <img src="static/images/right-arrow.svg" alt="Arrow Icon" class="w-10 h-10">
+            </li>
+        </ul>
+    </div>
+</section>
 {{/inline}}
 {{>layouts/base}}
