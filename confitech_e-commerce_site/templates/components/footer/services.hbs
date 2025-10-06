@@ -1,0 +1,9 @@
+<ul class="space-y-2">
+    {{#each footer.footer_info.our_services.services}}
+    <li><a href="{{page_link}}" class="text-gray-400 hover:text-white transition-colors text-sm">{{title}}</a></li>
+    {{/each}}
+</ul>
+
+<h4 class="text-lg font-bold mt-8 mb-4">{{footer.footer_info.our_services.title}}</h4>
+<p class="text-gray-400 text-sm">{{footer.footer_info.our_services.working_days}}</p>
+<p class="text-white text-sm font-semibold">{{footer.footer_info.our_services.working_time}}</p>

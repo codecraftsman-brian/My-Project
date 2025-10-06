@@ -5,9 +5,15 @@
         <div class="lg:col-span-3 relative overflow-hidden rounded-2xl shadow-2xl">
             <!-- Image Container -->
             <div class="relative h-full">
+                <div id="slide1" class="absolute inset-0 h-full w-full slide-in slide-bg"
+                    style="background-image: url('static/images/logo.svg');">
+                    <!--**-->
+                    <div class="gradient-overlay absolute inset-0"></div>
+                </div>
                 {{#each scrolling_section.hero_section.slides_data}}
                 {{>components/hero_section/slide}}
                 {{/each}}
+
             </div>
 
             <!-- Navigation Arrows -->
@@ -33,6 +39,8 @@
                     data-slide="2"></button>
                 <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all"
                     data-slide="3"></button>
+                <button class="dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all"
+                    data-slide="4"></button>
             </div>
         </div>
 
@@ -232,107 +240,163 @@
         <div class="flex-1 relative">
             <div class="rounded-2xl shadow-2xl h-96 relative overflow-hidden cursor-pointer group">
                 <!-- TV Carousel Slides -->
-                {{#each scrolling_section.middle_section.mid_slide_data}}
+                <!-- Slide 1 -->
+                {{#each scrolling_section.middle_section.tv_accessories}}
                 {{>components/mid_section/tv_accessories}}
                 {{/each}}
-            
-
-            <!-- Navigation Arrows -->
-            <button id="tvPrevBtn"
-                class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all z-10">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
-                    </path>
-                </svg>
-            </button>
-            <button id="tvNextBtn"
-                class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all z-10">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                    </path>
-                </svg>
-            </button>
-
-            <!-- Dots Indicator -->
-            <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
-                <button class="tv-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"
-                    data-slide="1"></button>
-                <button class="tv-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all"
-                    data-slide="2"></button>
-                <button class="tv-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all"
-                    data-slide="3"></button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Right Side Cards -->
-    <div class="flex flex-col gap-6 w-full lg:w-80">
-        <!-- Audio Card -->
-        <div class="bg-cover bg-center rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 relative overflow-hidden cursor-pointer group h-48 lg:h-44"
-            style="background-image: linear-gradient(135deg, rgba(59, 131, 246, 0.1), rgba(147, 51, 234, 0.1)), url('static/images/audio.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-purple-700/80"></div>
-            <div class="relative h-full flex flex-col justify-between p-6">
-                <div class="flex items-start justify-between">
-                    <div
-                        class="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414">
-                            </path>
-                        </svg>
+                <div id="tvSlide1" class="absolute inset-0 h-full w-full tv-carousel-slide bg-cover bg-center"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('static/images/Tv-display.jpg');">
+                    <div class="relative h-full flex items-center justify-center px-8">
+                        <div class="text-white text-center lg:text-left max-w-2xl">
+                            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                                Ultra HD <span class="text-yellow-300 drop-shadow-lg">Smart TVs</span>
+                            </h1>
+                            <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90">
+                                Immerse yourself in stunning 4K visuals and smart entertainment
+                            </p>
+                            <button
+                                class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                Explore TVs
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="text-white">
-                    <h3 class="font-bold text-xl lg:text-2xl mb-2">Premium Audio</h3>
-                    <p class="text-white/90 text-sm mb-3">Wireless headphones, speakers & sound systems</p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-white font-bold text-lg">From $49</span>
-                        <div class="flex items-center text-sm">
-                            <span class="mr-2">Shop Now</span>
-                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+
+                <!-- Slide 2 -->
+                <div id="tvSlide2" class="absolute inset-0 h-full w-full tv-carousel-slide bg-cover bg-center opacity-0"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('static/images/gaming-tv.jpg');">
+                    <div class="relative h-full flex items-center justify-center px-8">
+                        <div class="text-white text-center lg:text-left max-w-2xl">
+                            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                                Gaming <span class="text-green-400 drop-shadow-lg">4K TVs</span>
+                            </h1>
+                            <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90">
+                                120Hz refresh rate for ultimate gaming experience
+                            </p>
+                            <button
+                                class="bg-green-400 hover:bg-green-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                Gaming TVs
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div id="tvSlide3" class="absolute inset-0 h-full w-full tv-carousel-slide bg-cover bg-center opacity-0"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('static/images/oled-tv.jpg');">
+                    <div class="relative h-full flex items-center justify-center px-8">
+                        <div class="text-white text-center lg:text-left max-w-2xl">
+                            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                                Premium <span class="text-purple-400 drop-shadow-lg">OLED TVs</span>
+                            </h1>
+                            <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90">
+                                Perfect blacks and infinite contrast for cinema quality
+                            </p>
+                            <button
+                                class="bg-purple-400 hover:bg-purple-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                                OLED Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <button id="tvPrevBtn"
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+                <button id="tvNextBtn"
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                        </path>
+                    </svg>
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3 z-10">
+                    <button class="tv-dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all"
+                        data-slide="1"></button>
+                    <button class="tv-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all"
+                        data-slide="2"></button>
+                    <button class="tv-dot w-3 h-3 rounded-full bg-white/30 hover:bg-white transition-all"
+                        data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side Cards -->
+        <div class="flex flex-col gap-6 w-full lg:w-80">
+            <!-- Audio Card -->
+            <div class="bg-cover bg-center rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 relative overflow-hidden cursor-pointer group h-48 lg:h-44"
+                style="background-image: linear-gradient(135deg, rgba(59, 131, 246, 0.1), rgba(147, 51, 234, 0.1)), url('static/images/audio.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-600/80 to-purple-700/80"></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 001.414 1.414">
                                 </path>
                             </svg>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <h3 class="font-bold text-xl lg:text-2xl mb-2">Premium Audio</h3>
+                        <p class="text-white/90 text-sm mb-3">Wireless headphones, speakers & sound systems</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white font-bold text-lg">From $49</span>
+                            <div class="flex items-center text-sm">
+                                <span class="mr-2">Shop Now</span>
+                                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Storage Card -->
+            <div class="bg-cover bg-center rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 relative overflow-hidden cursor-pointer group h-48 lg:h-44"
+                style="background-image: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.1)), url('static/images/storage.jpg');">
+                <div class="absolute inset-0 bg-gradient-to-br from-green-500/80 to-blue-600/80"></div>
+                <div class="relative h-full flex flex-col justify-between p-6">
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <h3 class="font-bold text-xl lg:text-2xl mb-2">Storage</h3>
+                        <p class="text-white/90 text-sm mb-3">External drives, SSDs & backup solutions</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-white font-bold text-lg">From $29</span>
+                            <div class="flex items-center text-sm">
+                                <span class="mr-2">Shop Now</span>
+                                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- Storage Card -->
-        <div class="bg-cover bg-center rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 relative overflow-hidden cursor-pointer group h-48 lg:h-44"
-            style="background-image: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(59, 130, 246, 0.1)), url('static/images/storage.jpg');">
-            <div class="absolute inset-0 bg-gradient-to-br from-green-500/80 to-blue-600/80"></div>
-            <div class="relative h-full flex flex-col justify-between p-6">
-                <div class="flex items-start justify-between">
-                    <div
-                        class="bg-white/20 backdrop-blur-sm rounded-full p-3 group-hover:scale-110 transition-transform">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
-                            </path>
-                        </svg>
-                    </div>
-                </div>
-                <div class="text-white">
-                    <h3 class="font-bold text-xl lg:text-2xl mb-2">Storage</h3>
-                    <p class="text-white/90 text-sm mb-3">External drives, SSDs & backup solutions</p>
-                    <div class="flex items-center justify-between">
-                        <span class="text-white font-bold text-lg">From $29</span>
-                        <div class="flex items-center text-sm">
-                            <span class="mr-2">Shop Now</span>
-                            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 </section>
 
@@ -430,5 +494,63 @@
         </div>
     </div>
 </section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <!-- Company Info -->
+            {{>components/footer/company_logo}}
+
+            <!-- Our Company -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Our Company</h4>
+                {{#each footer.footer_info.our_company}}
+                {{>components/footer/our_company}}
+                {{/each}}
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Services</h4>
+                {{>components/footer/services}}
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+
+                <div class="flex space-x-3 mb-8">
+                    {{#each footer.footer_info.social_media}}
+                    {{>components/footer/social_media}}
+                    {{/each}}
+                </div>
+                <div class="space-y-2">
+                    <p class="text-sm"><span class="font-semibold">Shop Location:</span></p>
+                    <p class="text-gray-400 text-sm">123 Tech Avenue, Nairobi</p>
+                    <p class="text-sm"><span class="font-semibold">Email:</span></p>
+                    <p class="text-gray-400 text-sm">support@techstore.com</p>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                {{>components/footer/contact_us}}
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-400 text-sm">
+                © 2025 Tech Store Ltd. All Rights Reserved. | Designed with
+                <span class="text-red-500">❤</span> by Your Team
+            </p>
+        </div>
+    </div>
+</footer>
+
 {{/inline}}
 {{>layouts/base}}

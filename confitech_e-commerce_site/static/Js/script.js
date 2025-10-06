@@ -1,7 +1,7 @@
 class HeroCarousel {
   constructor() {
     this.currentSlide = 1;
-    this.totalSlides = 3;
+    this.totalSlides = 4;
     this.slides = [];
     this.dots = [];
     this.autoScrollInterval = null;
@@ -19,12 +19,8 @@ class HeroCarousel {
     this.dots = document.querySelectorAll(".dot");
 
     // Add event listeners
-    document
-      .getElementById("prevBtn")
-      .addEventListener("click", () => this.prevSlide());
-    document
-      .getElementById("nextBtn")
-      .addEventListener("click", () => this.nextSlide());
+    document.getElementById("prevBtn").addEventListener("click", () => this.prevSlide());
+    document.getElementById("nextBtn").addEventListener("click", () => this.nextSlide());
 
     // Add click listeners to dots
     this.dots.forEach((dot, index) => {

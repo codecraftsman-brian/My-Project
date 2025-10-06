@@ -1,5 +1,6 @@
-<div id="{{id}}" class="absolute inset-0 h-full w-full slide-in slide-bg bg-cover bg-center"
-    style="background-image: url('{{image_url}}');">
+<div id="{{id}}" class="absolute inset-0 h-full w-full {{smooth_scrolling}} slide-bg"
+    style="background-image: url('{{main_image_url}}');">
+    {{{colored_overlay}}}
     <div class="relative h-full flex items-center justify-between px-8">
         <div class="text-white z-10">
             <h1 class="text-4xl lg:text-6xl font-bold my-10 leading-tight">
@@ -18,8 +19,10 @@
         <div class="hidden lg:block">
             <div
                 class="w-64 h-64 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm overflow-hidden shadow-lg">
-                <img src="/static/images/iPhone.jpg" alt="" class="w-full h-full object-cover" />
+                <img src="{{image_url}}" alt="" class="w-full h-full object-cover" />
             </div>
         </div>
     </div>
 </div>
+
+

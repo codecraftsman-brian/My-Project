@@ -1,0 +1,103 @@
+{
+    "our_company": [
+        {
+            "page_link": "",
+            "title": "About Us"
+        },
+        {
+            "page_link": "",
+            "title": "Contact Us"
+        },
+        {
+            "page_link": "",
+            "title": "Service Center"
+        },
+        {
+            "page_link": "",
+            "title": "Privacy Policy"
+        },
+        {
+            "page_link": "",
+            "title": "Extended Warranty"
+        },
+        {
+            "page_link": "",
+            "title": "Terms & Conditions"
+        },
+        {
+            "page_link": "",
+            "title": "Shipping & Return Policy"
+        }
+    ],
+    "our_services": {
+        "services": [
+            {
+                "page_link": "",
+                "title": "B2B & Wholesale"
+            },
+            {
+                "page_link": "",
+                "title": "Repair Services"
+            },
+            {
+                "page_link": "",
+                "title": "Personalized Shopping"
+            }
+        ],
+        "title": "Business Hours",
+        "working_days": "Monday - Saturday",
+        "working_time": "8:00 AM - 6:00 PM"
+    },
+    "social_media": [
+        {
+            "link": "#",
+            "icon": "components/icons/social_media/facebook"
+        },
+        {
+            "link": "#",
+            "icon": "components/icons/social_media/twitter"
+        },
+        {
+            "link": "#",
+            "icon": "components/icons/social_media/ig"
+        },
+        {
+            "link": "#",
+            "icon": "components/icons/social_media/youtube"
+        },
+        {
+            "link": "#",
+            "icon": "components/icons/social_media/linkedin"
+        }
+    ],
+    "contact_payment": {
+        "contact": [
+            {
+                "title": "Sales",
+                "contact_link": "tel:07xxxxxxxx",
+                "contact_details": "07xx-xxx-xxxx"
+            },
+            {
+                "title": "Repairs",
+                "contact_link": "tel:07xxxxxxxx",
+                "contact_details": "07xx-xxx-xxxx"
+            },
+            {
+                "title": "Lipa mdogo",
+                "contact_link": "tel:07xxxxxxxx",
+                "contact_details": "07xx-xxx-xxxx"
+            }
+        ],
+        "payment": [
+            {
+                "title": "M-pesa"
+            },
+            {
+                "title": "visa"
+            },
+            {
+                "title": "Mastercard"
+            }
+        ]
+    }
+}

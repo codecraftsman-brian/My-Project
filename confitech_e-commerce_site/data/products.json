@@ -363,21 +363,6 @@
         {
             "image_url": "",
             "ratings": "⭐⭐⭐⭐⭐",
-            "rating_count": 298,
-            "tag_name": "WIRELESS",
-            "tag_bg_color": "text-green-500",
-            "title": "Gaming Mouse Ultra",
-            "description": "High precision sensor with RGB",
-            "price": "$89",
-            "price_color": "text-green-600",
-            "prev_price": "$129",
-            "stock_indicator": "In Stock",
-            "stock_indicator_color": "text-green-600",
-            "button_bg_color": "bg-green-600"
-        },
-        {
-            "image_url": "",
-            "ratings": "⭐⭐⭐⭐⭐",
             "rating_count": 156,
             "tag_name": "7.1 SURROUND",
             "tag_bg_color": "bg-purple-500",
@@ -419,21 +404,6 @@
             "stock_indicator": "In Stock",
             "stock_indicator_color": "text-green-600",
             "button_bg_color": "bg-indigo-600"
-        },
-        {
-            "image_url": "",
-            "ratings": "⭐⭐⭐⭐⭐",
-            "rating_count": "234",
-            "tag_name": "WIRELESS",
-            "tag_bg_color": "bg-yellow-500",
-            "title": "Gaming Controller Pro",
-            "description": "Wireless with haptic feedback",
-            "price": "$79",
-            "price_color": "text-yellow-600",
-            "prev_price": "$99",
-            "stock_indicator": "Limited Stock",
-            "stock_indicator_color": "text-green-600",
-            "button_bg_color": "bg-yellow-600"
         }
     ]
 }
