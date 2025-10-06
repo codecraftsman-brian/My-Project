@@ -1,0 +1,62 @@
+{
+    "services": [
+        {
+            "bg_color": "bg-gradient-to-br from-orange-500 to-orange-600",
+            "first_word": "Personalized",
+            "second_word": "Shopping"
+        },
+        {
+            "bg_color": "bg-gradient-to-br from-blue-500 to-blue-600",
+            "first_word": "Wholesale",
+            "second_word": ""
+        },
+        {
+            "bg_color": "bg-gradient-to-br from-green-500 to-green-600",
+            "first_word": "Fast",
+            "second_word": "Shipping"
+        },
+        {
+            "bg_color": "bg-gradient-to-br from-purple-500 to-purple-600",
+            "first_word": "Gadget",
+            "second_word": "Repair"
+        }
+    ],
+    "why_us": [
+        {
+            "reason_title": "Countrywide Delivery",
+            "reason_descr": "Same-day Nairobi, Next day Nationwide.",
+            "icon": "components/icons/why_us/country_wide_delivery",
+            "bg_color": "bg-blue-100"
+        },
+        {
+            "reason_title": "Pay on Delivery",
+            "reason_descr": "Shop with confidence, pay when delivered.",
+            "icon": "",
+            "bg_color": "bg-green-100"
+        },
+        {
+            "reason_title": "Easy Exchange Policy",
+            "reason_descr": "Quick and easy returns within 90 days.",
+            "icon": "",
+            "bg_color": "bg-purple-100"
+        },
+        {
+            "reason_title": "M-pesa Ready",
+            "reason_descr": "Your trusted way to pay.",
+            "icon": "",
+            "bg_color": "bg-orange-100"
+        },
+        {
+            "reason_title": "Pick up in Store",
+            "reason_descr": "Order online and collect in-store at your convenience",
+            "icon": "",
+            "bg_color": "bg-indigo-100"
+        },
+        {
+            "reason_title": "100% Genuine",
+            "reason_descr": "Originals only, because you deserve the real deal",
+            "icon": "",
+            "bg_color": "bg-pink-100"
+        }
+    ]
+}
