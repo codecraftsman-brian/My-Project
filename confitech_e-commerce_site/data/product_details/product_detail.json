@@ -7,19 +7,15 @@
   "thumbnail_images": [
     {
       "active_status": "thumbnail-active",
-      "image_url": "static/images/fresh-iPhone-15.jpg"
+      "image_url": "static/images/fresh-iPhone-14.jpg"
     },
     {
       "active_status": "",
-      "image_url": "static/images/fresh-iPhone-15.jpg"
+      "image_url": "static/images/fresh-iPhone-13.jpg"
     },
     {
       "active_status": "",
-      "image_url": "static/images/fresh-iPhone-15.jpg"
-    },
-    {
-      "active_status": "",
-      "image_url": "static/images/fresh-iPhone-15.jpg"
+      "image_url": "static/images/fresh-iPhone-16.jpg"
     }
   ],
   "product_title": [

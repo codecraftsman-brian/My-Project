@@ -15,15 +15,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <!-- Images -->
-        <div class="space-y-4">
-            {{#each product_details/product_detail.display_image}}
-            {{>components/product_details/main_image}}
-            {{/each}}
-            <div class="grid grid-cols-4 gap-4">
-                {{#each product_details/product_detail.thumbnail_images}}
-                {{>components/product_details/thumbnail_images}}
-                {{/each}}
-            </div>
+        {{>components/product_details/thumbnail_images}}
 
             <!-- Features -->
             <div class="bg-blue-50 rounded-xl p-6">
