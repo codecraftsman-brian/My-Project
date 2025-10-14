@@ -10,7 +10,7 @@
                     <!--**-->
                     <div class="gradient-overlay absolute inset-0"></div>
                 </div>
-                {{#each scrolling_section.hero_section.slides_data}}
+                {{#each display_section.hero_section.slides_data}}
                 {{>components/hero_section/slide}}
                 {{/each}}
 
@@ -46,7 +46,7 @@
 
         <!-- Right Side Cards (3 cards stacked vertically) -->
         <div class="flex flex-col space-y-4 lg:space-y-6">
-            {{#each scrolling_section.hero_section.cards_data}}
+            {{#each display_section.hero_section.cards_data}}
             {{>components/hero_section/hero_card_right}}
             {{/each}}
         </div>
@@ -55,7 +55,7 @@
     <!-- Bottom Cards (3 cards in a row) -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         <!-- Bottom Card 1 -->
-        {{#each scrolling_section.hero_section.bottom_cards}}
+        {{#each display_section.hero_section.bottom_cards}}
         {{>components/hero_section/bottom_card}}
         {{/each}}
 
@@ -80,8 +80,8 @@
         <div class="relative overflow-hidden">
             <div class="flex product-slider space-x-8">
                 <!-- First set of products -->
-                {{#each products.fresh_sales}}
-                {{>components/fresh_arrivals/fresh_arrival_section}}
+                {{#each products.fresh_arrivals}}
+                {{>components/fresh_arrivals/fresh_arrival}}
                 {{/each}}
             </div>
         </div>
@@ -155,7 +155,7 @@
             <!-- Flash Sale Products -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {{#each products.flash_sales}}
-                {{>components/flash_sales/flash_sales_section}}
+                {{>components/flash_sales/flash_sale}}
                 {{/each}}
 
             </div>
@@ -199,34 +199,6 @@
     </div>
 </section>
 
-<!-- Phones & Tablets Section -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <!-- Section Header -->
-    <div class="flex flex-col md:flex-row justify-between items-center mb-12">
-        <div>
-            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Phones & Tablets</h2>
-            <p class="text-xl text-gray-600">Discover the latest smartphones and tablets with amazing features</p>
-        </div>
-    </div>
-
-    <!-- Product Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {{#each products.phonesandtablets}}
-        {{>components/product/product_container}}
-        {{/each}}
-        <!--ATTENTION: Add another row on the json file-->
-
-    </div>
-
-    <!-- Show More Products Button -->
-    <div class="text-center mt-12">
-        <button
-            class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-4 rounded-full font-bold text-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-            View All Phones & Tablets
-        </button>
-    </div>
-</section>
-
 <!-- TV & Electronics Section with Carousel -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section Header -->
@@ -241,64 +213,10 @@
             <div class="rounded-2xl shadow-2xl h-96 relative overflow-hidden cursor-pointer group">
                 <!-- TV Carousel Slides -->
                 <!-- Slide 1 -->
-                {{#each scrolling_section.middle_section.tv_accessories}}
+                {{#each display_section.middle_section.tv_accessories}}
                 {{>components/mid_section/tv_accessories}}
                 {{/each}}
-                <div id="tvSlide1" class="absolute inset-0 h-full w-full tv-carousel-slide bg-cover bg-center"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('static/images/Tv-display.jpg');">
-                    <div class="relative h-full flex items-center justify-center px-8">
-                        <div class="text-white text-center lg:text-left max-w-2xl">
-                            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                                Ultra HD <span class="text-yellow-300 drop-shadow-lg">Smart TVs</span>
-                            </h1>
-                            <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90">
-                                Immerse yourself in stunning 4K visuals and smart entertainment
-                            </p>
-                            <button
-                                class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
-                                Explore TVs
-                            </button>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Slide 2 -->
-                <div id="tvSlide2" class="absolute inset-0 h-full w-full tv-carousel-slide bg-cover bg-center opacity-0"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('static/images/gaming-tv.jpg');">
-                    <div class="relative h-full flex items-center justify-center px-8">
-                        <div class="text-white text-center lg:text-left max-w-2xl">
-                            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                                Gaming <span class="text-green-400 drop-shadow-lg">4K TVs</span>
-                            </h1>
-                            <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90">
-                                120Hz refresh rate for ultimate gaming experience
-                            </p>
-                            <button
-                                class="bg-green-400 hover:bg-green-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
-                                Gaming TVs
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div id="tvSlide3" class="absolute inset-0 h-full w-full tv-carousel-slide bg-cover bg-center opacity-0"
-                    style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('static/images/oled-tv.jpg');">
-                    <div class="relative h-full flex items-center justify-center px-8">
-                        <div class="text-white text-center lg:text-left max-w-2xl">
-                            <h1 class="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                                Premium <span class="text-purple-400 drop-shadow-lg">OLED TVs</span>
-                            </h1>
-                            <p class="text-lg sm:text-xl lg:text-2xl mb-8 opacity-90">
-                                Perfect blacks and infinite contrast for cinema quality
-                            </p>
-                            <button
-                                class="bg-purple-400 hover:bg-purple-300 text-gray-900 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
-                                OLED Collection
-                            </button>
-                        </div>
-                    </div>
-                </div>
                 <!-- Navigation Arrows -->
                 <button id="tvPrevBtn"
                     class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all z-10">
@@ -402,7 +320,7 @@
 
 <!-- Smartwatches Section -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-    <div class=" rounded-2xl shadow-2xl overflow-hidden">
+    <div class="smartwatch-gradient rounded-2xl shadow-2xl overflow-hidden">
         <div class="bg-black/40 p-8">
             <!-- Section Header -->
             <h2 class="text-4xl md:text-5xl font-bold mb-8 drop-shadow-lg">
@@ -430,6 +348,34 @@
             </div>
         </div>
 </section>
+
+<!-- Phones & Tablets Section -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+        <div>
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Phones & Tablets</h2>
+            <p class="text-xl text-gray-600">Discover the latest smartphones and tablets with amazing features</p>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {{#each products.phonesandtablets}}
+        {{>components/product/product_container}}
+        {{/each}}
+        <!--ATTENTION: Add another row on the json file-->
+    </div>
+
+    <!-- Show More Products Button -->
+    <div class="text-center mt-12">
+        <button
+            class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-12 py-4 rounded-full font-bold text-lg hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+            View All Phones & Tablets
+        </button>
+    </div>
+</section>
+
 <!-- Gaming & Accessories Section with Horizontal Scroll -->
 <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <div class="bg-gradient-to-br from-gray-900 via-purple-900 to-blue-900 rounded-2xl shadow-2xl overflow-hidden">

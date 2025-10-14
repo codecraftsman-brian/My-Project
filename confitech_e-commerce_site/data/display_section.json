@@ -2,30 +2,30 @@
     "hero_section": {
         "slides_data": [
             {
-                "main_image_url": "static/images/S25-Series-1.jpg",
+                "main_image_url": "static/images/hero_section/iPhone.jpg",
                 "title": "Latest <span class='text-yellow-300'>iPhone 15</span>",
                 "description": "Experience the future of smartphones",
                 "page_link": "javascript::void(0)",
                 "id": "slide2",
-                "image_url": "static/images/iPhone.jpg",
+                "image_url": "static/images/hero_section/iPhone_logo.jpg",
                 "smooth_scrolling": "opacity-0"
             },
             {
-                "image_url": "static/images/S25-Series-2.jpg",
+                "main_image_url": "static/images/hero_section/galaxy_S25.jpg",
                 "title": "Samsung <span class='text-yellow-300'>Galaxy S25</span>",
                 "description": "AI-powered photography at its best",
                 "page_link": "javascript::void(0)",
                 "id": "slide3",
-                "main_image_url": "static/images/S25-Series-2.jpg",
+                "image_url": "static/images/hero_section/galaxy_S25_logo.jpg",
                 "smooth_scrolling": "opacity-0"
             },
             {
-                "image_url": "static/images/S25-Series-3.jpg",
-                "title": "Latest <span class='text-yellow-300'>iPhone 15</span>",
+                "main_image_url": "static/images/hero_section/pixel.jpg",
+                "title": "Latest <span class='text-yellow-300'>pixel</span>",
                 "description": "Pure Android experience",
                 "page_link": "javascript::void(0)",
                 "id": "slide4",
-                "main_image_url": "static/images/S25-Series-3.jpg",
+                "image_url": "static/images/hero_section/pixel_logo.jpg",
                 "smooth_scrolling": "opacity-0"
             }
         ],
@@ -60,7 +60,7 @@
         ],
         "bottom_cards": [
             {
-                "image_url": "static/images/gaming-accessories.jpg",
+                "image_url": "static/images/hero_section/gaming_accessories.jpg",
                 "title": "Gaming Accessories",
                 "description": "Level up your gaming experience with premium accessories and peripherals",
                 "discount_offer": "Up to 50% OFF",
@@ -70,7 +70,7 @@
                 "sale_button_color_hover": "bg-orange-600"
             },
             {
-                "image_url": "static/images/smartwatch.jpg",
+                "image_url": "static/images/hero_section/smartwatch.jpg",
                 "title": "Smartwatches",
                 "description": "Track your fitness and stay connected with the latest smartwatch technology.",
                 "discount_offer": "From Ksh. 2000",
@@ -80,7 +80,7 @@
                 "sale_button_color_hover": "bg-cyan-600"
             },
             {
-                "image_url": "static/images/phone-cover.jpg",
+                "image_url": "static/images/hero_section/phone_cover.jpg",
                 "title": "Phone Cases",
                 "description": "Protect your device with stylish and durable phone cases and screen protectors.",
                 "discount_offer": "Up to 50% OFF",
@@ -94,28 +94,31 @@
     "middle_section": {
         "tv_accessories": [
             {
-                "image_url": "static/images/Tv-display.jpg",
+                "image_url": "static/images/tv_accessories/tv_display.jpg",
                 "title": "Ultra HD <span class='text-yellow-300 drop-shadow-lg'>Smart TVs</span>",
                 "description": "Immerse yourself in stunning 4K visuals and smart entertainment",
                 "page_link": "javascript::void(0)",
                 "id": "tvSlide1",
-                "button_name": "Explore TVs"
+                "button_name": "Explore TVs",
+                "opacity_level": ""
             },
             {
-                "image_url": "static/images/gaming-tv.jpg",
+                "image_url": "static/images/tv_accessories/gaming_tv.jpg",
                 "title": "Gaming <span class='text-green-400 drop-shadow-lg'>4K TVs</span>",
                 "description": "120Hz refresh rate for ultimate gaming experience",
                 "page_link": "javascript::void(0)",
                 "id": "tvSlide2",
-                "button_name": "Gaming TVs"
+                "button_name": "Gaming TVs",
+                "opacity_level": "opacity-0"
             },
             {
-                "image_url": "static/images/oled-tv.jpg'",
+                "image_url": "static/images/tv_accessories/oled_tv.jpg",
                 "title": "Premium <span class='text-purple-400 drop-shadow-lg'>OLED TVs</span>",
                 "description": "Perfect blacks and infinite contrast for cinema quality",
                 "page_link": "javascript::void(0)",
                 "id": "tvSlide3",
-                "button_name": "OLED Collection"
+                "button_name": "OLED Collection",
+                "opacity_level": "opacity-0"
             }
         ],
         "audio_accessories": [

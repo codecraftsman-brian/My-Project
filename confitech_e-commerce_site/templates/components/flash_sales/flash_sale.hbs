@@ -5,21 +5,21 @@
         <div class="absolute top-3 left-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
             -{{discount_offer}}% OFF
         </div>
-        <div class="absolute top-3 right-3 {{tag_bg_color}} {{tag_color}} px-2 py-1 rounded text-xs font-bold">
-            {{tag_name}}
+        <div class="absolute top-3 right-3 ">
+            <div class="flex text-yellow-400">
+                {{ratings}}
+            </div>
         </div>
     </div>
     <div class="p-5">
         <h3 class="font-bold text-lg mb-2 text-gray-900">{{product_name}}</h3>
         <p class="text-gray-600 text-sm mb-3">{{product_description}}</p>
         <div class="flex items-center justify-between mb-4">
-            <div class="flex items-center space-x-2">
-                <span class="text-2xl font-bold text-red-600">{{price}}</span>
-                <span class="text-lg text-gray-400 line-through">{{prev_price}}</span>
+            <div class="flex items-center space-x-4">
+                <span class="text-2xl font-bold text-red-600">Ksh. {{price}}</span>
+                <span class="text-md text-gray-400 line-through">{{prev_price}}</span>
             </div>
-            <div class="flex text-yellow-400">
-                {{ratings}}
-            </div>
+
         </div>
         <button
             class="w-full {{button_bg_color}} text-white py-2 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
