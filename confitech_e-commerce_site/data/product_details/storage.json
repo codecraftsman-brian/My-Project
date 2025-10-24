@@ -13,28 +13,24 @@
             {
                 "storage": "512GB",
                 "selected_status": ""
-            },
-            {
-                "storage": "1TB",
-                "selected_status": ""
             }
         ]
     },
     "color_options": [
         {
-            "bg_color": "bg-gray-900",
-            "border_color": "border-blue-600"
-        },
-        {
-            "bg_color": "bg-gray-300",
-            "border_color": "border-gray-300 "
-        },
-        {
             "bg_color": "bg-purple-300",
+            "border_color": "border-gray-300"
+        },
+        {
+            "bg_color": "bg-sky-600",
             "border_color": "border-gray-300 "
         },
         {
-            "bg_color": "bg-yellow-100",
+            "bg_color": "bg-lime-400",
+            "border_color": "border-gray-300 "
+        },
+        {
+            "bg_color": "bg-gray-900",
             "border_color": "border-gray-300 "
         }
     ],
@@ -42,11 +38,18 @@
         "title": "Product Description",
         "options": [
             {
-                "description": "The Samsung Galaxy S24 Ultra features a premium titanium frame andrevolutionary 200MP camera system.",
-                "display": "6.8' AMOLED",
-                "processor": "Snapdragon 8 Gen 3",
-                "ram": "12GB",
-                "battery": "5000mAh"
+                "description": "The Xiaomi Redmi Note 14s 8GB 256GB offers powerful performance, stunning 120Hz OLED display, 200MP triple camera, and long-lasting 5000mAh battery. All at an unbeatable price in Kenya.",
+                "display": "6.67' AMOLED",
+                "processor": "MediaTek Helio",
+                "ram": "8 GB",
+                "battery": "5500mAh",
+                "sensor": "Accelerometer, ambient_light_sensor, gyroscope",
+                "rear_camera": "108 + 2MP",
+                "satisfied": "20 MP",
+                "network_type": "4G",
+                "sim_count": "Dual Sim",
+                "product_weight": "196 g"
+
             }
         ]
     },

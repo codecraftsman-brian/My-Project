@@ -20,25 +20,31 @@
   ],
   "product_title": [
     {
-      "title": "Samsung Galaxy S24 Ultra",
-      "description": "256GB, Titanium Black - Unlocked with AI-Powered Camera System",
+      "title": "Redmi Note 14 4G Dual SIM",
+      "description": "Powerful performance, stunning 120 Hz OLED display, and a 200 MP triple camera",
       "rating": "4.5",
       "rating_count": 253,
       "review_count": 47,
-      "price": 899,
-      "prev_price": 1199.99,
-      "discount": 300
+      "price": " 24,000",
+      "prev_price": " 27,000.00",
+      "discount": " 3,000"
     }
   ],
   "key_features": [
     {
-      "feature": "200MP AI camera with 100x Space Zoom"
+      "feature": "108MP AI camera system"
     },
     {
-      "feature": "Snapdragon 8 Gen 3 processor"
+      "feature": "33W Turbo Charge with 5500mAh (typ) battery"
     },
     {
-      "feature": "6.8' AMOLED 120Hz display"
+      "feature": "120Hz eye-care display with Corning® Gorilla® Glass 5"
+    },
+    {
+      "feature": "MediaTek Helio G99-Ultra - 6nm process"
+    },
+    {
+      "feature": "IP54 dust and water resistance"
     }
   ]
 }
