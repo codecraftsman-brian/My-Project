@@ -244,3 +244,22 @@
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
+
+/* Product middle nav bar */
+.sticky-nav {
+  position: sticky;
+  top: 64px;
+  z-index: 40;
+  
+}
+.nav-tab {
+  transition: all 0.3s ease;
+}
+.nav-tab.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+html {
+  scroll-behavior: smooth;
+}

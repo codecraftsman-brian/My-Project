@@ -65,20 +65,20 @@
             <!-- Images -->
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl shadow-lg p-8">
-                    <img id="mainImage" src="https://via.placeholder.com/600x700/667eea/ffffff?text=Galaxy+S24" alt="Product" class="w-full rounded-xl">
+                    <img id="mainImage" src="static/images/products/smartwatch/S24_ultra.jpg" alt="Product" class="w-full rounded-xl">
                 </div>
                 <div class="grid grid-cols-4 gap-4">
                     <div class="thumbnail-active bg-white rounded-lg p-2 cursor-pointer border-2 border-blue-600" onclick="changeImage(0)">
-                        <img src="https://via.placeholder.com/150/667eea/ffffff?text=1" alt="Thumb 1" class="w-full rounded">
+                        <img src="static/images/products/smartwatch/S24_ultra.jpg" alt="Thumb 1" class="w-full rounded">
                     </div>
                     <div class="bg-white rounded-lg p-2 cursor-pointer border-2 border-transparent hover:border-gray-300" onclick="changeImage(1)">
-                        <img src="https://via.placeholder.com/150/764ba2/ffffff?text=2" alt="Thumb 2" class="w-full rounded">
+                        <img src="static/images/products/smartwatch/S24_ultra_amoled.jpg" alt="Thumb 2" class="w-full rounded">
                     </div>
                     <div class="bg-white rounded-lg p-2 cursor-pointer border-2 border-transparent hover:border-gray-300" onclick="changeImage(2)">
-                        <img src="https://via.placeholder.com/150/f093fb/ffffff?text=3" alt="Thumb 3" class="w-full rounded">
+                        <img src="static/images/products/smartwatch/S24_ultra_waterproof.jpg" alt="Thumb 3" class="w-full rounded">
                     </div>
                     <div class="bg-white rounded-lg p-2 cursor-pointer border-2 border-transparent hover:border-gray-300" onclick="changeImage(3)">
-                        <img src="https://via.placeholder.com/150/4facfe/ffffff?text=4" alt="Thumb 4" class="w-full rounded">
+                        <img src="static/images/products/smartwatch/S24_ultra_bluetooth.jpg" alt="Thumb 4" class="w-full rounded">
                     </div>
                 </div>
             </div>
@@ -477,10 +477,10 @@
 
     <script>
         const images = [
-            'https://via.placeholder.com/600x700/667eea/ffffff?text=Galaxy+S24',
-            'https://via.placeholder.com/600x700/764ba2/ffffff?text=View+2',
-            'https://via.placeholder.com/600x700/f093fb/ffffff?text=View+3',
-            'https://via.placeholder.com/600x700/4facfe/ffffff?text=View+4'
+            "static/images/products/smartwatch/S24_ultra.jpg",
+            "static/images/products/smartwatch/S24_ultra_amoled.jpg",
+            "static/images/products/smartwatch/S24_ultra_waterproof.jpg",
+            "static/images/products/smartwatch/S24_ultra_bluetooth.jpg",
         ];
 
         function changeImage(index) {

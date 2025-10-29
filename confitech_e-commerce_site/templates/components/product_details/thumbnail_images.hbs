@@ -1,12 +1,12 @@
 <!-- Thumbnail Images -->
 <div class="space-y-4">
-    {{#each product_details.product_detail.display_image}}
+    {{#with product_meta}}
     {{>components/product_details/main_image}}
-    {{/each}}
+    {{/with}}
     <div class="grid grid-cols-4 gap-4">
-        {{#each product_details.product_detail.thumbnail_images}}
-        <div class="{{active_status}} bg-white rounded-lg p-2 cursor-pointer border-2 border-grey-600"
-            onclick="changeImage(0)">
+        {{#each thumbnail_images}}
+        <div class="{{active_status}} bg-white rounded-lg cursor-pointer border-2 border-grey-600 {{border_line}} {{hover_effect}}"
+            onclick="{{onclick}}">
             <img src="{{image_url}}" alt="Thumb 1" class="w-full rounded">
         </div>
         {{/each}}

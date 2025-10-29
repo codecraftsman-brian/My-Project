@@ -1,0 +1,10 @@
+<h3 class="text-lg font-semibold mb-3">{{product_details.phone_case_accessories.storage_option.title}}</h3>
+<div class="flex gap-3">
+    {{#each product_details.phone_case_accessories.storage_option.options}}
+    <button
+        class="size-button {{selected_status}} px-6 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-blue-600"
+        onclick="selectSize(this)">
+        {{storage}}
+    </button>
+    {{/each}}
+</div>

@@ -1,13 +1,13 @@
 <div class="border-b">
     <button class="w-full py-4 flex justify-between items-center" onclick="toggleAccordion(1)">
-        <span class="text-lg font-semibold">{{product_details.storage.return_policy.title}}</span>
+        <span class="text-lg font-semibold">{{return_policy.title}}</span>
         <svg class="accordion-icon w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
         </svg>
     </button>
     <div class="accordion-content">
         <div class="pb-4">
-            <p class="text-gray-600 mb-4">{{product_details.storage.return_policy.options.[0].policy_title}}</p>
+            <p class="text-gray-600 mb-4">{{return_policy.options.[0].policy_title}}</p>
             <ul class="space-y-2">
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -15,7 +15,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd"></path>
                     </svg>
-                    <span class="text-gray-700">{{product_details.storage.return_policy.options.[0].policy_descr_1}}</span>
+                    <span class="text-gray-700">{{return_policy.options.[0].policy_descr_1}}</span>
                 </li>
                 <li class="flex items-start">
                     <svg class="w-5 h-5 text-green-600 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -23,7 +23,7 @@
                             d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                             clip-rule="evenodd"></path>
                     </svg>
-                    <span class="text-gray-700">{{product_details.storage.return_policy.options.[0].policy_descr_2}}</span>
+                    <span class="text-gray-700">{{return_policy.options.[0].policy_descr_2}}</span>
                 </li>
             </ul>
         </div>

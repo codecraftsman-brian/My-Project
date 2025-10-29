@@ -1,6 +1,7 @@
 {
     "anchor_styles": "hover:text-blue-700 text-gray-600 text-[15px] font-semibold block",
-    "contact_no": "2547000000",
+    "contact_no_1": "+254723821511",
+    "contact_no_2": "+245702330084",
     "list": [
         {
             "type": "dropdown",

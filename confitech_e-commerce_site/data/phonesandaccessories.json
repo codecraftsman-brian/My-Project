@@ -8,16 +8,16 @@
     "phonesandaccessories": [
         {
             "product_url": "/product_details",
-            "image_url": "static/images/products/product_1.jpg",
+            "image_url": "static/images/products/smartwatch/S24_ultra.jpg",
             "ratings": "⭐⭐⭐⭐⭐",
-            "rating_count": 128,
+            "rating_count": 12,
             "tag_name": "NEW",
             "tag_bg_color": "bg-red-500",
-            "title": "iPhone 15 Pro Max",
-            "description": "Titanium design with A17 Pro chip",
-            "price": "999",
+            "title": "Samsung Galaxy S24 Ultra Smartwatch",
+            "description": "Advanced health tracking features, it monitors heart rate...",
+            "price": "2,999",
             "price_color": "text-blue-600",
-            "prev_price": "ksh. 1,199",
+            "prev_price": "ksh. 1,99",
             "stock_indicator": "In Stock",
             "stock_indicator_color": "text-green-600",
             "button_bg_color": "bg-blue-600"

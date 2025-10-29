@@ -25,38 +25,32 @@
         {
             "reason_title": "Countrywide Delivery",
             "reason_descr": "Same-day Nairobi, Next day Nationwide.",
-            "icon": "components/icons/why_us/country_wide_delivery",
-            "bg_color": "bg-blue-100"
+            "icon": "static/images/Why_Us/countrywide_delivery.png"
         },
         {
             "reason_title": "Pay on Delivery",
             "reason_descr": "Shop with confidence, pay when delivered.",
-            "icon": "",
-            "bg_color": "bg-green-100"
+            "icon": "static/images/Why_Us/pay_on_delivery.png"
         },
         {
             "reason_title": "Easy Exchange Policy",
             "reason_descr": "Quick and easy returns within 90 days.",
-            "icon": "",
-            "bg_color": "bg-purple-100"
+            "icon": "static/images/Why_Us/easy_exchange.png"
         },
         {
             "reason_title": "M-pesa Ready",
             "reason_descr": "Your trusted way to pay.",
-            "icon": "",
-            "bg_color": "bg-orange-100"
+            "icon": "static/images/Why_Us/mpesa.png"
         },
         {
             "reason_title": "Pick up in Store",
             "reason_descr": "Order online and collect in-store at your convenience",
-            "icon": "",
-            "bg_color": "bg-indigo-100"
+            "icon": "static/images/Why_Us/pick_up.png"
         },
         {
             "reason_title": "100% Genuine",
             "reason_descr": "Originals only, because you deserve the real deal",
-            "icon": "",
-            "bg_color": "bg-pink-100"
+            "icon": "static/images/Why_Us/genuine.png"
         }
     ]
 }

@@ -1,17 +1,3 @@
-{{#*inline "body_content"}}
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- Breadcrumb -->
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <nav class="flex text-sm text-gray-600 gap-2">
-        <a href="/index" class="hover:text-blue-600">Home</a>
-        <span class="mx-2">/</span>
-        <a href="/tablets" class="hover:text-blue-600">Phones & Tablets</a>
-        <span class="mx-2">/</span>
-        <span class="text-gray-900 font-medium">Samsung Galaxy S24 Ultra</span>
-    </nav>
-</div>
-
-<!-- Main Product Section -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <!-- Images -->
@@ -21,14 +7,14 @@
     <!-- Details -->
     <div class="space-y-6">
         <div>
-            {{#each product.smartwatch_s24_ultra.product_title}}
+            {{#with this.product_meta}}
             {{>components/product_details/product_title}}
-            {{/each}}
+            {{/with}}
         </div>
 
-        <!-- Storage & Color-->
+        <!--Color-->
         <div>
-            {{>components/product_details/product_specificies}}
+            {{>components/product_details/color}}
         </div>
 
         <!-- Quantity -->
@@ -68,7 +54,7 @@
         <div class="bg-blue-50 rounded-xl p-6">
             <h3 class="text-lg font-semibold mb-4">Key Features</h3>
             <ul class="space-y-2">
-                {{#each product.smartwatch_s24_ultra.key_features}}
+                {{#each key_features}}
                 {{>components/product_details/key_features}}
                 {{/each}}
             </ul>
@@ -76,16 +62,13 @@
     </div>
 </div>
 
+
 <!-- Sticky Navigation Tabs -->
 <div class="sticky-nav bg-white shadow-md mt-16 mb-8 rounded-xl">
     <div class="flex justify-center items-center space-x-4 p-4">
         <button class="nav-tab active px-8 py-3 rounded-full border-2 border-gray-300 font-semibold"
             onclick="scrollToSection('product-overview')">
             Product Overview
-        </button>
-        <button class="nav-tab px-8 py-3 rounded-full border-2 border-gray-300 font-semibold"
-            onclick="scrollToSection('product-features')">
-            Product Features
         </button>
         <button class="nav-tab px-8 py-3 rounded-full border-2 border-gray-300 font-semibold"
             onclick="scrollToSection('product-reviews')">
@@ -103,11 +86,6 @@
     {{>components/product_details/return_policy}}
 </div>
 
-<div id="product-features" class="bg-white rounded-2xl shadow-lg p-8 mt-4">
-    <h2 class="text-3xl font-bold text-gray-900 mb-8">Product Features</h2>
-    {{>components/product_details/product_features}}
-</div>
-
 <!-- Reviews -->
 <div id="product-reviews" class="mt-16 bg-white rounded-2xl shadow-lg p-8">
     <h2 class="text-2xl font-bold mb-6">Customer Reviews</h2>
@@ -115,80 +93,10 @@
     {{>components/product_details/review_title}}
 
     <div class="space-y-6">
-        {{#each product.smartwatch_s24_ultra.reviews_body}}
+        {{#each reviews_body}}
         {{>components/product_details/review_body}}
         {{/each}}
 
     </div>
     <button class="mt-6 text-blue-600 font-semibold hover:text-blue-700">Read all reviews</button>
 </div>
-</div>
-
-<!-- Why Us Section -->
-{{>components/our_services/why_us}}
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-white mt-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <!-- Company Info -->
-            {{>components/footer/company_logo}}
-
-            <!-- Our Company -->
-            <div>
-                <h4 class="text-lg font-bold">Our Company</h4>
-                {{#each footer.footer_info.our_company}}
-                {{>components/footer/our_company}}
-                {{/each}}
-            </div>
-
-            <!-- Services -->
-            <div>
-                <h4 class="text-lg font-bold">Services</h4>
-                {{>components/footer/services}}
-            </div>
-
-            <!-- Follow Us -->
-            <div>
-                <h4 class="text-lg font-bold">Follow Us</h4>
-
-                <div class="flex space-x-1 mb-4">
-                    {{#each footer.footer_info.social_media}}
-                    {{>components/footer/social_media}}
-                    {{/each}}
-                </div>
-                <div class="space-y-1">
-                    <p class="text-sm"><span class="text-lg font-bold">Shop Location:</span></p>
-                    <p class="text-gray-400 text-sm"><strong>Midtown Business Center</strong>, Taveta Road
-                        Opposite London Beauty Building
-                        2nd Floor, <strong>Shop S-70</strong> </p>
-                </div>
-                <div>
-                    <p class="text-sm"><span class="text-lg font-bold">Email:</span></p>
-                    <p class="text-gray-400 text-sm">Info.confitech@gmail.com</p>
-                </div>
-            </div>
-
-            <!-- Contact Us -->
-            <div>
-                {{>components/footer/contact_us}}
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p class="text-center text-gray-400 text-sm">
-                © 2025 Confitech Communicative. All Rights Reserved. | Designed with
-                <span class="text-red-500">❤</span> by Codecraftars Studio
-            </p>
-        </div>
-    </div>
-</footer>
-
-<script src="/static/js/phone_details.js"></script>
-
-{{/inline}}
-{{>layouts/base}}

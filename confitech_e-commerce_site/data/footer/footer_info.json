@@ -45,47 +45,45 @@
             }
         ],
         "title": "Business Hours",
-        "working_days": "Monday - Saturday",
-        "working_time": "8:00 AM - 6:00 PM"
+        "weekday": "Monday - Friday",
+        "weekday_time": "7:30 AM - 7:00 PM",
+        "weekend": "Saturday",
+        "weekend_time": "8:00 AM - 7:00 PM"
     },
     "social_media": [
         {
-            "link": "#",
+            "link": "https://www.facebook.com/share/1Bu1fxydvE/",
             "icon": "components/icons/social_media/facebook"
         },
         {
-            "link": "#",
-            "icon": "components/icons/social_media/twitter"
+            "link": "https://www.tiktok.com/@confitech.phone.a?_t=ZM-90vmp2Ok55o&_r=1",
+            "icon": "components/icons/social_media/tiktok"
         },
         {
-            "link": "#",
+            "link": "https://www.instagram.com/confitechphone?utm_source=qr&igsh=MXJ0Z2ZlY3c0dWdtOQ==",
             "icon": "components/icons/social_media/ig"
         },
         {
             "link": "#",
-            "icon": "components/icons/social_media/youtube"
-        },
-        {
-            "link": "#",
-            "icon": "components/icons/social_media/linkedin"
+            "icon": "components/icons/social_media/whatsapp"
         }
     ],
     "contact_payment": {
         "contact": [
             {
                 "title": "Sales",
-                "contact_link": "tel:07xxxxxxxx",
-                "contact_details": "07xx-xxx-xxxx"
+                "contact_link": "tel:0702330084",
+                "contact_details": "+254702330084"
             },
             {
                 "title": "Repairs",
-                "contact_link": "tel:07xxxxxxxx",
-                "contact_details": "07xx-xxx-xxxx"
+                "contact_link": "tel:0723821511",
+                "contact_details": "+254723821511"
             },
             {
                 "title": "Lipa mdogo",
-                "contact_link": "tel:07xxxxxxxx",
-                "contact_details": "07xx-xxx-xxxx"
+                "contact_link": "tel:0723821511",
+                "contact_details": "+254723821511"
             }
         ],
         "payment": [
@@ -99,5 +97,8 @@
                 "title": "Mastercard"
             }
         ]
-    }
+    },
+  "copyright_info": {
+    "text": "© 2025 Confitech Communicative. All Rights Reserved. | Designed with ❤ by Codecraftars Studio"
+  }
 }
