@@ -8,62 +8,62 @@
             "text": "All Categories",
             "list_items": [
                 {
-                    "page_link": "javascript:void(0)",
-                    "text": "Phones"
+                    "page_link": "/phones_tablets_gallery",
+                    "text": "Smartphones"
                 },
                 {
-                    "page_link": "/tablets",
+                    "page_link": "/phones_tablets_gallery",
                     "text": "Tablets"
                 },
                 {
-                    "page_link": "javascript:void(0)",
-                    "text": "Games"
+                    "page_link": "/games_consoles_gallery",
+                    "text": "Gaming"
                 },
                 {
-                    "page_link": "javascript:void(0)",
+                    "page_link": "/smartwatch_gallery",
                     "text": "Smartwatch"
                 },
                 {
-                    "page_link": "javascript:void(0)",
-                    "text": "Phone Accessories"
+                    "page_link": "/phones_tablets_accessories_gallery",
+                    "text": "Smartphones Accessories"
                 },
                 {
-                    "page_link": "javascript:void(0)",
+                    "page_link": "/audio_gallery",
                     "text": "Audio"
                 },
                 {
-                    "page_link": "javascript:void(0)",
+                    "page_link": "/storage_gallery",
                     "text": "Storage"
                 },
                 {
-                    "page_link": "javascript:void(0)",
-                    "text": "Computer Accessories"
+                    "page_link": "/computers_gallery",
+                    "text": "Computers"
                 }
             ]
         },
         {
             "type": "normal",
-            "page_link": "javascript:void(0)",
-            "text": "Mobile Accessories"
+            "page_link": "/phones_tablets_gallery",
+            "text": "Smartphones"
         },
         {
             "type": "normal",
-            "page_link": "javascript:void(0)",
-            "text": "Smartwatch"
-        },
-        {
-            "type": "normal",
-            "page_link": "javascript:void(0)",
+            "page_link": "/computers_accessories_gallery",
             "text": "Computer Accessories"
         },
         {
             "type": "normal",
-            "page_link": "javascript:void(0)",
+            "page_link": "/smartwatch_gallery",
+            "text": "Smartwatch"
+        },
+        {
+            "type": "normal",
+            "page_link": "/tv_gallery",
             "text": "TVs"
         },
         {
             "type": "normal",
-            "page_link": "javascript:void(0)",
+            "page_link": "/games_consoles_gallery",
             "text": "Gaming"
         }
     ]
