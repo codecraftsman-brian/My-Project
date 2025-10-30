@@ -1,0 +1,151 @@
+{{#*inline "body_content"}}
+<script src="/static/Js/products.js"></script>
+<!-- Phones & Tablets Section -->   
+<section class="max-w-7xl mx-auto sm:px-6 lg:px-8 py-4">
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav class="flex text-sm text-gray-600 gap-2">
+            <a href="/index" class="hover:text-blue-600">Home</a>
+            <span class="mx-2">/</span>
+            <span class="text-gray-900 font-medium">Phones & Tablets</span>
+        </nav>
+    </div>
+    <!-- Page Header -->
+    {{#each product.tv.header.page_title}}
+    {{>components/product/product_header}}
+    {{/each}}
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+        <!-- Filter Bar -->
+        <div class="bg-white rounded-xl shadow-md p-4 mb-8 flex flex-wrap gap-4 items-center justify-between">
+            <div class="flex items-center gap-4">
+                <span class="text-gray-700 font-semibold">Filter by:</span>
+                <select
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                    <option>All Categories</option>
+                    <option>Smartphones</option>
+                    <option>Tablets</option>
+                </select>
+                <select
+                    class="border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-600 focus:outline-none">
+                    <option>Price Range</option>
+                    <option>Under $500</option>
+                    <option>$500 - $1000</option>
+                    <option>Over $1000</option>
+                </select>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="text-gray-600">Showing 16 products</span>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product Card 1: iPhone 15 Pro -->
+            {{#each product.tv}}
+            {{#with this.product_meta}}
+            {{>components/product/product_container}}
+            {{/with}}
+            {{/each}}
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center items-center space-x-2 mt-12">
+            <button
+                class="pagination-btn w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-blue-600 hover:bg-blue-50 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button class="pagination-btn active w-10 h-10 rounded-full font-bold">1</button>
+            <button
+                class="pagination-btn w-10 h-10 rounded-full border-2 border-gray-300 font-bold hover:border-blue-600 hover:bg-blue-50 transition-colors">2</button>
+            <button
+                class="pagination-btn w-10 h-10 rounded-full border-2 border-gray-300 font-bold hover:border-blue-600 hover:bg-blue-50 transition-colors">3</button>
+            <button
+                class="pagination-btn w-10 h-10 rounded-full border-2 border-gray-300 font-bold hover:border-blue-600 hover:bg-blue-50 transition-colors">4</button>
+            <span class="px-2 text-gray-500">...</span>
+            <button
+                class="pagination-btn w-10 h-10 rounded-full border-2 border-gray-300 font-bold hover:border-blue-600 hover:bg-blue-50 transition-colors">10</button>
+            <button
+                class="pagination-btn w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-blue-600 hover:bg-blue-50 transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+</section>
+
+<!-- Our Services Section -->     
+{{>components/our_services/services}}
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white mt-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <!-- Company Info -->
+            {{>components/footer/company_logo}}
+
+            <!-- Our Company -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Our Company</h4>
+                {{#each footer.footer_info.our_company}}
+                {{>components/footer/our_company}}
+                {{/each}}
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Services</h4>
+                {{>components/footer/services}}
+            </div>
+
+            <!-- Follow Us -->
+            <div>
+                <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+
+                <div class="flex space-x-3 mb-8">
+                    {{#each footer.footer_info.social_media}}
+                    {{>components/footer/social_media}}
+                    {{/each}}
+                </div>
+                <div class="space-y-2">
+                    <p class="text-sm"><span class="font-semibold">Shop Location:</span></p>
+                    <p class="text-gray-400 text-sm">123 Tech Avenue, Nairobi</p>
+                    <p class="text-sm"><span class="font-semibold">Email:</span></p>
+                    <p class="text-gray-400 text-sm">support@techstore.com</p>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                {{>components/footer/contact_us}}
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+            <p class="text-center text-gray-400 text-sm">
+                © 2025 Tech Store Ltd. All Rights Reserved. | Designed with
+                <span class="text-red-500">❤</span> by Your Team
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+    // Pagination functionality
+    document.querySelectorAll('.pagination-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.pagination-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
+{{/inline}}
+{{>layouts/base}}
