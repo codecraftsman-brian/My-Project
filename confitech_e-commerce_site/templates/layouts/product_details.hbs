@@ -17,62 +17,7 @@
 {{>components/our_services/why_us}}
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white mt-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <!-- Company Info -->
-            {{>components/footer/company_logo}}
-
-            <!-- Our Company -->
-            <div>
-                <h4 class="text-lg font-bold">Our Company</h4>
-                {{#each footer.footer_info.our_company}}
-                {{>components/footer/our_company}}
-                {{/each}}
-            </div>
-
-            <!-- Services -->
-            <div>
-                <h4 class="text-lg font-bold">Services</h4>
-                {{>components/footer/services}}
-            </div>
-
-            <!-- Follow Us -->
-            <div>
-                <h4 class="text-lg font-bold">Follow Us</h4>
-
-                <div class="flex space-x-1 mb-4">
-                    {{#each footer.footer_info.social_media}}
-                    {{>components/footer/social_media}}
-                    {{/each}}
-                </div>
-                <div class="space-y-1">
-                    <p class="text-sm"><span class="text-lg font-bold">Shop Location:</span></p>
-                    <p class="text-gray-400 text-sm"><strong>Midtown Business Center</strong>, Taveta Road
-                        Opposite London Beauty Building
-                        2nd Floor, <strong>Shop S-70</strong> </p>
-                </div>
-                <div>
-                    <p class="text-sm"><span class="text-lg font-bold">Email:</span></p>
-                    <p class="text-gray-400 text-sm">Info.confitech@gmail.com</p>
-                </div>
-            </div>
-
-            <!-- Contact Us -->
-            <div>
-                {{>components/footer/contact_us}}
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            {{>components/footer/copyright}}
-        </div>
-    </div>
-</footer>
+{{>components/footer/footer_section}}
 
 <script src="/static/js/phone_details.js"></script>
 
