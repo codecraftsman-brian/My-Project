@@ -78,63 +78,7 @@
 {{>components/our_services/services}}
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white mt-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            <!-- Company Info -->
-            {{>components/footer/company_logo}}
-
-            <!-- Our Company -->
-            <div>
-                <h4 class="text-lg font-bold mb-4">Our Company</h4>
-                {{#each footer.footer_info.our_company}}
-                {{>components/footer/our_company}}
-                {{/each}}
-            </div>
-
-            <!-- Services -->
-            <div>
-                <h4 class="text-lg font-bold mb-4">Services</h4>
-                {{>components/footer/services}}
-            </div>
-
-            <!-- Follow Us -->
-            <div>
-                <h4 class="text-lg font-bold mb-4">Follow Us</h4>
-
-                <div class="flex space-x-3 mb-8">
-                    {{#each footer.footer_info.social_media}}
-                    {{>components/footer/social_media}}
-                    {{/each}}
-                </div>
-                <div class="space-y-2">
-                    <p class="text-sm"><span class="font-semibold">Shop Location:</span></p>
-                    <p class="text-gray-400 text-sm">123 Tech Avenue, Nairobi</p>
-                    <p class="text-sm"><span class="font-semibold">Email:</span></p>
-                    <p class="text-gray-400 text-sm">support@techstore.com</p>
-                </div>
-            </div>
-
-            <!-- Contact Us -->
-            <div>
-                {{>components/footer/contact_us}}
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Copyright -->
-    <div class="border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-            <p class="text-center text-gray-400 text-sm">
-                © 2025 Tech Store Ltd. All Rights Reserved. | Designed with
-                <span class="text-red-500">❤</span> by Your Team
-            </p>
-        </div>
-    </div>
-</footer>
-
-
+{{>components/footer/footer_section}}
 
 <script>
     // Pagination functionality
