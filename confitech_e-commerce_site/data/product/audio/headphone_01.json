@@ -2,37 +2,37 @@
   "thumbnail_images": [
     {
       "active_status": "thumbnail-active",
-      "image_url": "static/images/games_consoles/consoles_01/console_01.jpg",
+      "image_url": "static/images/audio/audio_02/headphone_1.jpg",
       "hover_effect": "",
       "border_line": "",
       "onclick": "changeImage(0)"
     },
     {
       "active_status": "",
-      "image_url": "static/images/games_consoles/consoles_01/console_02.jpg",
+      "image_url": "static/images/audio/audio_02/headphone_2.jpg",
       "hover_effect": "hover:border-gray-300",
       "border_line": "border-transparent",
       "onclick": "changeImage(1)"
     },
     {
       "active_status": "",
-      "image_url": "static/images/games_consoles/consoles_01/console_03.jpg",
+      "image_url": "static/images/audio/audio_02/headphone_3.jpg",
       "hover_effect": "hover:border-gray-300",
       "border_line": "border-transparent",
       "onclick": "changeImage(2)"
     },
     {
       "active_status": "",
-      "image_url": "static/images/games_consoles/consoles_01/console_04.jpg",
+      "image_url": "static/images/audio/audio_02/headphone_4.jpg",
       "hover_effect": "hover:border-gray-300",
       "border_line": "border-transparent",
       "onclick": "changeImage(3)"
     }
   ],
   "product_meta": {
-    "product_url": "/console_01",
-    "main_image": "static/images/games_consoles/consoles_01/console_01.jpg",
-    "zoom_image": "scale-75", 
+    "product_url": "/headphone_01",
+    "main_image": "static/images/audio/audio_02/headphone_1.jpg",
+    "zoom_image": "scale-70",
     "title": "Samsung Galaxy S24 Ultra Smartwatch",
     "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
     "rating": "4.5",
