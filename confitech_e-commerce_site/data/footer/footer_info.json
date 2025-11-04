@@ -68,6 +68,9 @@
             "icon": "components/icons/social_media/whatsapp"
         }
     ],
+    "email":{
+        "email_address": "Info.confitech@gmail.com"
+    },
     "contact_payment": {
         "contact": [
             {
