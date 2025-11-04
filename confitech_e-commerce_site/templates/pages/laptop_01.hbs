@@ -3,12 +3,11 @@
 {{#with (lookup product.computers "laptop_01")}}
 {{>components/product_details/product_view}}
 {{/with}}
-<script src="/static/js/laptop_01.js">
+<script>
     const images = [
-        "static/images/computer/laptop_01/laptop_01.jpg",
-        "static/images/computer/laptop_01/laptop_02.jpg",
-        "static/images/computer/laptop_01/laptop_03.jpg",
-        "static/images/computer/laptop_01/laptop_04.jpg",
+        {{#each product.computers.laptop_01.thumbnail_images}}
+        "{{image_url}}",
+        {{/each}}
     ];
 
     function changeImage(index) {

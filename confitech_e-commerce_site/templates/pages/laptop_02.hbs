@@ -5,10 +5,9 @@
 {{/with}}
 <script>
     const images = [
-        "static/images/computer/laptop_02/laptop_01.jpg",
-        "static/images/computer/laptop_02/laptop_02.jpg",
-        "static/images/computer/laptop_02/laptop_03.jpg",
-        "static/images/computer/laptop_02/laptop_04.jpg",
+        {{#each product.computers.laptop_02.thumbnail_images}}
+        "{{image_url}}",
+        {{/each}}
     ];
 
     function changeImage(index) {

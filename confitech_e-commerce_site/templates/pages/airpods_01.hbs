@@ -5,10 +5,9 @@
 {{/with}}
 <script>
     const images = [
-        "static/images/audio/audio_01/airpods_01.jpg",
-        "static/images/audio/audio_01/airpods_02.jpg",
-        "static/images/audio/audio_01/airpods_03.jpg",
-        "static/images/audio/audio_01/airpods_04.jpg",
+        {{#each product.audio.airpods_01.thumbnail_images}}
+        "{{image_url}}",
+        {{/each}}
     ];
 
     function changeImage(index) {

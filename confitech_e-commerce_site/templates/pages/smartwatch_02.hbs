@@ -3,6 +3,19 @@
 {{#with (lookup product.smartwatch "smartwatch_02")}}
 {{>components/product_details/product_view}}
 {{/with}}
-<script src="/static/js/smartwatch_02.js"></script>
+<script>
+    const images = [
+        {{#each product.smartwatch.smartwatch_02.thumbnail_images}}
+        "{{image_url}}",
+        {{/each }}
+    ];
+
+    function changeImage(index) {
+        document.getElementById("mainImage").src = images[index];
+        document.querySelectorAll('[onclick^="changeImage"]').forEach((thumb, i) => {
+            thumb.classList.toggle("thumbnail-active", i === index);
+        });
+    }
+</script>
 {{/inline}}
 {{>layouts/product_details}}

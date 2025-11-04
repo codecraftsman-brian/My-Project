@@ -5,10 +5,9 @@
 {{/with}}
 <script>
     const images = [
-        "static/images/audio/audio_02/headphone_1.jpg",
-        "static/images/audio/audio_02/headphone_2.jpg",
-        "static/images/audio/audio_02/headphone_3.jpg",
-        "static/images/audio/audio_02/headphone_4.jpg",
+        {{#each product.audio.headphone_01.thumbnail_images}}
+        "{{image_url}}",
+        {{/each}}
     ];
 
     function changeImage(index) {

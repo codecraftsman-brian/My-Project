@@ -5,10 +5,9 @@
 {{/with}}
 <script>
     const images = [
-        "static/images/tv_accessories/tv_01/tv_01.jpg",
-        "static/images/tv_accessories/tv_01/tv_02.jpg",
-        "static/images/tv_accessories/tv_01/tv_03.jpg",
-        "static/images/tv_accessories/tv_01/tv_04.jpg",
+        {{ #each product.tv.tv_01.thumbnail_images }}
+        "{{image_url}}",
+        {{/each }}
     ];
 
     function changeImage(index) {

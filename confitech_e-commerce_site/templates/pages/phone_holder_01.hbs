@@ -5,10 +5,9 @@
 {{/with}}
 <script>
     const images = [
-        "static/images/phone_accessories/phone_holder_01/phone_holder_01.jpg",
-        "static/images/phone_accessories/phone_holder_01/phone_holder_02.jpg",
-        "static/images/phone_accessories/phone_holder_01/phone_holder_03.jpg",
-        "static/images/phone_accessories/phone_holder_01/phone_holder_04.jpg",
+        {{ #each product.phones_tablets_accessories.phone_holder_01.thumbnail_images }}
+        "{{image_url}}",
+        {{/each }}
     ];
 
     function changeImage(index) {

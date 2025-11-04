@@ -5,10 +5,9 @@
 {{/with}}
 <script>
     const images = [
-        "static/images/smartwatch/smartwatch_02/smartwatch_01.jpg",
-        "static/images/smartwatch/smartwatch_02/smartwatch_02.jpg",
-        "static/images/smartwatch/smartwatch_02/smartwatch_03.jpg",
-        "static/images/smartwatch/smartwatch_02/smartwatch_04.jpg",
+        {{ #each product.storage.storage_02.thumbnail_images }}
+        "{{image_url}}",
+        {{/each }}
     ];
 
     function changeImage(index) {
