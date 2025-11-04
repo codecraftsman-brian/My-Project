@@ -1,16 +1,4 @@
-const images = [
-  "static/images/products/smartwatch/S24_ultra.jpg",
-  "static/images/products/smartwatch/S24_ultra_amoled.jpg",
-  "static/images/products/smartwatch/S24_ultra_waterproof.jpg",
-  "static/images/products/smartwatch/S24_ultra_bluetooth.jpg",
-];
 
-function changeImage(index) {
-  document.getElementById("mainImage").src = images[index];
-  document.querySelectorAll('[onclick^="changeImage"]').forEach((thumb, i) => {
-    thumb.classList.toggle("thumbnail-active", i === index);
-  });
-}
 
 function selectSize(button) {
   document
