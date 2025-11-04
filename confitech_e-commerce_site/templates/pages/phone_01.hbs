@@ -1,0 +1,22 @@
+{{#*inline "product_content"}}
+<!-- Main Product Section -->
+{{#with (lookup product.phones_tablets "phone_01")}}
+{{>components/product_details/product_view}}
+{{/with}}
+<script>
+    const images = [
+        "static/images/phones_tablets/phones/phone_01/phone_01.png",
+        "static/images/phones_tablets/phones/phone_01/phone_02.png",
+        "static/images/phones_tablets/phones/phone_01/phone_03.png",
+        "static/images/phones_tablets/phones/phone_01/phone_04.png",
+    ];
+
+    function changeImage(index) {
+        document.getElementById("mainImage").src = images[index];
+        document.querySelectorAll('[onclick^="changeImage"]').forEach((thumb, i) => {
+            thumb.classList.toggle("thumbnail-active", i === index);
+        });
+    }
+</script>
+{{/inline}}
+{{>layouts/product_details}}

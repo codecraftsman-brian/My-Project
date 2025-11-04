@@ -1,0 +1,22 @@
+{{#*inline "product_content"}}
+<!-- Main Product Section -->
+{{#with (lookup product.games_consoles "pad_01")}}
+{{>components/product_details/product_view}}
+{{/with}}
+<script>
+    const images = [
+        "static/images/games_consoles/games_01/pad_01.jpg",
+        "static/images/games_consoles/games_01/pad_02.jpg",
+        "static/images/games_consoles/games_01/pad_03.jpg",
+        "static/images/games_consoles/games_01/pad_04.jpg",
+    ];
+
+    function changeImage(index) {
+        document.getElementById("mainImage").src = images[index];
+        document.querySelectorAll('[onclick^="changeImage"]').forEach((thumb, i) => {
+            thumb.classList.toggle("thumbnail-active", i === index);
+        });
+    }
+</script>
+{{/inline}}
+{{>layouts/product_details}}

@@ -1,0 +1,22 @@
+{{#*inline "product_content"}}
+<!-- Main Product Section -->
+{{#with (lookup product.computers_accessories "laptop_stand_01")}}
+{{>components/product_details/product_view}}
+{{/with}}
+<script>
+    const images = [
+        "static/images/computer_accessories/laptop_stand/accessory_01.jpg",
+        "static/images/computer_accessories/laptop_stand/accessory_02.jpg",
+        "static/images/computer_accessories/laptop_stand/accessory_03.jpg",
+        "static/images/computer_accessories/laptop_stand/accessory_04.jpg",
+    ];
+
+    function changeImage(index) {
+        document.getElementById("mainImage").src = images[index];
+        document.querySelectorAll('[onclick^="changeImage"]').forEach((thumb, i) => {
+            thumb.classList.toggle("thumbnail-active", i === index);
+        });
+    }
+</script>
+{{/inline}}
+{{>layouts/product_details}}

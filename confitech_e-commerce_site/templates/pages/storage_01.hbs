@@ -1,7 +1,8 @@
 {{#*inline "product_content"}}
 <!-- Main Product Section -->
-{{#with (lookup product "smartwatch_s24_ultra")}}
+{{#with (lookup product.storage "storage_01")}}
 {{>components/product_details/product_view}}
 {{/with}}
+<script src="/static/js/storage_01.js"></script>
 {{/inline}}
 {{>layouts/product_details}}

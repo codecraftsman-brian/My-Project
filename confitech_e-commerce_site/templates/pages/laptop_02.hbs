@@ -1,0 +1,22 @@
+{{#*inline "product_content"}}
+<!-- Main Product Section -->
+{{#with (lookup product.computers "laptop_02")}}
+{{>components/product_details/product_view}}
+{{/with}}
+<script>
+    const images = [
+        "static/images/computer/laptop_02/laptop_01.jpg",
+        "static/images/computer/laptop_02/laptop_02.jpg",
+        "static/images/computer/laptop_02/laptop_03.jpg",
+        "static/images/computer/laptop_02/laptop_04.jpg",
+    ];
+
+    function changeImage(index) {
+        document.getElementById("mainImage").src = images[index];
+        document.querySelectorAll('[onclick^="changeImage"]').forEach((thumb, i) => {
+            thumb.classList.toggle("thumbnail-active", i === index);
+        });
+    }
+</script>
+{{/inline}}
+{{>layouts/product_details}}
