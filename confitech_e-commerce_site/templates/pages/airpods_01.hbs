@@ -1,6 +1,6 @@
 {{#*inline "product_content"}}
 <!-- Main Product Section -->
-{{#with (lookup product.audio "airpods_01")}}
+{{#with (lookup product.audio.devices "airpods_01")}}
 {{>components/product_details/product_view}}
 {{/with}}
 <script>
@@ -18,4 +18,4 @@
     }
 </script>
 {{/inline}}
-{{>layouts/product_details}}
+{{>layouts/product_details}}.devices

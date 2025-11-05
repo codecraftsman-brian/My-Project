@@ -1,6 +1,6 @@
 {{#*inline "product_content"}}
 <!-- Main Product Section -->
-{{#with (lookup product.phones_tablets "tablet_01")}}
+{{#with (lookup product.phones_tablets.devices "tablet_01")}}
 {{>components/product_details/product_view}}
 {{/with}}
 <script>
