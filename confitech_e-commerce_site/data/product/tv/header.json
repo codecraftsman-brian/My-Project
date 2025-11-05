@@ -1,15 +1,13 @@
 {
-    "page_title": [
-        {
-            "title": "Televisions",
-            "description": "Discover the latest smartphones and tablets with amazing features"
-        }
-    ],
+    "title": "Televisions",
+    "description": "Discover the latest smartphones and tablets with amazing features",
     "path_link": [
         {
-            "path_name_1": "Home",
-            "path_link_home": "/index",
-            "path_name_2": "Televisions"
+            "name": "Home",
+            "link": "/index"
+        },
+        {
+            "name": "Televisions"
         }
     ]
 }

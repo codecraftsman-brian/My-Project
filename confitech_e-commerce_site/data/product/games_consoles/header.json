@@ -1,15 +1,13 @@
 {
-    "page_title": [
-        {
-            "title": "Games & Consoles",
-            "description": "Discover the latest smartphones and tablets with amazing features"
-        }
-    ],
+    "title": "Games & Consoles",
+    "description": "Discover the latest smartphones and tablets with amazing features",
     "path_link": [
         {
-            "path_name_1": "Home",
-            "path_link_home": "/index",
-            "path_name_2": "Games & Consoles"
+            "name": "Home",
+            "link": "/index"
+        },
+        {
+            "name": "Games & Consoles"
         }
     ]
 }
