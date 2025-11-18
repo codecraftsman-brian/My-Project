@@ -33,149 +33,45 @@
     "product_url": "/phone_cover_01",
     "main_image": "static/images/phone_accessories/phone_cover_01/phone_cover_01.jpg",
     "zoom_image": "scale-100", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
+    "title": "Samsung Galaxy S24 Series Phone Case",
+    "description": "Sleek, durable, and eco-friendly phone case with a built-in kickstand, 360° protection, and wireless charging support",
     "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 23,
+    "review_count": 7,
+    "price": " 499",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
+    "prev_price": " 699",
+    "discount": " Ksh 200",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
     "stock_indicator_color": "text-green-600",
     "button_bg_color": "bg-blue-600"
   },
-  "storage_option": {
-    "title": "Storage",
-    "options": [
-      {
-        "storage": "128GB",
-        "selected_status": ""
-      },
-      {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
-        "selected_status": ""
-      }
-    ]
-  },
   "color_options": [
     {
-      "bg_color": "bg-purple-300",
+      "bg_color": "bg-black",
       "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
-      "border_color": "border-gray-300 "
     }
   ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "Perfect Fit & Eco-Friendly Material"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Adjustable Kickstand"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "360° Protection with Elastic Wrist Band"
     },
     {
-      "feature": "Powerful Battery Performance"
-    },
-    {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Wireless Charging Compatible"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
-    "specification": [
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
-      }
-    ]
+    "title": "Premium zSamsung Galaxy S24 Series Phone Case",
+    "description": "Experience the perfect combination of style and functionality with this <strong>Samsung Galaxy S24 / S24 Plus / S24 Ultra case.</strong> Designed for a precise fit, it feels comfortable in your hand, is lightweight, durable, odor-free, and made from eco-friendly materials for a safe, healthy experience. <br><br> <b>Adjustable Kickstand Design </b> <br>Enjoy hands-free convenience with the <strong>ultra-slim kickstand</strong>, featuring three adjustable angles ideal for watching videos, video calls, or sketching. Whether for work or leisure, this case adapts perfectly to your daily lifestyle. <br><br> <b>Secure Elastic Wrist Band</b> <br> The 360° <b>full-body protective design</b> and retractable <b>elastic wrist strap</b> provide a secure grip, preventing accidental drops. Its unique and modern look complements your style while ensuring comfort for any palm size. <br><br> <b>Comprehensive Protection</b> <br> This case offers robust protection against drops, bumps, and scratches with its shock-absorbent TPU material and raised edges to safeguard your screen and camera. Enjoy peace of mind knowing your phone is well-protected in style. <br><br> <b>Wireless Charging Compatible</b> <br>Stay powered effortlessly! This <b>wireless charging phone case</b> supports all Qi-enabled and fast-charging devices—no need to remove the cover. Convenient, efficient, and built for modern living."
   },
   "return_policy": {
     "title": "Return Policy",

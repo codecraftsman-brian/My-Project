@@ -32,148 +32,174 @@
   "product_meta": {
     "product_url": "/headphone_01",
     "main_image": "static/images/audio/audio_02/headphone_1.jpg",
-    "zoom_image": "scale-70",
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "zoom_image": "scale-50",
+    "title": "Bose Wireless Noise Cancelling Headphones",
+    "description": "Experience superior sound with the Bose QuietComfort Ultra, offering powerful noise cancellation, immersive audio, and personalized comfort.",
+    "rating": "3.8",
+    "rating_icon": "⭐⭐⭐",
+    "rating_count": 13,
+    "review_count": 9,
+    "price": " 7,599",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
     "stock_indicator_color": "text-green-600",
     "button_bg_color": "bg-blue-600"
   },
-  "storage_option": {
-    "title": "Storage",
-    "options": [
-      {
-        "storage": "128GB",
-        "selected_status": ""
-      },
-      {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
-        "selected_status": ""
-      }
-    ]
-  },
   "color_options": [
     {
-      "bg_color": "bg-purple-300",
+      "bg_color": "bg-white",
       "border_color": "border-gray-300"
     },
     {
-      "bg_color": "bg-sky-600",
+      "bg_color": "bg-rose-800",
       "border_color": "border-gray-300 "
     },
     {
-      "bg_color": "bg-lime-400",
+      "bg_color": "bg-neutral-400",
       "border_color": "border-gray-300 "
     },
     {
-      "bg_color": "bg-gray-900",
+      "bg_color": "bg-sky-900",
       "border_color": "border-gray-300 "
     }
   ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "Noise Cancellation"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "CustomTune Technology"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "All-Day Battery Life"
     },
     {
-      "feature": "Powerful Battery Performance"
+      "feature": "Crystal-Clear Calls"
     },
     {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Premium Comfort & Design"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Bose QuietComfort Ultra Wireless Headphones",
+    "description": "Immerse yourself in pure sound with the <b>Bose QuietComfort Ultra Wireless Noise Cancelling Over-Ear Headphones</b>. Engineered with </b>Bose Immersive Audio</b> and <b>CustomTune technology</b>, these premium headphones deliver spatial, natural sound that adapts perfectly to your ears. Enjoy <b>world-class noise cancellation, long-lasting comfort</b>, and <b>up to 24 hours of battery life</b> ideal for travel, work, or relaxation. Designed for modern audiophiles, the QuietComfort Ultra offers <b>Bluetooth 5.3 connectivity, touch controls</b>, and <b>multi-mode listening</b> options for total control over your experience. Whether you’re on a call, commuting, or unwinding with your favorite playlist, these headphones redefine what it means to truly listen.",
     "specification": [
       {
         "background": "bg-gray-50",
+        "sub_title": "Available Colors",
+        "description": "Black, Sandstone, White Smoke"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Headphone Fit",
+        "description": "Around Ear Circumaural"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Headband",
+        "description": "On Head Adjustable"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Cushions",
+        "description": "Removable Cushion"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Microphones",
+        "description": "Built-in Microphone"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Noise Cancelling",
+        "description": "Yes"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Noise Control Type",
+        "description": "Active Noise Cancelling, Echo Reduction, Adjustable Noise Cancelling"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Audio cable included",
+        "description": "Yes"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Case",
+        "description": "Carry"
+      },
+      {
+        "background": "bg-white",
         "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "description": "Plastic, Aluminum, Leather (Protein) <br> Case: Plastic (Hard)"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Ear Cushion Material",
+        "description": "Protein Leather"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Rechargeable",
+        "description": "Yes"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "sub_title": "Battery Life",
+        "description": "24 hours"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "Battery Charge Time",
+        "description": "3 hours"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "Charging Accessory included",
+        "description": "Yes"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "sub_title": "Charging Interface(s)",
+        "description": "USB C PORT"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "sub_title": "Wireless Connectivity",
+        "description": "Bluetooth, A2DP Bluetooth Audio Streaming, HFP Bluetooth, AVRCP Bluetooth, Bluetooth Low Energy"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
+        "sub_title": "Bluetooth Version",
+        "description": "5.3"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Bluetooth Range",
+        "description": "30'"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
+        "sub_title": "Bose App",
+        "description": "Bose Music App"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
+        "sub_title": "Battery Quantity",
+        "description": "1"
       },
       {
         "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Dimensions (H x W x D)",
+        "description": "7.7 x 5.5 x 2.0' (19.55 x 13.97 x 5.08cm)"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Weight",
+        "description": "8.96 oz (254.01g)"
       }
     ]
   },

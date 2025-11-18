@@ -33,16 +33,14 @@
     "product_url": "/console_01",
     "main_image": "static/images/games_consoles/consoles_01/console_01.jpg",
     "zoom_image": "scale-75", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "title": "Sony PlayStation 4 1TB Console With Controller",
+    "description": "Experience powerful gaming and endless entertainment with the slim, sleek PlayStation 4",
+    "rating": "5.0",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 63,
+    "review_count": 41,
+    "price": " 43,999",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
@@ -53,32 +51,16 @@
     "title": "Storage",
     "options": [
       {
-        "storage": "128GB",
+        "storage": "1TB",
         "selected_status": ""
       },
       {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
+        "storage": "500GB",
         "selected_status": ""
       }
     ]
   },
   "color_options": [
-    {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
     {
       "bg_color": "bg-gray-900",
       "border_color": "border-gray-300 "
@@ -86,94 +68,71 @@
   ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "500GB Storage"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Immersive Gaming"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Fast Performance"
     },
     {
-      "feature": "Powerful Battery Performance"
-    },
-    {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "DualShock 4 Controller"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Sony PlayStation 4 1TB Console With Controller",
+    "description": "The <strong>Sony PlayStation 4 1TB (Jet Black)</strong> delivers the ultimate home entertainment experience, combining incredible gameplay, HD movies, and music in one powerful console. With <b>8GB GDDR5 RAM</b> and a <b>1TB storage capacity</b>, it’s designed to handle your favorite blockbuster titles, streaming apps, and downloads effortlessly. <br><br> Enjoy smoother gameplay and richer visuals on HDR-supported TVs, while the <b>DualShock 4 wireless controller</b> enhances precision and immersion with its responsive triggers, touchpad, and lightbar. Connect easily via <b>Wi-Fi, Bluetooth 4.0, and USB 3.1 ports</b>, and access an entire universe of entertainment through the <b>PlayStation Store</b>. Whether you’re gaming solo, streaming movies, or connecting with friends online, the PS4 keeps you entertained from start to finish.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
-      },
-      {
-        "background": "bg-white",
         "sub_title": "Product Weight",
-        "description": "57 g"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "description": "2 KG"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
-      },
-      {
-        "background": "bg-gray-50",
         "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "description": "Wireless"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Product Height",
+        "description": "11.3\""
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Type of Console Software",
+        "description": "PlayStation 4 (PS4)"
       },
       {
         "background": "bg-gray-50",
         "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
+        "description": "Voice Assistant, Noise Cancelling"
       },
       {
         "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Colour Name",
+        "description": "Jet Black"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Product Length",
+        "description": "10.4 in"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Product Width",
+        "description": "1.5\""
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "What's In The Box",
+        "description": "1TB PlayStation 4 system DUALSHOCK 4 Wireless Controller Mono headset HDMI cable AC power cord USB cable"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Storage Capacity",
+        "description": "500 GB"
       }
     ]
   },

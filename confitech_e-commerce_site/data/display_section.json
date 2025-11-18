@@ -31,7 +31,7 @@
         ],
         "cards_data": [
             {
-                "page_link": "javascript::void(0)",
+                "page_link": "/phones_tablets_gallery",
                 "icon_bg_color": "from-yellow-500 to-yellow-600",
                 "icon": "components/icons/smart_phones",
                 "title": "Smartphones",
@@ -40,27 +40,28 @@
                 "price_color": "text-yellow-600"
             },
             {
-                "page_link": "javascript::void(0)",
-                "icon_bg_color": "from-green-500 to-green-600",
-                "icon": "components/icons/tablets",
-                "title": "Tablets",
-                "description": "Work and play devices",
-                "price": "From Ksh. 10,000",
-                "price_color": "text-green-600"
-            },
-            {
-                "page_link": "javascript::void(0)",
+                "page_link": "/audio_gallery",
                 "icon_bg_color": "from-purple-500 to-purple-600",
                 "icon": "components/icons/audio",
                 "title": "Audio",
                 "description": "Premium sound quality",
                 "price": "From Ksh. 10,000",
                 "price_color": "text-purple-600"
+            },
+            {
+                "page_link": "/phones_tablets_gallery",
+                "icon_bg_color": "from-green-500 to-green-600",
+                "icon": "components/icons/tablets",
+                "title": "Tablets",
+                "description": "Work and play devices",
+                "price": "From Ksh. 10,000",
+                "price_color": "text-green-600"
             }
         ],
         "bottom_cards": [
             {
                 "image_url": "static/images/hero_section/gaming_accessories.jpg",
+                "page_link": "/games_consoles_gallery",
                 "title": "Gaming Accessories",
                 "description": "Level up your gaming experience with premium accessories and peripherals",
                 "discount_offer": "Up to 50% OFF",
@@ -71,6 +72,7 @@
             },
             {
                 "image_url": "static/images/hero_section/smartwatch.jpg",
+                "page_link": "/smartwatch_gallery",
                 "title": "Smartwatches",
                 "description": "Track your fitness and stay connected with the latest smartwatch technology.",
                 "discount_offer": "From Ksh. 2000",
@@ -81,6 +83,7 @@
             },
             {
                 "image_url": "static/images/hero_section/phone_cover.jpg",
+                "page_link": "/phones_tablets_accessories_gallery",
                 "title": "Phone Cases",
                 "description": "Protect your device with stylish and durable phone cases and screen protectors.",
                 "discount_offer": "Up to 50% OFF",
@@ -126,7 +129,7 @@
                 "image_url": "static/images/audio.jpg",
                 "title": "Premium Audio",
                 "description": "Wireless headphones, speakers & sound systems",
-                "page_link": "javascript::void(0)",
+                "page_link": "/audio_gallery",
                 "price": "$49"
             }
         ]

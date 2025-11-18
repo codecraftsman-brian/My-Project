@@ -33,16 +33,14 @@
     "product_url": "/storage_01",
     "main_image": "static/images/storage/storage_01/storage_01.jpg",
     "zoom_image": "scale-60", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "title": "Lexar JumpDrive D400 Dual 128GB Flash Drive",
+    "description": "Fast, durable, and versatile. Makes transferring files between USB-C and USB-A devices seamless and secure.",
+    "rating": "4.0",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 3,
+    "review_count": 7,
+    "price": " 3,000",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
@@ -66,24 +64,6 @@
       }
     ]
   },
-  "color_options": [
-    {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
-      "border_color": "border-gray-300 "
-    }
-  ],
   "key_features": [
     {
       "feature": "Advanced Health Tracking"
@@ -102,23 +82,23 @@
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Lexar JumpDrive D400 Dual 128GB Flash Drive",
+    "description": "The <b>Lexar JumpDrive D400 Dual 128GB USB 3.1 Flash Drive</b> is the ultimate portable storage companion for professionals and everyday users. Designed with <b>dual USB Type-C and Type-A connectors,</b> it lets you effortlessly transfer data between laptops, tablets, and smartphones no adapters needed. With <b>USB 3.1 Gen 1</b> technology, enjoy blazing-fast read speeds of up to <b>130MB/s</b>, ensuring your photos, videos, and documents move in seconds. The <b>titanium metal casing</b> and <b>swivel design</b> provide lasting protection and style, while <b>Lexar DataShield encryption</b> keeps your files private and secure. Compact, durable, and universally compatible, the <b>JumpDrive D400</b> is built to handle life on the go combining speed, style, and security in one sleek device.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "USB Flash Drive Capacity",
+        "description": "128 GB / 256 GB / 512 GB"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "USB Flash Drive Type",
+        "description": "Flash Drive"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "USB Flash Drive Features",
+        "description": "Dual connectors (USB Type-C and USB Type-A)"
       },
       {
         "background": "bg-gray-50",
@@ -127,53 +107,38 @@
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "sub_title": "USB Generation",
+        "description": "USB 3.1"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "Material of Item",
+        "description": "Metal"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "Maximum Read Speed (MB per Seconds)",
+        "description": "130 MB/s"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "sub_title": "True Color",
+        "description": "Titanium"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "sub_title": "USB Flash Drive Pack Size",
+        "description": "Each"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
+        "sub_title": "Pack Qty",
+        "description": "1"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Weight (kg)",
+        "description": "0.4"
       }
     ]
   },

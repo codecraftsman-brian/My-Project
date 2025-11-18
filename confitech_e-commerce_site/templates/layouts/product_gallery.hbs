@@ -1,5 +1,10 @@
 {{#*inline "body_content"}}
 <script src="https://cdn.tailwindcss.com"></script>
+{{!-- {{>components/breadcrumb/paths breadcrumbs=product.computers.header.path_link}} --}}
+
+    {{#with header}}
+    {{>components/breadcrumb/paths}}
+    {{/with}}
 
 {{>product_gallery_content}}
 

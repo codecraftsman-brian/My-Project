@@ -39,147 +39,139 @@
     "product_url": "/laptop_01",
     "main_image": "static/images/computer/laptop_01/laptop_01.jpg",
     "zoom_image": "scale-85",
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
+    "title": "HP EliteBook 840 G10 14\" Laptop Computer",
+    "description": "Intel Core i5 13th Gen 1335U 1.3GHz Processor; 16GB RAM; 512GB Solid State Drive.",
     "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 9,
+    "review_count": 17,
+    "price": " 72,499",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
+    "prev_price": " 83,999",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
     "stock_indicator_color": "text-green-600",
     "button_bg_color": "bg-blue-600"
   },
-  "storage_option": {
-    "title": "Storage",
-    "options": [
-      {
-        "storage": "128GB",
-        "selected_status": ""
-      },
-      {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
-        "selected_status": ""
-      }
-    ]
-  },
-  "color_options": [
-    {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
-      "border_color": "border-gray-300 "
-    }
-  ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "Intel Core i5 1335U (1.3GHz) Processor"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "16GB RAM"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Intel Iris Xe Integrated Graphics"
     },
     {
-      "feature": "Powerful Battery Performance"
+      "feature": "512GB SSD"
     },
     {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Wireless LAN WiFi 6E (802.11ax), Bluetooth 5.3"
+    },
+    {
+      "feature": "Windows 11 Pro"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "HP EliteBook 840 G10 14\" Laptop Computer",
+    "description": "The <b>HP EliteBook 840 G10 14' Laptop</b> is a cutting-edge business notebook meticulously designed to deliver top-tier performance, security, and mobility for professionals on the move. Powered by the latest <b>13th Gen Intel Core i5-1335U processor</b> with Intel Turbo Boost technology, this device ensures smooth multitasking and lightning-fast responsiveness for all your computing needs. Paired with <b>16GB of high-speed DDR5 RAM</b> and a <b>512GB solid-state drive (SSD)</b>, the EliteBook 840 G10 offers ample storage capacity and quick access to files, enabling seamless workflow transitions and efficient data processing. <br><br> Crafted in a sleek <b>silver aluminum chassis</b>, the EliteBook 840 G10 blends premium aesthetics with robust durability. Its <b>14-inch Full HD display</b> delivers crisp visuals and vibrant colors, enhanced by <b>Intel Iris Xe Graphics</b>, making it perfect for presentations, content creation, and streaming. Designed for hybrid work, it supports <b>Wi-Fi 6E connectivity</b>, ensuring ultra-fast wireless performance for video conferencing, cloud collaboration, and remote access. <br><br>When it comes to security, HP sets the industry standard. The EliteBook 840 G10 comes integrated with </b>HP Wolf Security for Business</b>, combining hardware-enforced protection with multiple software layers such as <b>HP Sure Start Gen7, HP Sure Click</b>, and <b>HP Sure Sense</b>. These technologies work together to defend against malware, phishing, and BIOS-level attacks, keeping your data safe and your system running smoothly. <br><br>In addition to performance and protection, this laptop excels in comfort and usability. It features a <b>precision backlit keyboard, long battery life</b>, and <b>HP Fast Charge</b> technology that powers up to 50% in just 30 minutes. The <b>HD webcam</b> and <b>AI-based noise reduction</b> ensure crystal-clear virtual meetings, while the lightweight design makes it easy to carry between home, office, or business trips. <br><br> With enterprise-grade manageability through <b>HP Manageability Integration Kit</b> and compatibility with <b>Microsoft Endpoint Manager</b>, the HP EliteBook 840 G10 is built to simplify IT operations in business environments. Whether you’re a remote professional, executive, or IT manager, this laptop offers unmatched reliability, security, and speed     making it one of the best productivity tools in the modern workplace.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Platform",
+        "description": "Notebook PC"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "Series",
+        "description": "EliteBook"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Color - Lid",
+        "description": "Silver"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Operating System",
+        "description": "Windows 11 Pro"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "sub_title": "CPU Brand",
+        "description": "Intel"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "CPU Model",
+        "description": "13th Generation Core i5 Processor"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "CPU Type",
+        "description": "Core i5"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "sub_title": "Turbo Boost Speed",
+        "description": "Up to 4.6Hz"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "sub_title": "RAM",
+        "description": "16GB"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
+        "sub_title": "SSD Interface",
+        "description": "512GB"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Screen Size",
+        "description": "14\""
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
+        "sub_title": "Resolution",
+        "description": "1920x1200"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
+        "sub_title": "Front Camera",
+        "description": "Yes"
       },
       {
         "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Touch Screen",
+        "description": "No"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Connectivity",
+        "description": "WiFi Only"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Biometric Security",
+        "description": "Fingerprint Reader"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Weight",
+        "description": "3.01 lbs. (1.37 kg)"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Box Dimensions (WxDxH)",
+        "description": "13.00 x 9.00 x 3.00 in. (330.20 x 228.60 x 76.20 mm)"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "What's in the Box",
+        "description": "EliteBook 840 G10 14\" Laptop Computer, <br>Power Cord"
       }
     ]
   },

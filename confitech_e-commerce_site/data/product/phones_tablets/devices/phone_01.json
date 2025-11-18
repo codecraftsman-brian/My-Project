@@ -33,16 +33,15 @@
     "product_url": "/phone_01",
     "main_image": "static/images/phones_tablets/phones/phone_01/phone_01.png",
     "zoom_image": "scale-75", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
+    "title": "Google Pixel 10 – 6.3” OLED Display, Google Tensor G5, 12GB RAM",
+    "description": "Experience lightning-fast performance and cutting-edge AI with the Google Pixel 10.",
+    "rating": "5.0",
     "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "rating_count": 53,
+    "review_count": 147,
+    "price": " 82,999",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
+    "prev_price": " 93,999",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
@@ -68,7 +67,7 @@
   },
   "color_options": [
     {
-      "bg_color": "bg-purple-300",
+      "bg_color": "bg-blue-50",
       "border_color": "border-gray-300"
     },
     {
@@ -86,94 +85,87 @@
   ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "6.3\" OLED 120Hz display with 3000-nit peak brightness"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Google Tensor G5 processor with 12GB RAM"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "4970mAh battery with 30+ hours of usage"
     },
     {
-      "feature": "Powerful Battery Performance"
+      "feature": "Triple-lens 48MP camera with 20x Super Res Zoom"
     },
     {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Android 16 with 7 years of updates"
+    },
+    {
+      "feature": "Durable, water-resistant premium design"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Google Pixel 10 – 6.3” OLED Display, Google Tensor G5, 12GB RAM",
+    "description": "The Google Pixel 10 redefines smartphone intelligence with its Tensor G5 processor, delivering unmatched speed, efficiency, and AI-driven personalization. Its vibrant 6.3-inch OLED display with 120Hz refresh rate ensures fluid visuals and lifelike colors, while the 4970mAh battery provides reliable all-day power and fast-charging support reaching 55% in just 30 minutes. <br><br> Built with <b>Gemini AI</b>, the Pixel 10 helps you screen calls, translate in real time, and remove distractions from photos using Magic Eraser. The advanced <b>triple-lens camera system</b> offers 20x Super Res Zoom and Night Sight for crystal-clear shots in any light. Designed from premium materials, it’s durable, water-resistant, and features enhanced security with automatic device lock and spam call protection. <br><br> Running <b>Android 16</b>, the Pixel 10 guarantees <b>seven years of OS and security updates</b>, keeping your phone secure and fresh for the long haul. Plus, enjoy up to <b>six months of free Google One Premium, Fitbit Premium,</b> and <b>YouTube Premium</b> to unlock the full Google ecosystem experience.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Display",
+        "description": "6.3-inch OLED"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "Processor",
+        "description": "Google Tensor G5 chipset"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Memory",
+        "description": "12 GB"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Storage",
+        "description": "128 GB | 256 GB | 512 GB"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "Rear Cameras": "Rear Cameras",
+        "description": "48 MP main + 13 MP ultrawide"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "Battery",
+        "description": "4,970 mAh"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "Charging",
+        "description": "Wired charging up to ~30 W <br> Wireless charging via Qi2 up to ~15 W"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "sub_title": "Dimensions",
+        "description": "152.8 × 72.0 × 8.6 mm"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "sub_title": "Weight",
+        "description": "204 g"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
+        "sub_title": "Water & Dust resistance",
+        "description": "Yes"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Connectivity",
+        "description": "5G, Wi-Fi 6E, Bluetooth (next-gen)"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Build & Durability",
+        "description": "Gorilla Glass Victus 2 front"
       }
     ]
   },

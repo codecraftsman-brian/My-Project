@@ -7,19 +7,21 @@
     </button>
     <div class="accordion-content">
         <div class="pb-4">
-            <p class="text-gray-600 mb-4">{{product_info.description}}</p>
+            <p class="text-gray-600 mb-4">{{{product_info.description}}}</p>
             
             <!-- Specifications -->
+            {{#if product_info.specification}}
             <h3 class="text-2xl font-bold text-gray-800 mb-6">SPECIFICATIONS</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {{#each product_info.specification}}
                 <div class="{{background}} p-4 rounded-lg">
                     <p class="text-sm font-semibold text-gray-600 mb-1">
                         {{sub_title}}</p>
-                    <p class="text-gray-900">{{description}}</p>
+                    <p class="text-gray-900">{{{description}}}</p>
                 </div>
                 {{/each}}
             </div>
+            {{/if}}
         </div>
     </div>
 </div>

@@ -38,148 +38,110 @@
   "product_meta": {
     "product_url": "/laptop_02",
     "main_image": "static/images/computer/laptop_02/laptop_01.jpg",
-    "zoom_image": "scale-80",
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "zoom_image": "scale-50",
+    "title": "HP 15s Laptop – Core i3, 8GB RAM, 512GB SSD",
+    "description": "A sleek and reliable HP 15s laptop upgraded for superior speed and multitasking, perfect for work, study, and entertainment.",
+    "rating": "3.5",
+    "rating_icon": "⭐⭐⭐",
+    "rating_count": 33,
+    "review_count": 10,
+    "price": " 42,999",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
+    "prev_price": " 50,999",
+    "discount": " 8,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
     "stock_indicator_color": "text-green-600",
     "button_bg_color": "bg-blue-600"
   },
-  "storage_option": {
-    "title": "Storage",
-    "options": [
-      {
-        "storage": "128GB",
-        "selected_status": ""
-      },
-      {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
-        "selected_status": ""
-      }
-    ]
-  },
-  "color_options": [
-    {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
-      "border_color": "border-gray-300 "
-    }
-  ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "High-Speed Storage"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Vivid Display"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Sleek & Lightweight Design"
     },
     {
-      "feature": "Powerful Battery Performance"
-    },
-    {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Windows 11 Home"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "HP 15s Upgraded Laptop – Core i3, 8GB RAM, 512GB SSD",
+    "description": "Experience enhanced productivity with the upgraded <b>HP 15s-du3564TU laptop</b>, designed for those who value performance, style, and efficiency. Powered by the <b>Intel Core i3-1125G4 processor, 8GB of RAM</b>, and a <b>512GB SSD</b>, it delivers smooth multitasking and quick load times for all your daily computing tasks. The <b>15.6-inch HD display</b> ensures crisp visuals, while <b>Intel UHD Graphics</b> handle streaming, browsing, and light creative work with ease. With <b>Windows 11 Home</b>, a sleek silver design, and long-lasting performance, this laptop strikes the perfect balance between power and portability ideal for students, professionals, and everyday users alike.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Processor Speed",
+        "description": "3.7 GHz"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "Internal Memory",
+        "description": "512 GB"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Display Resolution",
+        "description": "1366x768"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Keyboard Language",
+        "description": "English"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "sub_title": "Storage Type",
+        "description": "SSD"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "Operating System",
+        "description": "Windows 11 Home"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "Model Series",
+        "description": "HP DU Series"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
+        "sub_title": "RAM Type",
+        "description": "DDR4"
       },
       {
         "background": "bg-gray-50",
         "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
+        "description": "15s-du3564TU"
       },
       {
         "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "HDMI Output",
+        "description": "Yes"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "RAM Size",
+        "description": "8 GB"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Colour Name",
+        "description": "Silver"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Graphic Memory",
+        "description": "2 GB"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Number of USB Ports",
+        "description": "2"
       }
     ]
   },

@@ -33,147 +33,155 @@
     "product_url": "/airpods_01",
     "main_image": "static/images/audio/audio_01/airpods_01.jpg",
     "zoom_image": "scale-75",
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
+    "title": "Bose QuietComfort Earbuds II (Triple Black)",
+    "description": "Immerse yourself in premium sound with Bose QuietComfort Earbuds II, featuring advanced noise cancellation and personalized audio tuning.",
     "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 113,
+    "review_count": 17,
+    "price": " 36,999",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
+    "prev_price": " 43,999",
+    "discount": " 18%",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
     "stock_indicator_color": "text-green-600",
     "button_bg_color": "bg-blue-600"
   },
-  "storage_option": {
-    "title": "Storage",
-    "options": [
-      {
-        "storage": "128GB",
-        "selected_status": ""
-      },
-      {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
-        "selected_status": ""
-      }
-    ]
-  },
   "color_options": [
     {
-      "bg_color": "bg-purple-300",
+      "bg_color": "bg-white",
       "border_color": "border-gray-300"
     },
     {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
+      "bg_color": "bg-black",
       "border_color": "border-gray-300 "
     }
   ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "World-Class Noise Cancellation"
+ },
+    {
+      "feature": "Comfortable & Secure Fit"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Long Battery Life"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Touch Controls & Smart Sensors"
     },
     {
-      "feature": "Powerful Battery Performance"
+      "feature": "Bluetooth 5.3 Connectivity"
     },
     {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "IPX4 Water Resistance"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Bose QuietComfort Earbuds II (Triple Black)",
+    "description": "It's a new benchmark for wireless audio excellence. Engineered with <b>CustomTune sound calibration</b>, they automatically adjust the sound profile and noise cancellation to your ears—ensuring every note sounds perfectly balanced. With </b>world-leading noise cancellation</b>, you can fully immerse yourself in music, podcasts, or calls without distractions. The <b>secure, customizable fit</b> ensures long-lasting comfort, whether you’re at the gym, on a flight, or working from home. Each earbud houses advanced </b>microphones that isolate your voice</b>, providing crisp, clear calls in any environment. Featuring <b>up to 6 hours of listening time</b> (plus 18 extra hours from the case), <b>IPX4 water resistance</b>, and <b>touch-based controls</b>, these earbuds combine luxury, technology, and everyday practicality. The <b>Bose Music App</b> enhances your experience with easy sound customization and software updates, making the </b>Bose QuietComfort Earbuds II</b> the ultimate companion for premium wireless listening.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Color",
+        "description": "Triple Black"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "Water Resistance",
+        "description": "Earbuds: Yes, IPx4 <br> Charging Case: No"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Sweat Resistance",
+        "description": "Earbuds: Yes, IPx4 <br> Charging Case: No"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Removable Ear Cushions/Tips",
+        "description": "Yes"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "sub_title": "Ear Tip Sizes in the Box",
+        "description": "Small/Medium/Large"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "Case Functionality",
+        "description": "Charging"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "Noise Cancelling",
+        "description": "Yes"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "sub_title": "Echo Reduction",
+        "description": "Yes"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "sub_title": "Adjustable Noise Cancelling",
+        "description": "Yes"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
+        "sub_title": "Bluetooth Range",
+        "description": "Up to 30' (9.14m)"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Bluetooth Version",
+        "description": "5.3"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
+        "sub_title": "Primary Power Source",
+        "description": "Rechargeable Battery"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
+        "sub_title": "Charging Cable",
+        "description": "USB-C"
       },
       {
         "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Battery Life",
+        "description": "Earbuds: Up to 6 hours <br> Charging Case: Up to Additional 18 hours"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Earbud Battery Charge Time",
+        "description": "3 hours"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Microphone",
+        "description": "Yes"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "USB Cable",
+        "description": "12' (30.48cm)"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Battery Info",
+        "description": "Required, included"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Dimensions (W x H x D)",
+        "description": "0.68 x 1.20 x 0.88' (1.72 x 3.048 x 2.23cm)"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Weight",
+        "description": "0.22 oz (6.35g)"
       }
     ]
   },

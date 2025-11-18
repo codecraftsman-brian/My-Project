@@ -33,16 +33,14 @@
     "product_url": "/storage_02",
     "main_image": "static/images/storage/storage_02/storage_01.jpg",
     "zoom_image": "scale-60", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
+    "title": "Gigastone 128GB Micro SD Card",
+    "description": "Designed for 4K video recording, high-speed transfers, and reliable app performance across all devices.",
+    "rating": "3.9",
+    "rating_icon": "⭐⭐⭐",
+    "rating_count": 19,
+    "review_count": 20,
     "price": " 2,999",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
@@ -53,127 +51,57 @@
     "title": "Storage",
     "options": [
       {
-        "storage": "128GB",
+        "storage": "32GB",
         "selected_status": ""
       },
       {
-        "storage": "256GB",
+        "storage": "64GB",
         "selected_status": "active"
       },
       {
-        "storage": "512GB",
+        "storage": "128GB",
         "selected_status": ""
       }
     ]
   },
-  "color_options": [
-    {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
-      "border_color": "border-gray-300 "
-    }
-  ],
+
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "Ultra-Fast Read/Write Speeds"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "V60 Speed Grade"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Reliable & Durable"
     },
     {
-      "feature": "Powerful Battery Performance"
-    },
-    {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Ample Storage"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Gigastone 128GB Micro SD Card",
+    "description": "The <b>Gigastone 128GB Micro SD Card (GS-4KA2V60-128G)</b> delivers top-tier speed, durability, and performance for professionals and creators alike. With <b>V60 speed grade</b> and <b>A2 app performance</b>, it supports <b>Ultra HD 4K video recording, mobile gaming,</b> and <b>high-speed file transfers</b> without lag. Ideal for expanding storage on <b>smartphones, tablets, cameras, drones, and laptops</b>, this micro SD card ensures quick access and smooth playback. Its robust design withstands extreme conditions, while Gigastone’s 5-year limited warranty and free data recovery provide long-term peace of mind. Whether you're capturing breathtaking footage, running apps, or storing large media libraries, the <b>Gigastone V60 128GB Micro SD Card</b> delivers reliable, high-performance storage you can count on.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Flash Memory Card Max Read Speed",
+        "description": "120 MB/s (800x)"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "Flash Memory Form Factor",
+        "description": "microSD"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Flash Memory Card Max Write Speed",
+        "description": "80 MB/s (833x)"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Video Speed Class",
+        "description": "V60"
       }
     ]
   },

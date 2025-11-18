@@ -33,16 +33,14 @@
     "product_url": "/tablet_01",
     "main_image": "static/images/phones_tablets/tablets/tablet_01/tablet_01.jpg",
     "zoom_image": "scale-75", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
+    "title": "TiLECC 10.1-Inch Android Tablet PC",
+    "description": "Powerful and versatile, the TiLECC 10.1\" Android 13 Tablet combines performance, portability, and productivity",
     "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 13,
+    "review_count": 27,
+    "price": " 12,855",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
@@ -53,30 +51,22 @@
     "title": "Storage",
     "options": [
       {
-        "storage": "128GB",
+        "storage": "32GB",
         "selected_status": ""
       },
       {
-        "storage": "256GB",
+        "storage": "64GB",
         "selected_status": "active"
       },
       {
-        "storage": "512GB",
+        "storage": "128GB",
         "selected_status": ""
       }
     ]
   },
   "color_options": [
     {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
       "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
       "border_color": "border-gray-300 "
     },
     {
@@ -86,94 +76,107 @@
   ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "Display - 10.1-inch IPS, 1280x800 resolution"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Processor - T310, 2.0GHz Octa-Core"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Memory - 8GB RAM | 512GB ROM (expandable to 1TB via MicroSD)"
     },
     {
-      "feature": "Powerful Battery Performance"
+      "feature": "Battery - 10000mAh, up to 8 hours of video playback"
     },
     {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Cameras - 5MP front | 8MP rear"
+    },
+    {
+      "feature": "Audio - Dual stereo speakers"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "TiLECC 10.1-Inch Android Tablet PC",
+    "description": "The <b>TiLECC 10.1-Inch Android Tablet (M16)</b> offers the perfect balance of power and convenience. Running on <b>Android 13</b>, it features an <b>octa-core T310 processor, 8GB RAM</b>, and <b>512GB storage</b> (expandable up to <b>1TB</b>) for seamless multitasking and large file storage. The 10.1-inch IPS display delivers crisp visuals, while the <b>10000mAh battery</b> provides up to 8 hours of streaming. <br><br> With <b>dual cameras (5MP front, 8MP rear), dual speakers</b>, and <b>Bluetooth 5.0</b>, it’s ideal for video calls, learning, or streaming content. The tablet also comes with a <b>wireless keyboard, mouse, case, charger, and OTG adapter</b>, making it a true 2-in-1 productivity device. Enjoy added features like <b>Google Family Link parental controls, FM radio</b>, and <b>dual-band Wi-Fi</b> for reliable connectivity. <br><br> Whether you’re studying, working remotely, or relaxing with your favorite shows, this tablet adapts to your lifestyle effortlessly.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Brand",
+        "description": "TiLECC"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "System",
+        "description": "Android 13"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Color",
+        "description": "Black"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Processor",
+        "description": "T310, 2.0GHz"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
+        "sub_title": "Memory capacity",
+        "description": "8GB"
       },
       {
         "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
+        "sub_title": "ROM model",
+        "description": "512GB"
       },
       {
         "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
+        "sub_title": "Screen size",
+        "description": "10.1\""
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Connection Type",
-        "description": "Bluetooth"
+        "sub_title": "Display type",
+        "description": "IPS"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "sub_title": "Screen resolution",
+        "description": "1280 x 800 pixels"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
+        "sub_title": "Connection",
+        "description": "WiFi 5GHz+2.4GHz, Bluetooth 5.0, hotspot, FM"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Bluetooth",
+        "description": "5.0"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
+        "sub_title": "Battery",
+        "description": "10000 milliampere hours (mAh)"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
+        "sub_title": "Dual cameras",
+        "description": "front 5 PM/rear 8 PM."
       },
       {
         "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "Ports",
+        "description": "Type-C port, 3.5mm headphone jack, MicroSD/TF card slot"
+      },
+      {
+        "background": "bg-gray-50",
+        "sub_title": "Size (cm)",
+        "description": "24 * 16 CM"
+      },
+      {
+        "background": "bg-white",
+        "sub_title": "Weight",
+        "description": "500g"
       }
     ]
   },

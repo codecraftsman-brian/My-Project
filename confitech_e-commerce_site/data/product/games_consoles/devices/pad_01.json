@@ -33,147 +33,85 @@
     "product_url": "/pad_01",
     "main_image": "static/images/games_consoles/games_01/pad_01.jpg",
     "zoom_image": "scale-75", 
-    "title": "Samsung Galaxy S24 Ultra Smartwatch",
-    "description": "Advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators.",
-    "rating": "4.5",
-    "rating_icon": "⭐⭐⭐⭐⭐",
-    "rating_count": 253,
-    "review_count": 47,
-    "price": " 2,999",
+    "title": "Microsoft Xbox Wireless Controller",
+    "description": "Unleash your style and precision with the Heart Breaker Edition Xbox Wireless Controller crafted for comfort, control, and seamless cross-platform gaming.",
+    "rating": "3.5",
+    "rating_icon": "⭐⭐⭐⭐",
+    "rating_count": 3,
+    "review_count": 14,
+    "price": " 6,999",
     "price_color": "text-blue-600",
-    "prev_price": " 3,999",
-    "discount": " 1,000",
     "tag_name": "NEW",
     "tag_bg_color": "bg-red-500",
     "stock_indicator": "In Stock",
     "stock_indicator_color": "text-green-600",
     "button_bg_color": "bg-blue-600"
   },
-  "storage_option": {
-    "title": "Storage",
-    "options": [
-      {
-        "storage": "128GB",
-        "selected_status": ""
-      },
-      {
-        "storage": "256GB",
-        "selected_status": "active"
-      },
-      {
-        "storage": "512GB",
-        "selected_status": ""
-      }
-    ]
-  },
-  "color_options": [
-    {
-      "bg_color": "bg-purple-300",
-      "border_color": "border-gray-300"
-    },
-    {
-      "bg_color": "bg-sky-600",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-lime-400",
-      "border_color": "border-gray-300 "
-    },
-    {
-      "bg_color": "bg-gray-900",
-      "border_color": "border-gray-300 "
-    }
-  ],
   "key_features": [
     {
-      "feature": "Advanced Health Tracking"
+      "feature": "Striking Heart Breaker Design"
     },
     {
-      "feature": "Vibrant 1.39” TFT Display"
+      "feature": "Enhanced Control"
     },
     {
-      "feature": "Durable Build with Premium Materials"
+      "feature": "Multi-Device Connectivity"
     },
     {
-      "feature": "Powerful Battery Performance"
+      "feature": "Seamless Sharing"
     },
     {
-      "feature": "Smart Connectivity & Multi-Sport Modes"
+      "feature": "Customizable Gameplay"
     }
   ],
   "product_info": {
-    "title": "Samsung Galaxy S24 Ultra Business Smartwatch",
-    "description": "The Samsung Galaxy S24 Ultra is designed for professionals who value both functionality and style. With advanced health tracking features, it monitors heart rate, body temperature, and key wellness indicators, giving you a well-rounded view of your physical condition. Its 1.39-inch TFT display with 360x360 resolution ensures a crisp and vibrant visual experience – ideal for viewing notifications and smoothly navigating through functions. Built with durable zinc alloy and ABS+PC materials, the smartwatch is made to withstand everyday wear and maintain long-term reliability. Powered by a high-capacity 260mAh battery, it offers 5–7 days of usage and up to 30 days of standby time, with a fast 2-hour charge to keep you going without long downtimes.Equipped with 8+1 sports modes, Bluetooth audio, call and message reminders, and music control, the Samsung Galaxy S24 Ultra is your perfect companion for staying active, connected, and in control — all in one stylish device.",
+    "title": "Microsoft Xbox Wireless Controller",
+    "description": "The <b>Microsoft Xbox Wireless Controller – Special Edition Heart Breaker</b> brings a bold and vibrant aesthetic to your gaming setup, featuring stunning pink and purple hues with blue accents. Designed for precision and comfort, it includes <b>textured triggers</b> and <b>rubberized grips</b> that deliver superior control during intense gameplay. <br><br> <b>With Xbox Wireless and Bluetooth® technology,</b> you can effortlessly connect to <b>Xbox Series X|S, Xbox One, Windows PCs, and cloud-enabled devices</b> making it perfect for gamers on the go. Capture and share your best moments with the dedicated <b>Share button</b>, and personalize button mapping through the<b> Xbox Accessories app</b> for a tailored experience. <br><br> Whether you’re gaming competitively or casually, the Heart Breaker controller combines high performance, comfort, and iconic design—built to stand out as much as you do.",
     "specification": [
       {
         "background": "bg-gray-50",
-        "sub_title": "Material",
-        "description": "6.67' AMOLED"
+        "sub_title": "Model Name",
+        "description": "Xbox Wireless Controller – Heart Breaker Edition"
       },
       {
         "background": "bg-white",
-        "sub_title": "Battery Size",
-        "description": "260 mAh"
+        "sub_title": "SKU",
+        "description": "MIEP229567"
       },
       {
         "background": "bg-white",
-        "sub_title": "Product Weight",
-        "description": "57 g"
+        "sub_title": "Color",
+        "description": "Heart Breaker (Pink/Purple/Blue)"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Colour Name",
-        "description": "Galaxy-S24-Black"
+        "sub_title": "Compatibility",
+        "description": "Xbox Series X"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Band Material",
-        "description": "Silicone/Rubber"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Department",
-        "description": "Unisex"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Display Type",
-        "description": "TFT"
-      },
-      {
-        "background": "bg-gray-50",
-        "sub_title": "Connection Type",
+        "sub_title": "Connectivity",
         "description": "Bluetooth"
       },
       {
-        "background": "bg-gray-50",
-        "sub_title": "Face/Dial Shape",
-        "description": "Round"
+        "background": "bg-white",
+        "sub_title": "Battery Type",
+        "description": "AA batteries"
       },
       {
         "background": "bg-white",
-        "sub_title": "Band Size",
-        "description": "One Size (Adjustable Band)"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Band Length",
-        "description": "222.5 mm"
+        "sub_title": "Weight",
+        "description": "280g"
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Features",
-        "description": "Heart Rate Monitor, Bluetooth, ControlSync, Temperature Monitor, Water Resistant"
+        "sub_title": "Dimensions (L x W x H)",
+        "description": "6.0 x 4.0 x 2.4\""
       },
       {
         "background": "bg-gray-50",
-        "sub_title": "Model Number",
-        "description": "PrismWatch-S24"
-      },
-      {
-        "background": "bg-white",
-        "sub_title": "Model Name",
-        "description": "PrismWatch"
+        "sub_title": "In the Box",
+        "description": "Xbox Wireless Controller, 2 × AA batteries, Quick Start Guide"
       }
     ]
   },

@@ -52,7 +52,7 @@
 }
 
 .scrolling-banner {
-  animation: scrollLeft 40s ease infinite;
+  animation: scrollLeft 60s ease-in-out infinite;
   white-space: nowrap;
 }
 
@@ -223,7 +223,7 @@
   transition: max-height 0.4s ease-out;
 }
 .accordion-content.active {
-  max-height: 1000px;
+  max-height: fit-content;
 }
 
 /*---Our Services---*/
